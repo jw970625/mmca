@@ -1,0 +1,248 @@
+
+
+#shop .fade{
+  position: relative;
+  width: 100%;
+  height: 65rem;
+}
+
+/* (1)이미지 모두 동일한 위치, 안보이게 함 */
+#shop .fade_items ul li{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade_items ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* (2)첫번째 이미지만 보임 */
+#shop .fade_items ul li:first-child{display: block;}
+
+/* Indicator */
+#shop .fade_indicator{
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#shop .fade_indicator a{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-indent: -9999px;
+  margin: 0.5rem;
+}
+#shop .fade_indicator a.active{background-color: #666;}
+
+/* Prev Next  Button */
+#shop .fade_side .icon{
+  font-size: 7rem;
+  color: #333;
+}
+#shop .fade_side .prev,
+#shop.fade-side .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#shop .fade_side .prev{left: 3rem;}
+#shop .fade_side .next{right: 3rem;}
+#shop .fade_side .prev:hover,
+#shop .fade_side .next:hover{opacity: 0.5;}
+
+#shop .main_text{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #fff;
+}
+#shop .main_text p{
+  margin-top: 3rem;
+}
+#shop .main_btn{margin-top: 3rem;}
+#shop .main_btn a{
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  transition: 0.3s;
+}
+#shop .main_btn a:hover{
+  color: #333;
+  background-color: #fff;
+}
+
+/* 공통 */
+#shop .btn{
+  display: flex;
+  padding: 0 23rem;
+  margin-top: 10rem;
+  width: 100%;
+}
+#shop .btn a{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+/* collection */
+#shop .collection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10rem;
+  margin-top: 10rem;
+}
+#shop .collection .box{
+  width: 40rem;
+  height: 45rem;
+  position: relative;
+}
+
+#shop .collection .text{
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  transition: 0.3s;
+  opacity: 0;
+  margin: auto;
+  width: inherit;
+}
+
+#shop .collection .box:hover{
+  background-color: #f0f0f0;
+}
+#shop .collection .box:hover .text{
+  opacity: 1;
+}
+
+/* publication */
+#shop .publication{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10rem;
+  margin-top: 10rem;
+}
+#shop .publication .box{
+  width: 40rem;
+  height: 43rem;
+  position: relative;
+}
+
+#shop .publication .text{
+  width: inherit;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  transition: 0.3s;
+  opacity: 0;
+  margin: auto;
+}
+
+#shop .publication .box:hover{
+  background-color: #f0f0f0;
+}
+#shop .publication .box:hover .text{
+  opacity: 1;
+}
+
+/* Limited Edition */
+#shop .edition{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20rem;
+  margin-top: 30rem;
+}
+#shop .edt_left{
+  width: 40rem;
+  text-align: left;
+  margin-bottom: 20rem;
+}
+#shop .edt_text h3{
+  font-size: 3.2rem;
+  margin-bottom: 5rem;
+  color: #333;
+}
+#shop .edt_text p{
+  font-size: 1.8rem;
+  color: #666;
+}
+#shop .edt_btn{
+  width: 15rem;
+  margin-top: 5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #333;
+  text-align: center;
+  transition: 0.3s;
+}
+#shop .edt_btn:hover{
+  color: #fff;
+  background-color: #333;
+}
+
+#shop .edt_right img{
+  width: 45rem;
+  height: 55rem;
+  object-fit: cover;
+}
+
+/* More story */
+#shop .story{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30rem auto;
+  column-gap: 20rem;
+}
+#shop .str_right{
+  width: 40rem;
+  text-align: left;
+  margin-bottom: 20rem;
+}
+#shop .str_text h3{
+  font-size: 3.2rem;
+  margin-bottom: 5rem;
+  color: #333;
+}
+#shop .str_text p{
+  font-size: 1.8rem;
+  color: #666;
+}
+#shop .str_btn{
+  width: 15rem;
+  margin-top: 5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #333;
+  text-align: center;
+  transition: 0.3s;
+}
+#shop .str_btn:hover{
+  color: #fff;
+  background-color: #333;
+}
+#shop .str_left img{
+  width: 45rem;
+  height: 55rem;
+  object-fit: cover;
+}
+
+/* mmca end */
+#shop .mmca_text{
+  text-align: center;
+}
+#shop .mmca_text p{
+  font-size: 2.6rem;
+  color: #666;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+#shop .mmca_img{
+  width: 100%;
+  height: 6rem;
+}

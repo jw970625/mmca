@@ -1,0 +1,120 @@
+/* PC: 1200px 이상 */
+@media screen and (min-width: 1200px) {
+  #reservation .seoul02{display: block;}
+}
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px){
+
+  #reservation .seoul02,
+  .gwacheon02{display: none;}
+
+  #reservation .exh_btn{
+    display: block;
+    margin-left: 8rem;
+  }
+  #reservation section .exh {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 2rem;
+    text-align: left;
+  }
+  #reservation section .exh_left img{
+    width: 60rem;
+    height: 40rem;
+    object-fit: cover;
+  }
+  #reservation section .exh_right {
+    width: 60rem;
+    height: 45rem;
+    margin-top: 3rem;
+  }
+
+  #reservation section .exh_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #reservation section .exh_box h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  #reservation section .exh_text {
+    column-gap: 1.2rem;
+    font-size: 1.4rem;
+  }
+  #reservation section .btn{
+    padding: 0 10rem;
+  }
+}
+
+/* 모바일 사이즈 */
+@media (max-width: 768px) {
+  #reservation section .reser,
+  #reservation section .exh,
+  #reservation{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  #reservation .main_text{
+    margin-left: 10rem;
+  }
+  #reservation .main_text h2{
+    margin-top: 10rem;
+    margin-left: 4rem;
+    font-size: 3.6rem;
+  }
+  #reservation .exh_btn{
+    display: block;
+  }
+
+  #reservation .main_text{text-align: left;}
+
+  #reservation .seoul02,
+  .gwacheon02{display: none;}
+
+  #reservation section .reser {
+    margin-top: 5rem;
+  }
+
+  #reservation section .exh_right {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  
+  #reservation section .exh_box {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  #reservation section .exh_text {
+    width: 30rem;
+    margin: auto;
+  }
+
+  #reservation section .exh_text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  #reservation .btn {
+    padding: 0 2rem;
+  }
+
+  #reservation .btn a:nth-of-type(1) {
+    font-weight: 600;
+  }
+
+  #reservation .btn a:nth-of-type(2) {
+    font-weight: 400;
+  }
+}
