@@ -20,7 +20,6 @@
   object-fit: cover;
 }
 
-/* (2)첫번째 이미지만 보임 */
 #shop .fade_items ul li:first-child{display: block;}
 
 /* Indicator */

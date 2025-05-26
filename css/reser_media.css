@@ -3,7 +3,7 @@
   #reservation .seoul02{display: block;}
 }
 /* 태블릿 */
-@media (min-width: 768px) and (max-width: 1199px){
+@media (max-width: 1199px){
 
   #reservation .seoul02,
   .gwacheon02{display: none;}
@@ -60,7 +60,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 2rem;
   }
   #reservation .main_text{
     margin-left: 10rem;

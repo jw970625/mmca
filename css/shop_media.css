@@ -85,9 +85,10 @@
   #shop .story .str_left img{
     width: 50rem;
     height: 30rem;
+    margin-right: 10rem;
   }
   #shop .story .str_right{
-    margin-right: 10rem;
+    margin-right: 1rem;
     margin-bottom: 40rem;
   }
   #shop .story .str_text{
@@ -111,12 +112,16 @@
   #shop .collection .box:nth-of-type(3){display: none;}
   #shop .publication .box:nth-of-type(3){display: none;}
   
-#shop .fade ul li img {
-  width: 100%;
-  height: 65rem;
-  object-fit: cover;
-  display: block;
+  #shop .section03, .section04{
+    height: 90rem;
   }
+  #shop .section04{margin-bottom: 10rem;}
+  #shop .fade ul li img {
+    width: 100%;
+    height: 65rem;
+    object-fit: cover;
+    display: block;
+    }
   #shop .btn{
     width: 20rem;
     margin: 10rem auto 0;
@@ -187,13 +192,13 @@
   #shop .story{flex-direction: column;}
   #shop .story .str_right{
     margin-top: 3rem;
-    margin-left: 10rem;
+    margin-left: 1rem;
     text-align: center;
   }
   #shop .story .str_left img{
     width: 40rem;
-    margin-right: 50rem;
     height: 50rem;
+    margin-right: 50rem;
   }
   #shop .story .str_text h3{
     font-size: 2.2rem;
@@ -201,5 +206,11 @@
   #shop .story .str_btn{
     margin: 3rem auto 0;
   }
+
+  #shop .mmca_text h2{font-size: 2.8rem;}
+  #shop .mmca_text p{font-size: 2rem;}
+
+
+
 
 }
