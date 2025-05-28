@@ -41,3 +41,10 @@ h2 {
 p, a {
   font-size: 1.6rem; /* 16px */
 }
+
+.container-wrap{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}

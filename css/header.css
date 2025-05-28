@@ -5,17 +5,20 @@
   display: none;
 }
 /* 데스크톱 메뉴 */
+
+
+
 .desk_header{
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 8rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   background-color: #fff;
-  z-index: 99999;
+  z-index: 99;
 }
 
 ul.gnb{
@@ -99,21 +102,22 @@ ul.gnb{
 /* Tab / Mobile Header start */
 
 .tab_header{
-  width: 100vw;
+  width: 100%;
   height: 8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   position: fixed;
   background-color: #fff;
   z-index: 999;
+  padding: 0 4rem;
 }
+
 
 .tab_header_left,
 .tab_header_logo,
 .trigger {
-  flex: 1; /* 1:1:1 비율 */
   display: flex;
   align-items: center;
   justify-content: center; /* 내부 요소 가운데 정렬 */
@@ -124,25 +128,22 @@ ul.gnb{
 .menu_all{
   position: absolute;
   top: 8rem; 
-  right: -120%;
+  right: -150%;
   width: 50%;
   height: 80rem;
   background-color: #fff;
   transition: right 0.1s;
-  z-index: 999;
+  z-index: 99;
   border-top: 1px solid #f0f0f0;
 }
 
 /* login / join */
 .menu_user {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.8rem;
   font-size: 1.4rem;
   color: #333;
-  margin-bottom: 2rem;
-  margin-right: 3rem;
   margin-top: 2rem;
+  border: 1px solid #000;
 }
 .menu_user a {
   text-decoration: none;
@@ -185,10 +186,17 @@ ul.gnb{
 
 .mright{
   flex: 7;
-  padding: 30px;
+  padding: 0 7rem;
   font-size: 2rem;
+  margin: 0 auto;
 }
 
+.mright .tmain{margin-bottom: 1rem;}
+.mright .tsub{margin-bottom: 1rem;}
+
+.mright .tsub li a:hover{
+  color: #008787;
+}
 .mlogo img{ 
 	width:100%;
 	max-width:100%;
