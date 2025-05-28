@@ -1,91 +1,40 @@
-@import url(style.css);
 
-/* main */
-#reservation .main_img img{
+/* bg_sec */
+
+#reservation .bg_sec .bg_wrap{
   width: 100%;
-  height: 50rem;
-  object-fit: cover;
-  position: relative;
-  transition: all 0.3s ease-in-out;
+  height: 65rem;
 }
-#reservation .main_text{
+
+#reservation .bg_sec .bg_wrap img{
+  width: 100%;
+  height: 65rem;
+  object-fit: cover;
+}
+
+#reservation .bg_wrap .bg_text{
   position: absolute;
-  top: 25%;
-  left: 5%;
+  left: 10%;
+  top: 35%;
   color: #fff;
 }
-#reservation .main_text h2{
+
+#reservation .bg_wrap .bg_text h2{
+  font-size: 4.2rem;
   margin-bottom: 3rem;
-  font-weight: 500;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
-/* 공통 */
-#reservation section{
-  margin-top: 10rem;
-}
-#reservation h3{font-size: 2.4rem;}
-
-#reservation section .reser{
-  display: flex;
-  margin-top: 10rem;
-  justify-content: space-between;
-  padding: 0 20rem;
-}
-#reservation section .exh{
-  display: flex;
-  text-align: center;
-}
-#reservation section .exh_right{
-  margin-top: 10rem;
-  width: 28rem;
-  height: 30rem;
-  position: relative;
-  margin-left: 3rem;
-}
-#reservation section .exh_box{margin-top: 3rem;}
-#reservation section .exh_text{
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-}
-#reservation section .exh_text p:nth-of-type(1){
-  font-weight: 600;
-}
-#reservation .btn{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 23rem;
-}
-#reservation .btn a:nth-of-type(1){
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-#reservation .btn a:nth-of-type(2){
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-#reservation .btn a:nth-of-type(2):hover{
-  color: var(--color-primary);
-}
-#reservation section img{
-  width: 37rem;
-  height: 45rem;
-  object-fit: cover;
+#reservation .bg_wrap .bg_text p{
+  font-size: 2rem;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
-/* 예약버튼 */
-#reservation .exh_btn{
-  margin-top: 5rem;
-  display: none;
-}
-#reservation .exh_btn a{
-  border: 1px solid #000;
-  padding: 1rem 2rem;
-  transition: 0.3s;
-}
 
-#reservation .exh_btn a:hover{
-  border: none;
-  color: #fff;
-  background-color: #333;
+
+/* Media Query */
+
+@media (max-width:768px){
+  
+
 }
