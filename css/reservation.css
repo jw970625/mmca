@@ -36,6 +36,8 @@
 #reservation section{margin: auto;}
 
 #reservation .menubar{
+  width: 100%;
+  min-width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -70,11 +72,13 @@
 
 #reservation .reserimg img{
   width: 35rem;
+  min-width: 30rem;
   height: 30rem;
 }
 
 #reservation .resertext{
   width: 100%;
+  min-width: 35rem;
   display: block;
 }
 
@@ -178,7 +182,7 @@
   }
 }
 
-@media (max-width:320px){
+@media (min-width:320px){
 
   #reservation .bg_wrap .bg_text{
     margin: auto;
