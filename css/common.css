@@ -13,6 +13,12 @@
   --color-gray-900: #999;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%; /* 브라우저 기본 16px → 1rem = 10px */
 }
@@ -44,7 +50,7 @@ p, a {
 
 .container-wrap{
   width: 100%;
-  max-width: 1400px;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 4rem;
 }

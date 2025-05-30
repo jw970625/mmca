@@ -137,13 +137,15 @@ ul.gnb{
   border-top: 1px solid #f0f0f0;
 }
 
-/* login / join */
+/* 탭메뉴 로그인 */
 .menu_user {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
   font-size: 1.4rem;
   color: #333;
-  margin-top: 2rem;
-  border: 1px solid #000;
+  margin: 3rem auto 0;
+  /* border: 1px solid #000; */
 }
 .menu_user a {
   text-decoration: none;
@@ -157,6 +159,7 @@ ul.gnb{
 .tab_header_left a{
   margin-right: 5rem;
 }
+
 /* Trigger*/
 .tab_header_left a img,
 .tab_header_logo a img {
@@ -185,13 +188,14 @@ ul.gnb{
 }
 
 .mright{
-  flex: 7;
-  padding: 0 7rem;
+  /* flex: 7; */
   font-size: 2rem;
   margin: 0 auto;
 }
 
-.mright .tmain{margin-bottom: 1rem;}
+.mright .tmain{
+  margin: auto;
+}
 .mright .tsub{margin-bottom: 1rem;}
 
 .mright .tsub li a:hover{
@@ -199,23 +203,26 @@ ul.gnb{
 }
 .mlogo img{ 
 	width:100%;
-	max-width:100%;
 }
 
 
-.mright .mlogo{margin-top: 50px;}
+.mright .mlogo{margin-top: 5rem;}
+/* .mright>ul>li:nth-child(n+3):nth-child(-n+10){ 
+} */
 
-.mright>ul>li:nth-child(n+3):nth-child(-n+10){ /*li의 3번째~10번째까지*/
-	padding:12px 0;
+.mright .tgnb{
+  margin-top: 10rem;
 }
+
 .mright>ul>li>a{
+  width: 80%;
 	color:#333;
 	font-weight:400;
-	font-size:18px;
-	font-size:1.125rem;
+	font-size:1.8rem;
+  margin: auto;
 }
 
-.tgnb .tmain > a {
+.tgnb .tmain>a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,7 +230,7 @@ ul.gnb{
   color: #222;
   padding: 1.2rem 0;
 }
-/* Boxicon으로 바꿀 범위 */
+
 .tgnb>.tmain>a:after{ 
   content: "\f107";
   font-family: fontawesome;
@@ -237,7 +244,9 @@ ul.gnb{
 
 .tsub{display: none;}
 .tsub>li{
-	margin-top: 1rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0;
 }
 .tsub>li:last-child {border-bottom: none;}
 .tsub>li>a{  

@@ -28,9 +28,3 @@ img{
 	vertical-align: top;
 }
 
-/* h1{
-	font-size: 2.5rem;
-} 
-rem 단위는 최상위부모인 html을 기준으로 배율로 하는 반응형단위
-rem 단위 * 10 = px단위
-*/

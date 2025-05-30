@@ -1,5 +1,4 @@
-
-/* bg_sec */
+@import url(style.css);
 
 #reservation .bg_sec .bg_wrap{
   width: 100%;
@@ -31,97 +30,82 @@
   text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
-/* seoul_sec */
-
-#reservation section{margin: auto;}
-
-#reservation .menubar{
-  width: 100%;
-  min-width: 80%;
+#reservation section .menubar{
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 10rem 20rem 10rem;
+  margin: 7rem auto 8rem;
 }
 
-#reservation .menubar a:nth-of-type(1){
-  font-size: 3rem;
+#reservation section .menubar a:nth-of-type(1){
   font-weight: 600;
+  font-size: 2.8rem;
 }
 
-#reservation .menubar a:nth-of-type(2){
+#reservation section .menubar a:nth-of-type(2){
   font-size: 2rem;
   font-weight: 400;
 }
 
-#reservation .reser_wrap{
-  width: 100%;
-  display: flex;
-}
-
-#reservation .reserbox{
+#reservation section .reser_wrap{
+  width: 70%;
   display: flex;
   margin: auto;
 }
 
-#reservation .reserimg{
+#reservation .reser_wrap .reserbox{
+  display: flex;
   width: 100%;
-  display: block;
+  justify-content: space-between;
+}
+
+#reservation section .reserimg{
+  width: 60%;
   object-fit: cover;
+  padding-right: 5rem;
 }
 
-#reservation .reserimg img{
-  width: 35rem;
-  min-width: 30rem;
-  height: 30rem;
-}
-
-#reservation .resertext{
-  width: 100%;
-  min-width: 35rem;
+#reservation section .resertext{
+  width: 55%;
   display: block;
+  padding-right: 5rem;
 }
 
-#reservation .resertext .reser_title tr th{
+#reservation section .resertext table .reser_title tr th{
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
   margin: 0 auto 3rem;
 }
 
-#reservation .resertext table{
-  margin: auto;
-}
-
-#reservation .resertext tr{
+#reservation section .resertext tr{
   display: flex;
   justify-content: space-between;
   text-align: right;
 }
 
-#reservation .resertext tr .tit{
-  margin-right: 10rem;
+#reservation section .resertext tr .tit{
   font-weight: 800;
   color: #333;
   white-space: nowrap;
 }
 
-#reservation .resertext tr td{
+#reservation section .resertext tr td{
   margin: 0.7rem 0;
   font-size: 1.6rem;
-  color: #333;
+  color: #666;
   white-space: nowrap;
 }
 
-#reservation .btn{
-  text-align: center;
+#reservation section .btn{
+  text-align: left;
   display: none;
 }
 
-#reservation .btn a{
+#reservation section .btn a{
   border: 1px solid #000;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 #reservation .deoksu_sec .reserbox:nth-of-type(2){
@@ -130,117 +114,147 @@
 
 /* Media Query */
 
-@media (max-width:768px){
-  #reservation .reser_wrap .reserbox:nth-of-type(2){display: none;}
+@media (max-width: 1400px){
+
+  #reservation section .reser_wrap .reserbox:nth-of-type(2){
+    display: none;
+  }
+
+  #reservation section .menubar{
+  width: 80%;
+  margin: 10rem auto;
+  }
 
   #reservation .reser_wrap{
-    padding: 0;
+  width: 100%;
   }
 
-  #reservation .menubar{
-    padding: 5rem 10rem 5rem;
+  #reservation section .reserimg{
+  width: 40%;
+  object-fit: cover;
+  padding-right: 0;
+}
+
+  #reservation section .resertext{
+    width: 40%;
+    padding-right: 0;
   }
 
-  #reservation .menubar a:nth-of-type(1){
-    font-size: 2rem;
+  #reservation section .resertext table{
+    width: 80%;
   }
 
-  #reservation .menubar a:nth-of-type(2){
-    font-size: 1.6rem;
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 5rem auto 2rem;
   }
 
-  #reservation .reserbox {
-    margin: auto;
-  }
-
-  #reservation .reserimg img{
-  width: 35rem;
-  height: 30rem;
-  }
-
-  #reservation .resertext .reser_title tr th{
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-  }
-
-#reservation .resertext tr .tit{
-  margin-right: 5rem;
-  }
-
-#reservation .resertext tr td{
-  margin: 0.7rem 0;
-  font-size: 1.4rem;
-  color: #333;
-  line-height: 3.5rem;
-  }
-
-  #reservation .btn{
-    margin-top: 2rem;
+  #reservation section .btn{
     display: block;
   }
 }
 
-@media (min-width:320px){
+@media (max-width:768px){
 
-  #reservation .bg_wrap .bg_text{
-    margin: auto;
-  }
-
-  #reservation .bg_wrap .bg_text h2{
-  font-size: 3.6rem;
-  }
-
-  #reservation .bg_wrap .bg_text p{
-  font-size: 1.6rem;
-  }
-  
   #reservation .reser_wrap{
-    padding: 0;
+  width: 80%;
   }
 
-  #reservation .menubar{
-    padding: 5rem 5rem 3rem;
+  #reservation section .reserimg{
+    margin-top: 5rem;
+    width: 40%;
+    object-fit: cover;
   }
 
-  #reservation .menubar a:nth-of-type(1){
-    font-size: 1.6rem;
+  #reservation section .resertext{
+    width: 50%;
   }
 
-  #reservation .menubar a:nth-of-type(2){
-    font-size: 1.2rem;
+  #reservation section .resertext table{
+    width: 100%;
   }
 
-  #reservation .reserbox{
-  flex-direction: column;
-  margin: auto;
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 2.2rem;
   }
 
-  #reservation .reserimg img{
-  width: 40rem;
-  height: 35rem;
+  #reservation section .btn{
+    margin-top: 1rem;
+    display: block;
   }
-
-  #reservation .resertext{
-    height: 30rem;
-  }
-  #reservation .resertext .reser_title tr th{
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 3rem auto 1rem;
 }
 
-#reservation .resertext tr .tit{
-  margin-right: 8rem;
-  margin-bottom: 2rem;
+@media (max-width:540px){
+
+  #reservation .bg_wrap .bg_text h2{
+  font-size: 3rem;
+}
+
+#reservation .bg_wrap .bg_text p{
+  font-size: 1.6rem;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+  
+  #reservation .reser_wrap{
+  width: 100%;
   }
 
-#reservation .resertext tr td{
-  margin: 0.1rem 0;
-  font-size: 1.2rem;
-  color: #333;
+  #reservation section .reser_wrap .reserbox{
+    width: 100%;
+    flex-direction: column;
   }
+
+  #reservation section .reserimg{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #reservation section .menubar a:nth-of-type(1){
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+#reservation section .menubar a:nth-of-type(2){
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+  #reservation section .resertext{
+    width: 100%;
+  }
+
+  #reservation section .resertext table{
+    width: 100%;
+  }
+
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  #reservation section .resertext tr td{
+  font-size: 1.6rem;
+}
+
+  #reservation section .btn{
+    width: 50%;
+    display: block;
+    margin: 3rem auto 2rem;
+  }
+}
+
+@media (max-width:320px){
+
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  #reservation section .resertext tr td{
+  font-size: 1.4rem;
+}
 }
 
 

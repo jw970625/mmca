@@ -1,193 +1,161 @@
 @import url(style.css);
 
-/* Main Start */
-#seoul .main_img img{
+
+/* bg_sec */
+#seoul .bg_img{
   width: 100%;
   height: 80rem;
+  object-fit: cover;
   position: relative;
 }
-#seoul .main_text h2{
+
+#seoul .bg_img img{
+  width: 100%;
+  height: 80rem;
+}
+
+#seoul .bg_sec .bg_text{
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: var(--color-white);
-  text-align: center;
-  line-height: 6rem;
-  font-size: 3.6rem;
+  color: #fff;
 }
-#seoul .main_time{
+
+#seoul .bg_sec .bg_text h2{
+  line-height: 6rem;
+  text-align: center;
+}
+
+#seoul .bg_sec .time_sec{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  bottom: 13%;
   position: absolute;
-  bottom: 12rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(185, 185, 185, 0.6);
+}
+
+#seoul .bg_sec .time_sec p{
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+#seoul .bg_sec .time_sec p.bold{
+  color: #222;
+}
+
+/* navbar */
+#seoul .navbar .navi{
   width: 100%;
   height: 10rem;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background-color: rgba(212, 212, 212, 0.4);
+  gap: 10rem;
 }
-#seoul .time_name p, .time_day p{
-  font-size: 2rem;
+
+#seoul .navbar .navi li a{
+  font-size: 2.2rem;
   font-weight: 600;
-  color: var(--color-gray-300);
-}
-#seoul .time_name p{margin-right: 3rem;}
-
-/* 전시관 이동 메뉴 */
-#seoul .locate_menu{
-  width: 100%;
-  height: 3rem;
-  margin: 5rem auto 0;
-  text-align: center;
-}
-#seoul .locate_menu a{
-  font-size: 2.4rem;
-  color: var(--gray-300);
-  font-weight: 500;
-  margin: 0 5rem;
+  color: #333;
+  transition: 0.3s;
 }
 
-#seoul .locate_menu a:hover{
-  color: var(--color-primary);
+#seoul .navbar .navi li a:hover{
+  color: #008787;
 }
 
 
-/* 공통 섹션 */
-#seoul section{
-  width: 100%;
-  height: 80rem;
-  /* border: 1px solid #000; */
-}
-
+/* common */
 #seoul .btn{
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 10rem auto 15rem;
-  padding: 0 20rem;
+  margin: 5rem auto 3rem;
 }
-#seoul .btn a:nth-of-type(1){
-  font-size: 3.6rem;
+
+#seoul .btn a:nth-child(1){
+  font-size: 2.8rem;
   font-weight: 600;
-}
-#seoul .btn a:nth-of-type(2){
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-/* 1 */
-#seoul .exhibit_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-#seoul .exhibit_img img{
-  width: 43rem;
-  height: 43rem;
-  margin: 0 5rem;
-
-}
-
-/* 2 */
-#seoul .education_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-}
-#seoul .education_img img{
-  width: 30rem;
-  height: 30rem;
-  margin: 0 10rem;
-}
-/* 3 */
-#seoul .watching_img{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  object-fit: cover;
-}
-#seoul .watching_img img{
-  width: 80%;
-  height: 80rem;
-  margin: auto;
-}
-/* 4 */
-#tabmenu{
-  width:960px;
-  height:500px;
-  margin:30px auto;
-  padding:30px;
-  position: relative;
-  display: flex;
-}
-.tab-header{
-  width:200px;
-  position:relative;
-}
-.tab li{
-  width:160px; 
-  height:70px; /*->jQuery에서 탭메뉴 움직이는 거리*/
-  box-sizing:border-box;
-  float:left;
-  border-bottom:1px solid #ccc;
-  color:#333;
-  font-size:17px;
-  line-height:70px;
-  text-align:center;
-  letter-spacing:1px; 
-  position:relative;
-  z-index:100;  
-}
-.tab li:last-of-type{border-bottom:1px solid #ccc;}
-.tab li.active{color:#fff;} /*1번째 선택된 글자색 */
-.tab-highlight{  /*현재 선택된 탭메뉴->옆으로 이동하는 박스*/
-  background:#ffffff; 
-  width: 160px;
-  height:70px; 
-  position:absolute;
-  width:160px;
-  left:0px;
   color: #333;
 }
 
-/*Tab Mneu Contents ---------------------------------------*/
-.tab-contents div{
-  border: 1px solid #000;
-  width:80rem;
-  height:60rem;
-  padding:20px;
-  display:none;   
+#seoul .btn a:nth-child(2){
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
 }
-.tab-contents div img{
-  width: 80rem;
-  height: 60rem;
-  border: 1px solid #000;
+
+/* exhibition_sec */
+#seoul .exhibition_sec .swiper{
+  margin-top: 5rem;
+  width: 80%;
+  height: 60%;
+}
+
+#seoul .exhibition_sec .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seoul .exhibition_sec .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 70%;
+}
+
+/* exhibition_sec */
+
+#seoul .education_sec{
+  margin-top: 5rem;
+}
+#seoul .education_sec .swiper{
+  margin-top: 5rem;
+  width: 80%;
+  height: 60%;
+}
+
+#seoul .education_sec .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seoul .education_sec .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 70%;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1400px){
+  #seoul .exhibition_sec .swiper-slide img {
+  display: block;
+  width: 80%;
   object-fit: cover;
 }
-.tab-contents div.active{display:block}
-
-
-
-/* 5 */
-#seoul .map_img{
-  width: 100%;
-  position: relative;
-}
-
-#seoul .map_img iframe{
-  position: absolute;
-  width: 100%;
-  height: 60rem;
-  padding: 0 20rem;
   
 }
 
+@media (max-width:768px){
+
+  
+}
+
+@media (max-width:540px){
+
+}
+
+@media (max-width:320px){
+
+}
 
 
 
-
-/* Footer */
