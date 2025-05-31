@@ -254,3 +254,11 @@ ul.gnb{
 	color:#999;
   font-size: 1.6rem;
 }
+
+/* select_menu */
+
+.select_menu .select_box{
+  outline: none;
+  border: none;
+  height: 3rem;
+}
