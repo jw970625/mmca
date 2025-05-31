@@ -31,7 +31,7 @@
   width: 100%;
   height: 10%;
   display: flex;
-  bottom: 13%;
+  bottom: 9.5%;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 15rem auto 15rem;
+  margin: 15rem auto 10rem;
 }
 
 #seoul .btn a:nth-child(1){
@@ -88,6 +88,13 @@
   font-size: 2rem;
   font-weight: 600;
   color: #333;
+}
+
+#seoul .btn .watch_sec, .map_sec .btn a:nth-child(2){
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  opacity: 0;
 }
 
 /* exhibition_sec */
@@ -131,10 +138,12 @@
 }
 
 /* watch_sec */
-#seoul .watch_table {
-  margin: 0 auto; /* ⬅ 중앙 정렬 */
-  border-collapse: collapse; /* ⬅ 경계선 중복 제거 */
-  width: 80%; /* ⬅ 가독성 확보 */
+
+#seoul .watch_table{
+  margin: 0 auto; 
+  border-collapse: collapse;
+  width: 80%;
+  min-width: 80%;
 }
 
 #seoul th, td {
@@ -164,28 +173,109 @@
 #seoul .left{
   text-align: left;
 }
+
+
+/* floor_sec */
+#seoul .floor_wrap{
+  border: 1px solid #000;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#seoul .floor_wrap .floor_header{
+  width: 25%;
+  margin: auto;
+}
+
+
+#seoul .floor_header .floor_menu .floor li{
+  width: 100%;
+  border-bottom:1px solid #f0f0f0;
+  color:#333;
+  font-size:1.6rem;
+  z-index:100;  
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 10rem;
+}
+
+#seoul .floor_header .floor_menu .floor li.active{
+  background: #333;
+  color: #fff;
+}
+
+#seoul .floor_img{
+  width: 60%;
+  margin: auto;
+}
+
+#seoul .floor_img div{
+  display: none;
+}
+
+#seoul .floor_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#seoul .floor_img div.active{
+  display: block;
+}
+
+/* map_sec */
+
+
+#seoul .map_wrap{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#seoul .map_wrap iframe{
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+}
+
 /* Media Query */
 
-@media (max-width: 1400px){
+@media (max-width: 1200px){
+
+  #seoul .bg_sec .bg_text h2{
+    font-size: 3.6rem;
+  }
+
   #seoul .exhibition_sec .swiper-slide img {
   width: 80%;
   object-fit: cover;
+  }
+
+  #seoul .floor_wrap{
+    flex-direction: column;
+  }
+
+  #seoul .floor_wrap .floor_header{
+    width: 80%;
+  }
+
+  #seoul .floor_wrap .floor_header .floor_menu .floor{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+  }
+
+  #seoul .floor_img{
+  width: 80%;
+  border: 1px solid #000;
 }
+
+
   
 }
 
-@media (max-width:768px){
 
-  
-}
-
-@media (max-width:540px){
-
-}
-
-@media (max-width:320px){
-
-}
 
 
 
