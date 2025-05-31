@@ -80,6 +80,7 @@ ul.gnb{
 }
 
 .desk_header_right{
+  display: flex;
   font-size: 1.6rem;
 }
 .desk_header_right a{
@@ -261,4 +262,5 @@ ul.gnb{
   outline: none;
   border: none;
   height: 3rem;
+  color: #333;
 }

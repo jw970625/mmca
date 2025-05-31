@@ -75,7 +75,7 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 5rem auto 3rem;
+  margin: 15rem auto 15rem;
 }
 
 #seoul .btn a:nth-child(1){
@@ -93,7 +93,7 @@
 /* exhibition_sec */
 #seoul .exhibition_sec .swiper{
   margin-top: 5rem;
-  width: 80%;
+  width: 65%;
   height: 40%;
 }
 
@@ -106,17 +106,15 @@
 #seoul .exhibition_sec .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 70%;
+  width: 65%;
 }
-
-/* exhibition_sec */
 
 #seoul .education_sec{
   margin-top: 5rem;
 }
 #seoul .education_sec .swiper{
   margin-top: 5rem;
-  width: 80%;
+  width: 65%;
   height: 40%;
 }
 
@@ -132,12 +130,44 @@
   width: 70%;
 }
 
+/* watch_sec */
+#seoul .watch_table {
+  margin: 0 auto; /* ⬅ 중앙 정렬 */
+  border-collapse: collapse; /* ⬅ 경계선 중복 제거 */
+  width: 80%; /* ⬅ 가독성 확보 */
+}
 
+#seoul th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+#seoul th {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#seoul .center{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#seoul .left{
+  text-align: left;
+}
 /* Media Query */
 
 @media (max-width: 1400px){
   #seoul .exhibition_sec .swiper-slide img {
-  display: block;
   width: 80%;
   object-fit: cover;
 }
