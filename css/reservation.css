@@ -48,27 +48,24 @@
 }
 
 #reservation section .reser_wrap{
-  width: 70%;
+  width: 80%;
   display: flex;
   margin: auto;
 }
 
 #reservation .reser_wrap .reserbox{
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  width: 80%;
 }
 
 #reservation section .reserimg{
-  width: 60%;
+  width: 40%;
   object-fit: cover;
   padding-right: 5rem;
 }
 
 #reservation section .resertext{
-  width: 55%;
-  display: block;
-  padding-right: 5rem;
+  width: 40%;
 }
 
 #reservation section .resertext table .reser_title tr th{
@@ -95,17 +92,25 @@
   font-size: 1.6rem;
   color: #666;
   white-space: nowrap;
+  border: none;
 }
 
 #reservation section .btn{
-  text-align: left;
+  text-align: center;
   display: none;
+  margin: auto;
 }
 
 #reservation section .btn a{
-  border: 1px solid #000;
   text-align: center;
   padding: 1rem 2rem;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+#reservation section .btn a:hover{
+  background: #333;
+  color: #fff;
 }
 
 #reservation .deoksu_sec .reserbox:nth-of-type(2){
@@ -157,21 +162,18 @@
 
 @media (max-width:768px){
 
-  #reservation .reser_wrap{
-  width: 80%;
+  #reservation .reserbox{
+    width: 100%;
+    margin: auto;
   }
 
   #reservation section .reserimg{
     margin-top: 5rem;
-    width: 40%;
+    width: 100%;
     object-fit: cover;
   }
 
   #reservation section .resertext{
-    width: 50%;
-  }
-
-  #reservation section .resertext table{
     width: 100%;
   }
 
@@ -207,8 +209,9 @@
   }
 
   #reservation section .reserimg{
-    width: 100%;
+    width: 80%;
     object-fit: cover;
+    margin: auto;
   }
 
   #reservation section .menubar a:nth-of-type(1){
@@ -222,12 +225,10 @@
 }
 
   #reservation section .resertext{
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 
-  #reservation section .resertext table{
-    width: 100%;
-  }
 
   #reservation section .resertext table .reser_title tr th{
     font-size: 2rem;
@@ -253,8 +254,13 @@
   }
 
   #reservation section .resertext tr td{
-  font-size: 1.4rem;
-}
+    font-size: 1.4rem;
+  }
+
+  #reservation section .resertext{
+    width: 100%;
+    margin: auto;
+  }
 }
 
 

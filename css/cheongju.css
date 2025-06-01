@@ -1,6 +1,5 @@
 @import url(style.css);
 
-
 /* bg_sec */
 #cheongju .bg_img{
   width: 100%;
@@ -162,7 +161,7 @@
 }
 
 #cheongju th, td {
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   padding: 10px;
   vertical-align: top;
   text-align: left;

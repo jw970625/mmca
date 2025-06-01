@@ -83,7 +83,7 @@
 }
 
 #shop .collection_box{
-  width: 27%;
+  width: 30%;
   height: 50rem;
   object-fit: cover;
   transition: 0.3s;
@@ -116,15 +116,16 @@
 }
 
 #shop .publication_wrap{
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin: 20rem auto 0;
 }
 
 #shop .publication_box{
   width: 30%;
-  height: 50rem;
+  height: 60rem;
   margin: 0 1rem;
   object-fit: cover;
   transition: 0.3s;
@@ -171,7 +172,6 @@
 }
 
 #shop .edition_wrap .edition_box .btn a{
-  border: 1px solid #333;
   padding: 1rem 2rem;
   transition: 0.3s;
 }
@@ -222,7 +222,6 @@
 }
 
 #shop .story_wrap .story_box .btn a{
-  border: 1px solid #333;
   padding: 1rem 2rem;
   transition: 0.3s;
 }
@@ -259,14 +258,22 @@
   }
 
   #shop .collection_box{
-    width: 55%;
-    height: 45rem;
+    width: 80%;
+    height: 40rem;
+  }
+
+  #shop .collection_box h3{
+    font-size: 1.6rem;
+  }
+  #shop .publication_box:nth-child(3){
+    display: none;
+  }
+
+  #shop .publication_box{
+    width: 45%;
+    height: 60rem;
   }
 }
-
-
-
-
 
 @media (max-width:768px){
   /* bg */
@@ -278,7 +285,7 @@
     display: none;
   }
   #shop .collection_box{
-    width: 80%;
+    width: 40%;
     height: 30rem;
   }
 
@@ -290,7 +297,8 @@
     display: none;
   }
   #shop .publication_box{
-  margin: 0 5rem;
+    width: 40%;
+    margin: 0 5rem;
   }
   /* edition_sec */
   #shop .edition_wrap{
@@ -360,7 +368,7 @@
   }
 
   #shop .collection_box{
-  height: 50rem;
+    height: 50rem;
   }
   #shop .collection_box h3{
     font-size: 1.6rem;
@@ -380,7 +388,7 @@
   }
 
   #shop .publication_box{
-  height: 50rem;
+    height: 50rem;
   }
   
   #shop .publication_box h3{
