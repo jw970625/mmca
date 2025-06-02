@@ -1,5 +1,3 @@
-
-
 /* Desktop Header */
 $(document).ready(function () {
 

@@ -1,7 +1,7 @@
 @import url(style.css);
-body{
+/* body{
   background: #e8e8e8;
-}
+} */
 
 /* .desk_header, */
 .tab_header{
@@ -56,7 +56,7 @@ ul.gnb{
   margin-left: 3rem;
 }
 .sub li{
-  height: 4rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +159,17 @@ ul.gnb{
 }
 
 /* Trigger*/
-.tab_header_left a img,
+/* .tab_header_left a img,
 .tab_header_logo a img {
   height: 3rem;
+  object-fit: contain;
+} */
+.tab_header_left a img{
+  height: 3rem;
+  object-fit: contain;
+}
+.tab_header_logo a img {
+  height: 4rem;
   object-fit: contain;
 }
 
@@ -257,10 +265,6 @@ ul.gnb{
 @media (min-width: 1400px) {
   .desk_header { display: flex; }
   .tab_header { display: none; }
-
-  .tab_header .tab_header_logo img{
-    width: 80%;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -268,11 +272,6 @@ ul.gnb{
   .tab_header { display: flex;}
   .menu_all {
     width: 50%;
-  }
-
-  .tab_header_logo{
-    width: 100%;
-    object-fit: cover;
   }
 
 }
@@ -285,8 +284,8 @@ ul.gnb{
   .tab_header_left img{
     width: 2.4rem;
   }
-  .tab_header_logo{
-    width: 16rem;
+  .tab_header_logo img{
+    width: 14rem;
   }
 
   .menu_all {
