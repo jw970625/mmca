@@ -141,6 +141,7 @@
 }
 
 @media (max-width: 768px){
+  
   #reservation .reserbox:first-child{
     display: none;
   }
@@ -163,5 +164,21 @@
     flex-direction: column;
   }
 
+  #reservation .reser_wrap .reserbox .reserimg{
+    width: 100%;
+  }
+  #reservation .reser_wrap .reserbox .reserimg img{
+    display: block;
+    margin: auto;
+  }
+  #reservation .reser_wrap .reserbox .resertext{
+    width: 100%;
+  }
+
+  #reservation .reser_wrap .reserbox .resertext table{
+    margin: auto;
+    width: 80%;
+  }
+  
   
 } 
