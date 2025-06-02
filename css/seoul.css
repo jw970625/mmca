@@ -393,15 +393,17 @@
   /* floor_sec */
   #seoul .floor_img{
     width: 80%;
-    max-width: 80%;
+    object-fit: cover;
   }
 
   #seoul .floor_img .img_box{
     flex-direction: column;
+    object-fit: cover;
   }
 
   #seoul .floor_img img{
     width: 100%;
+    height: 60rem;
     object-fit: cover;
   }
 

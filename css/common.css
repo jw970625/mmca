@@ -24,10 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 1.6rem;    
-  line-height: 2.5rem;   
-  color: #222;
+  
 }
 
 /* 제목 태그는 S-Core Dream 폰트 */
@@ -45,6 +42,9 @@ h2 {
 }
 
 p, a {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 2.5rem;   
+  color: #222;
   font-size: 1.6rem; /* 16px */
 }
 

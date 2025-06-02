@@ -117,7 +117,7 @@
 #cheongju .exhibition_sec .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 65%;
+  width: 80%;
 }
 
 /* education_sec */
@@ -378,7 +378,7 @@
 
   /* exhibition_sec */
   #cheongju .exhibition_sec .swiper-wrapper img{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
@@ -391,7 +391,6 @@
   /* floor_sec */
   #cheongju .floor_img{
     width: 80%;
-    max-width: 80%;
   }
 
   #cheongju .floor_img .img_box{
@@ -400,7 +399,7 @@
 
   #cheongju .floor_img img{
     width: 100%;
-    object-fit: cover;
+    height: 50rem;
   }
 
   #cheongju .floor_img img:nth-child(2){
