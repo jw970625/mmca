@@ -132,16 +132,17 @@
 
   #reservation .reser_wrap{
   width: 100%;
+  justify-content: center;
   }
 
   #reservation section .reserimg{
-  width: 40%;
+  width: 100%;
   object-fit: cover;
   padding-right: 0;
 }
 
   #reservation section .resertext{
-    width: 40%;
+    width: 50%;
     padding-right: 0;
   }
 
