@@ -142,10 +142,6 @@
 
 @media (max-width: 768px){
   
-  #reservation .reserbox:first-child{
-    display: none;
-  }
-
   #reservation .reserbox .reserimg{
     width: 30%;
   }
@@ -168,6 +164,7 @@
     width: 100%;
   }
   #reservation .reser_wrap .reserbox .reserimg img{
+    width: 80%;
     display: block;
     margin: auto;
   }
