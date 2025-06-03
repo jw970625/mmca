@@ -88,13 +88,13 @@
 #reservation section .resertext tr{
   display: flex;
   justify-content: space-between;
-  text-align: right;
 }
 
 #reservation section .resertext tr .tit{
   font-weight: 500;
   color: #333;
   white-space: nowrap;
+  text-align: left;
 }
 
 #reservation section .resertext tr td{
@@ -104,6 +104,7 @@
   white-space: nowrap;
   border: none;
   line-height: 2rem;
+  text-align: right;
 }
 
 #reservation section .btn{
@@ -135,6 +136,10 @@
     display: none;
   }
 
+  #reservation .deoksu_sec .reserbox:nth-of-type(2){
+  opacity: 1;
+}
+
   #reservation .reserbox .reserimg{
     width: 30%;
   }
@@ -155,7 +160,7 @@
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 540px){
   #reservation .reser_wrap .reserbox{
     flex-direction: column;
   }
@@ -164,18 +169,54 @@
     width: 100%;
   }
   #reservation .reser_wrap .reserbox .reserimg img{
-    width: 80%;
+    width: 60%;
     display: block;
     margin: auto;
   }
   #reservation .reser_wrap .reserbox .resertext{
     width: 100%;
+    margin-top: 5rem;
   }
 
   #reservation .reser_wrap .reserbox .resertext table{
     margin: auto;
     width: 80%;
   }
-  
-  
 } 
+
+@media (max-width: 540px){
+  #reservation .bg_wrap .bg_text h2{
+    font-size: 3.6rem;
+    font-weight: 500;
+  }
+
+  #reservation .bg_wrap .bg_text p{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px){
+  
+  #reservation .bg_wrap .bg_text{
+    margin: auto;
+    left: 25%;
+    top: 35%;
+  }
+  #reservation .bg_wrap .bg_text h2{
+    text-align: center;
+  }
+
+  #reservation .bg_wrap .bg_text p{
+    display: none;
+  }
+
+  #reservation section .menubar a:nth-of-type(1){
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  #reservation section .menubar a:nth-of-type(2){
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
