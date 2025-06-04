@@ -84,19 +84,19 @@
   margin: 15rem auto 10rem;
 }
 
-#gwacheon .btn a:nth-child(1){
+#gwacheon .btn h3{
   font-size: 2.8rem;
   font-weight: 600;
   color: #333;
 }
 
-#gwacheon .btn a:nth-child(2){
+#gwacheon .btn a{
   font-size: 1.6rem;
   font-weight: 500;
   color: #666;
 }
 
-#gwacheon .btn .watch_sec, .map_sec .btn a:nth-child(2){
+#gwacheon .btn .watch_sec, .map_sec .btn a{
   font-size: 2rem;
   font-weight: 600;
   color: #333;

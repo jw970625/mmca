@@ -38,12 +38,12 @@
   margin: 7rem auto 8rem;
 }
 
-#reservation section .menubar a:nth-of-type(1){
+#reservation section .menubar h3{
   font-weight: 600;
   font-size: 2.8rem;
 }
 
-#reservation section .menubar a:nth-of-type(2){
+#reservation section .menubar a{
   font-size: 2rem;
   font-weight: 400;
 }
@@ -215,12 +215,12 @@
     display: none;
   }
 
-  #reservation section .menubar a:nth-of-type(1){
+  #reservation section .menubar h3{
     font-weight: 600;
     font-size: 2rem;
   }
 
-  #reservation section .menubar a:nth-of-type(2){
+  #reservation section .menubar a{
     font-size: 1.6rem;
     font-weight: 400;
   }
