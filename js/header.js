@@ -4,7 +4,6 @@ $(document).ready(function () {
   $(".sub").hide();
   $(".bg_box").hide();
 
-  $(function () {
   $(".main").mouseenter(function () {
     $(this).find(".sub").stop().slideDown(200);
     $(".bg_box").stop().slideDown(200);
@@ -14,7 +13,6 @@ $(document).ready(function () {
     $(this).find(".sub").stop().slideUp(200);
     $(".bg_box").stop().slideUp(200);
   });
-});
 });
 
 /* Tab Header */

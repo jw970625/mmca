@@ -51,12 +51,13 @@
 #deoksu .bg_sec .time_sec p{
   font-size: 2rem;
   color: #333;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 
 #deoksu .bg_sec .time_sec p.bold{
   color: #222;
+  font-weight: 600;
 }
 
 /* navbar */
@@ -84,8 +85,7 @@
 
 /* common */
 #deoksu .btn{
-  width: 100%;
-  max-width: 130rem;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 10rem;
@@ -180,7 +180,7 @@
 /* watch_sec */
 #deoksu .watch_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -222,7 +222,7 @@
 /* floor_sec */
 #deoksu .floor_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -289,7 +289,7 @@
 /* map_sec */
 #deoksu .map_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   height: 100%;
   margin: 0 auto;
 }
@@ -405,9 +405,18 @@
 }
 
 @media (max-width:540px){
+  #deoksu .container_wrap{
+    padding: 0 1.5rem;
+  }
+
   #deoksu .bg_img img{
     height: 60rem;
     object-fit: cover;
+  }
+
+  #deoksu .bg_sec .time_sec{
+    flex-direction: column;
+    height: 20%;
   }
 
   #deoksu .btn h3{
@@ -415,7 +424,7 @@
   }
 
   #deoksu .btn a{
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 
   #deoksu .education_sec .no_swiper{
@@ -436,9 +445,14 @@
 
   #deoksu .bg_sec .bg_text h2{
     font-size: 2.4rem;
+    line-height: 4rem;
   }
 
   #deoksu .bg_sec .bg_text p{
     display: none;
+  }
+
+  #deoksu .bg_sec .time_sec p{
+    font-size: 1.4rem;
   }
 }

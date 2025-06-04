@@ -41,11 +41,13 @@
 #reservation section .menubar h3{
   font-weight: 600;
   font-size: 2.8rem;
+  color: #333;
 }
 
 #reservation section .menubar a{
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
+  color: #666;
 }
 
 #reservation section .reser_wrap{
@@ -107,14 +109,12 @@
   text-align: right;
 }
 
-#reservation .resertext .btn a{
-  width: 15rem;
+#reservation section .resertext .btn a{
   text-align: center;
   padding: 1rem 2rem;
   border: 1px solid #333;
   transition: 0.3s;
-  display: none;
-  margin: 3rem auto 0;
+  opacity: 0;
 }
 
 #reservation section .btn a:hover{
@@ -128,8 +128,8 @@
 
 /* Media Query */
 
-@media (max-width: 1300px){
-  #reservation .reserbox:last-child{
+@media (max-width: 1200px){
+  #reservation .reserbox:first-child{
     display: none;
   }
 
@@ -137,19 +137,19 @@
     opacity: 1;
   }
 
+  #reservation section .resertext .btn a{
+    opacity: 1;
+  }
+
   #reservation .reserbox .reserimg{
     width: 30%;
-  }
-  
-  #reservation .resertext .btn a{
-    display: block;
   }
 }
 
 @media (max-width: 768px){
   
   #reservation .reserbox .reserimg{
-    width: 35%;
+    width: 30%;
   }
 
   #reservation section .resertext table .reser_title tr th{
@@ -159,6 +159,18 @@
   #reservation section .resertext tr td{
     font-size: 1.6rem;
   }
+
+  #reservation section .menubar h3{
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+#reservation section .menubar a{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+}
 }
 
 @media (max-width: 540px){
@@ -170,7 +182,7 @@
     width: 100%;
   }
   #reservation .reser_wrap .reserbox .reserimg img{
-    width: 60%;
+    width: 65%;
     display: block;
     margin: auto;
   }
@@ -184,9 +196,7 @@
     width: 80%;
   }
 
-  #reservation .resertext .btn{
-    margin: auto;
-  }
+  
 } 
 
 @media (max-width: 540px){
@@ -215,12 +225,12 @@
     display: none;
   }
 
-  #reservation section .menubar h3{
+  #reservation section .menubar a:nth-of-type(1){
     font-weight: 600;
     font-size: 2rem;
   }
 
-  #reservation section .menubar a{
+  #reservation section .menubar a:nth-of-type(2){
     font-size: 1.6rem;
     font-weight: 400;
   }

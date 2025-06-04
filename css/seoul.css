@@ -57,13 +57,12 @@
 
 #seoul .bg_sec .time_sec p.bold{
   color: #222;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* navbar */
 #seoul .navbar .navi{
   width: 100%;
-  max-width: 130rem;
   height: 10rem;
   display: flex;
   justify-content: center;
@@ -84,9 +83,9 @@
 }
 
 /* common */
+
 #seoul .btn{
-  width: 100%;
-  max-width: 130rem;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 10rem;
@@ -167,7 +166,7 @@
 /* watch_sec */
 #seoul .watch_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -209,7 +208,7 @@
 /* floor_sec */
 #seoul .floor_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -276,9 +275,9 @@
 /* map_sec */
 #seoul .map_wrap{
   width: 100%;
-  max-width: 130rem;
+  max-width: 80%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30rem;
 }
 
 #seoul .map_wrap iframe{
@@ -319,6 +318,7 @@
 
 
 @media (max-width: 1200px){
+  
   #seoul .bg_img img{
     height: 80rem;
     object-fit: cover;
@@ -341,25 +341,6 @@
     height: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-  }
-}
-
-
-@media (max-width: 670px){
-  #seoul .bg_sec .bg_text h2{
-    font-size: 3.2rem;
-  }
-
-  #seoul .bg_sec .time_sec p{
-    font-size: 1.6rem;
-  }
-
-  #seoul .navbar .navi{
-    gap: 4rem;
-  }
-
-  #seoul .navbar .navi li a{
-    font-size: 1.8rem;
   }
 }
 
@@ -391,7 +372,29 @@
   }
 }
 
+@media (max-width: 670px){
+  #seoul .bg_sec .bg_text h2{
+    font-size: 3.2rem;
+  }
+
+  #seoul .bg_sec .time_sec p{
+    font-size: 1.8rem;
+  }
+
+  #seoul .navbar .navi{
+    gap: 4rem;
+  }
+
+  #seoul .navbar .navi li a{
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width:540px){
+  #seoul .container_wrap{
+    padding: 0 1.5rem;
+  }
+
   #seoul .bg_img img{
     height: 60rem;
     object-fit: cover;
@@ -405,8 +408,13 @@
     font-size: 3rem;
   }
 
+  #seoul .bg_sec .time_sec{
+    flex-direction: column;
+    height: 20%;
+  }
+
   #seoul .bg_sec .bg_text p{
-    font-size: 2rem;
+    display: none;
   }
 }
 
@@ -416,17 +424,12 @@
     object-fit: cover;
   }
 
+  #seoul .bg_sec .bg_text h2{
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+
   #seoul .bg_sec .time_sec p{
     font-size: 1.4rem;
   }
-
-  #seoul .bg_sec .bg_text h2{
-    font-size: 2.4rem;
-  }
-
-  #seoul .bg_sec .bg_text p{
-    display: none;
-  }
-
-
 }

@@ -144,7 +144,6 @@
   max-width: 130rem;
   margin: auto;
   gap: 5rem;
-  padding: 0 4rem;
 }
 
 #shop .edition_wrap .edition_box{
@@ -202,7 +201,6 @@
   align-items: center;
   margin: auto;
   gap: 5rem;
-  padding: 0 4rem;
 }
 
 #shop .story_wrap .story_img{
@@ -272,6 +270,10 @@
 
 /* Media Query */
 @media (max-width: 1200px){
+  #shop .container_wrap{
+    padding: 0 1rem;
+  }
+
   #shop .collection_wrap .swiper-slide h3{
     font-size: 1.6rem;
     color: #333;
@@ -304,7 +306,7 @@
   }
 
   #shop .edition_wrap .edition_img img{
-    width: 80%;
+    width: 100%;
   }
 
   #shop .edition_wrap .edition_box{
@@ -330,11 +332,11 @@
   }
 
   #shop .story_wrap .story_img img{
-    width: 80%;
+    width: 100%;
   }
 
   #shop .story_wrap .story_box{
-    width: 80%;
+    width: 100%;
   }
 
   #shop .story_wrap .story_box h3{
@@ -366,13 +368,17 @@
 }
 
 @media (max-width: 540px){
+  #shop .container_wrap{
+    padding: 0 1.5rem;
+  }
+
   #shop .main_text h2{
     font-size: 3.2rem;
   }
 
 
   #shop .collection_title{
-    text-align: center;
+    text-align: left;
     margin: 0;
   }
   #shop .collection_title h2{
@@ -402,6 +408,11 @@
   #shop .publication_wrap .swiper-slide p{
     font-size: 1.8rem;
   }
+
+  #shop .end_wrap .end_img img{
+    width: 100%;
+    height: 40rem;
+  }
 }
 
 @media (max-width: 370px){
@@ -416,7 +427,7 @@
 
   #shop .main_text .main_btn{
     margin-top: 4rem;
-    text-align: center;
+    text-align: left;
   }
 
   #shop .collection_title h2{
@@ -449,11 +460,24 @@
     font-size: 1.4rem;
   }
 
+
+  #shop .story_wrap .story_box p{
+  margin-bottom: 1rem;
+}
+
   #shop .story_wrap .story_box h3{
     font-size: 2.4rem;
   }
 
   #shop .story_wrap .story_box p{
     font-size: 1.4rem;
+  }
+
+  #shop .end_wrap .end_title p{
+    font-size: 1.4rem;
+  }
+
+  #shop .end_wrap .end_img img{
+    height: 30rem;
   }
 }
