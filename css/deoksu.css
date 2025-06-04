@@ -8,13 +8,11 @@
 
 #deoksu .bg_img{
   width: 100%;
-  height: 80rem;
   object-fit: cover;
 }
 
 #deoksu .bg_img img{
   width: 100%;
-  height: 80rem;
 }
 
 #deoksu .bg_sec .bg_text{
@@ -22,12 +20,19 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
 }
 
 #deoksu .bg_sec .bg_text h2{
   line-height: 6rem;
   text-align: center;
+  color: #fff;
+}
+
+#deoksu .bg_sec .bg_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 2.4rem;
 }
 
 #deoksu .bg_sec .time_sec{
@@ -39,13 +44,15 @@
   align-items: center;
   justify-content: center;
   column-gap: 4rem;
-  background: rgba(185, 185, 185, 0.6);
+  background: rgba(240, 240, 240, 0.8);
+  padding: 0 0.3rem;
 }
 
 #deoksu .bg_sec .time_sec p{
   font-size: 2rem;
   color: #333;
   font-weight: 600;
+  text-align: center;
 }
 
 #deoksu .bg_sec .time_sec p.bold{
@@ -61,7 +68,7 @@
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  margin: 10rem auto 0;
+  margin: 3rem auto 0;
 }
 
 #deoksu .navbar .navi li a{
@@ -77,10 +84,11 @@
 
 /* common */
 #deoksu .btn{
-  width: 80%;
+  width: 100%;
+  max-width: 130rem;
   display: flex;
   justify-content: space-between;
-  margin: 15rem auto 10rem;
+  margin: 7rem auto 10rem;
 }
 
 #deoksu .btn h3{
@@ -324,6 +332,11 @@
 
 
 @media (max-width: 1200px){
+  #deoksu .bg_img img{
+    height: 80rem;
+    object-fit: cover;
+  }
+
   #deoksu .floor_wrap{
     flex-direction: column;
     width: 80%;
@@ -392,6 +405,15 @@
 }
 
 @media (max-width:540px){
+  #deoksu .bg_img img{
+    height: 60rem;
+    object-fit: cover;
+  }
+
+  #deoksu .btn h3{
+    font-size: 2.2rem;
+  }
+
   #deoksu .btn a{
     font-size: 2.2rem;
   }
@@ -401,7 +423,22 @@
   }
 
   #deoksu .education_sec .no_swiper p{
-  line-height: 30rem;
-  font-size: 1.6rem;
+    line-height: 30rem;
+    font-size: 1.6rem;
+  }
 }
+
+@media (max-width:400px){
+  #deoksu .bg_img img{
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  #deoksu .bg_sec .bg_text h2{
+    font-size: 2.4rem;
+  }
+
+  #deoksu .bg_sec .bg_text p{
+    display: none;
+  }
 }
