@@ -149,6 +149,7 @@
 
 #shop .edition_wrap .edition_box{
   width: 100%;
+  max-width: 130rem;
   height: auto;
   margin: auto;
 }

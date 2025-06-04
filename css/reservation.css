@@ -114,7 +114,7 @@
   border: 1px solid #333;
   transition: 0.3s;
   display: none;
-  margin: auto;
+  margin: 3rem auto 0;
 }
 
 #reservation section .btn a:hover{
@@ -128,14 +128,14 @@
 
 /* Media Query */
 
-@media (max-width: 1200px){
-  #reservation .reserbox:first-child{
+@media (max-width: 1300px){
+  #reservation .reserbox:last-child{
     display: none;
   }
 
   #reservation .deoksu_sec .reserbox:nth-of-type(2){
-  opacity: 1;
-}
+    opacity: 1;
+  }
 
   #reservation .reserbox .reserimg{
     width: 30%;
@@ -149,7 +149,7 @@
 @media (max-width: 768px){
   
   #reservation .reserbox .reserimg{
-    width: 30%;
+    width: 35%;
   }
 
   #reservation section .resertext table .reser_title tr th{
@@ -182,6 +182,10 @@
   #reservation .reser_wrap .reserbox .resertext table{
     margin: auto;
     width: 80%;
+  }
+
+  #reservation .resertext .btn{
+    margin: auto;
   }
 } 
 
