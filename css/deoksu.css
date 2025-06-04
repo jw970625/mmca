@@ -2,11 +2,14 @@
 
 
 /* bg_sec */
+#deoksu .bg_sec{
+  position: relative;
+}
+
 #deoksu .bg_img{
   width: 100%;
   height: 80rem;
   object-fit: cover;
-  position: relative;
 }
 
 #deoksu .bg_img img{
@@ -31,7 +34,7 @@
   width: 100%;
   height: 10%;
   display: flex;
-  bottom: 12%;
+  bottom: 0;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -263,7 +266,7 @@
 
 #deoksu .floor_img .img_box img:nth-of-type(2){
   display: block;
-  width: 40%;
+  width: 30%;
 }
 
 #deoksu .floor_img .img_box img:nth-of-type(3){

@@ -2,11 +2,14 @@
 
 
 /* bg_sec */
+#seoul .bg_sec{
+  position: relative;
+}
+
 #seoul .bg_img{
   width: 100%;
   height: 80rem;
   object-fit: cover;
-  position: relative;
 }
 
 #seoul .bg_img img{
@@ -30,8 +33,8 @@
 #seoul .bg_sec .time_sec{
   width: 100%;
   height: 10%;
+  bottom: 0;
   display: flex;
-  bottom: 12%;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -42,11 +45,12 @@
 #seoul .bg_sec .time_sec p{
   font-size: 2rem;
   color: #333;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 #seoul .bg_sec .time_sec p.bold{
   color: #222;
+  font-weight: bold;
 }
 
 /* navbar */
@@ -249,7 +253,7 @@
 
 #seoul .floor_img .img_box img:nth-of-type(2){
   display: block;
-  width: 20%;
+  width: 30%;
 }
 
 #seoul .floor_img .img_box img:nth-of-type(3){
