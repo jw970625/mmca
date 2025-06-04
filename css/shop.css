@@ -190,7 +190,7 @@
 }
 /* story_sec */
 #shop .story_sec{
-  margin: 20rem auto 30rem
+  margin: 20rem auto 30rem;
 }
 
 #shop .story_wrap{
@@ -201,6 +201,7 @@
   align-items: center;
   margin: auto;
   gap: 5rem;
+  bottom: 50%;
 }
 
 #shop .story_wrap .story_img{
@@ -378,7 +379,7 @@
 
 
   #shop .collection_title{
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
   #shop .collection_title h2{
