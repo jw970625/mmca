@@ -107,17 +107,14 @@
   text-align: right;
 }
 
-#reservation section .btn{
-  text-align: center;
-  display: none;
-  margin: auto;
-}
-
-#reservation section .btn a{
+#reservation .resertext .btn a{
+  width: 15rem;
   text-align: center;
   padding: 1rem 2rem;
   border: 1px solid #333;
   transition: 0.3s;
+  display: none;
+  margin: auto;
 }
 
 #reservation section .btn a:hover{
@@ -142,6 +139,10 @@
 
   #reservation .reserbox .reserimg{
     width: 30%;
+  }
+  
+  #reservation .resertext .btn a{
+    display: block;
   }
 }
 
