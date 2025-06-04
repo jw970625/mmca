@@ -84,19 +84,19 @@
   margin: 15rem auto 10rem;
 }
 
-#cheongju .btn a:nth-child(1){
+#cheongju .btn h3{
   font-size: 2.8rem;
   font-weight: 600;
   color: #333;
 }
 
-#cheongju .btn a:nth-child(2){
+#cheongju .btn a{
   font-size: 1.6rem;
   font-weight: 500;
   color: #666;
 }
 
-#cheongju .btn .watch_sec, .map_sec .btn a:nth-child(2){
+#cheongju .btn .watch_sec, .map_sec .btn a{
   font-size: 2rem;
   font-weight: 600;
   color: #333;
