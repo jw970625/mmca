@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전시예약</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="reservation">
+    <header>
+    <div class="desk_header">
+      <div class="header_wrap">
+        <div class="bg_box"></div>
+        <div class="desk_header_left">
+          <a href="index.html"><img src="images/ui/ui_logo.png" alt="로고"></a>
+        </div>
+        <div class="desk_header_center">
+          <ul class="gnb"> 
+            <li class="main"><a href="intro1.html">소개</a>
+              <ul class="sub s1">
+                <li><a href="intro1.html">미술관소개</a></li>
+                <li><a href="intro2.html">연혁</a></li>
+                <li><a href="intro3.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="seoul.html">관람</a>
+              <ul class="sub s2">
+                <li><a href="seoul.html">전시관</a></li>
+                <li><a href="reservation.html">전시예약</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="exhibit_now.html">전시/행사</a>
+              <ul class="sub s3">
+                <li><a href="exhibit_now.html">현재전시</a></li>
+                <li><a href="exhibit_deu.html">예정전시</a></li>
+                <li><a href="exhibit_event.html">이벤트</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="edu_intro.html">교육</a>
+              <ul class="sub s4">
+                <li><a href="edu_intro.html">교육소개</a></li>
+                <li><a href="edu.html">프로그램</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="archive.html">소장품</a>
+              <ul class="sub s5">
+                <li><a href="archive.html">아카이브</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="desk_header_right">
+          <a href="#">
+            <img src="images/ui/profile.svg" alt="로그인">
+          </a>
+          <div class="select_menu">
+            <select class="select_box">
+              <option value="/">KOR</option>
+              <option value="/">CHN</option>
+              <option value="/">ENG</option>
+              <option value="/">JPN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab_header">
+      <div class="header_wrap">
+        <div class="tab_header_left">
+          <a href="#"><img src="images/ui/store.svg" alt="스토어"></a>
+        </div>
+        <div class="tab_header_logo">
+          <a href="#">
+            <img src="images/ui/ui_logo.png" alt="로고">
+          </a>
+        </div>
+        <div class="trigger">
+          <img src="images/ui/menu.svg" alt="메뉴아이콘">
+        </div>
+        <div class="menu_all">
+          <div class="mright">
+            <ul class="tgnb">
+              <li class="tmain"><a href="#">소개</a>
+                <ul class="tsub">
+                  <li><a href="intro1.html">미술관소개</a></li>
+                  <li><a href="intro2.html">연혁</a></li>
+                  <li><a href="intro3.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="tmain"><a href="#">관람</a>
+                <ul class="tsub">
+                  <li><a href="seoul.html">전시관</a></li>
+                  <li><a href="reservation.html">전시예약</a></li>
+                </ul>
+              </li>
+              <li class="tmain"><a href="#">전시</a>
+                <ul class="tsub">
+                  <li><a href="exhibit_now.html">현재전시</a></li>
+                  <li><a href="exhibit_deu.html">예정전시</a></li>
+                  <li><a href="exhibit_event.html">이벤트</a></li>
+                </ul>		
+              </li>
+              <li class="tmain"><a href="#">교육</a>
+                <ul class="tsub">
+                  <li><a href="edu_intro.html">교육소개</a></li>
+                  <li><a href="edu.html">프로그램</a></li>
+                </ul>		
+              </li>
+              <li class="tmain"><a href="#">소장품</a>
+                <ul class="tsub">
+                  <li><a href="archive.html">아카이브</a></li>
+                </ul>		
+              </li>
+            </ul>
+            <div class="menu_user">
+            <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
+            <div class="select_menu">
+              <select class="select_box">
+                <option value="/">KOR</option>
+                <option value="/">CHN</option>
+                <option value="/">ENG</option>
+                <option value="/">JPN</option>
+              </select>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section class="bg_sec">
+        <div class="bg_wrap">
+          <div class="bg_img">
+            <img src="images/bg/bg_07.png" alt="전시예약배경">
+          </div>
+          <div class="bg_text">
+            <h2>전시예약</h2>
+            <p>관람을 원하는 전시를 선택해 주세요</p>
+          </div>
+        </div>
+      </section>
+      <section class="seoul_sec">
+        <div class="container_wrap">
+          <div class="menubar">
+            <h3>서울</h3>
+            <a href="#">더보기</a>
+          </div>
+          <div class="reser_wrap">
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_seoul_01.png" alt="서울전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        기울인 몸들: 서로의 취약함이 만날 때
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-05-01 ~ 2026-05-03</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>월,화,목,금,일: 10:00-18:00<br> 수,토: 10:00-21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>서울 지상 1층 1전시실<br> / 지하 2층 2전시실</td>
+                    </tr>
+                    <tr>
+                      <td class="btn" colspan="2">
+                        <a href="#">예약하기</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_seoul_02.png" alt="서울전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        론 뮤익
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-04-11 ~ 2025-07-13</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>월,화,목,금,일: 10:00-18:00<br> 수,토: 10:00-21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>서울 지하1층 5, 6전시실</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gwacheon_sec">
+        <div class="container_wrap">
+          <div class="menubar">
+            <h3>과천</h3>
+            <a href="#">더보기</a>
+          </div>
+          <div class="reser_wrap">
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_gwacheon_01.png" alt="과천전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        젊은 모색 2025 : 지금, 여기
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-04-24 ~ 2025-10-12</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>화요일 ~ 일요일 10:00-18:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>과천 1층, 1, 2 전시실, 중앙홀</td>
+                    </tr>
+                    <tr>
+                      <td class="btn" colspan="2"><a href="#">예약하기</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_gwacheon_02.png" alt="과천전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        MMCA 과천 <br>상설전 «한국근현대미술 I»
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>25-05-01 ~ 2026-05-03</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>화요일 ~ 일요일 10:00-18:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>과천 3층, 5, 6전시실</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="deoksu_sec">
+        <div class="container_wrap">
+          <div class="menubar">
+            <h3>덕수궁</h3>
+            <a href="#">더보기</a>
+          </div>
+          <div class="reser_wrap">
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_deoksu_01.png" alt="덕수전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        초현실주의와 한국근대미술
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-04-17 ~ 2025-07-06</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>월,화,목,금,일: 10:00-18:00<br> 수,토: 10:00-21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>덕수궁 2층, 1, 2전시실,<br> 3층, 3, 4전시실</td>
+                    </tr>
+                    <tr>
+                      <td class="btn" colspan="2"><a href="#">예약하기</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_deoksu_01.png" alt="덕수전시">
+                </a href="#">
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        기울인 몸들: 서로의 취약함이 만날 때
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-05-01 ~ 2026-05-03</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>월,화,목,금,일: 10:00-18:00<br> 수,토: 10:00-21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>서울 지상 1층 1전시실<br> / 지하 2층 2전시실</td>
+                    </tr>
+                    <tr>
+                      <td class="btn" colspan="2">
+                        <a href="#">예약하기</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cheongju_sec">
+        <div class="container_wrap">
+          <div class="menubar">
+            <h3>청주</h3>
+            <a href="#">더보기</a>
+          </div>
+          <div class="reser_wrap">
+            <div class="reserbox">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_cheongju_01.png" alt="청주전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        개방 수장고 개편
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-03-21 ~ 2026-09-07</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>화요일 ~ 일요일 10:00-18:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>무료</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>청주 개방수장고</td>
+                    </tr>
+                    <tr>
+                      <td class="btn" colspan="2"><a href="#">예약하기</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="reserbox none">
+              <div class="reserimg">
+                <a href="#">
+                  <img src="images/exhibition/exh_cheongju_02.png" alt="청주전시">
+                </a>
+              </div>
+              <div class="resertext">
+                <table>
+                  <thead class="reser_title">
+                    <tr>
+                      <th colspan="2">
+                        MMCA 소장품 기획전 - 수채(水彩): 물을 그리다
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tit">전시 기간</td>
+                      <td>2025-03-21 ~ 2026-09-07</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시 시간</td>
+                      <td>화요일 ~ 일요일 10:00-18:00</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">관람료</td>
+                      <td>2,000원</td>
+                    </tr>
+                    <tr>
+                      <td class="tit">전시실</td>
+                      <td>청주 5층, 기획전시실</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/header.js"></script>
+</body>
+</html>

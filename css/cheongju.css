@@ -1,0 +1,447 @@
+@import url(style.css);
+
+
+/* bg_sec */
+#cheongju .bg_sec{
+  position: relative;
+}
+
+#cheongju .bg_img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#cheongju .bg_img img{
+  width: 100%;
+}
+
+#cheongju .bg_sec .bg_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+}
+
+#cheongju .bg_sec .bg_text h2{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4rem;
+  word-break: keep-all;
+  line-height: 4rem;
+}
+
+#cheongju .bg_sec .bg_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+#cheongju .bg_sec .time_sec{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+  background: rgba(240, 240, 240, 0.8);
+  padding: 0 0.3rem;
+}
+
+#cheongju .bg_sec .time_sec p{
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+  text-align: center
+}
+
+#cheongju .bg_sec .time_sec p.bold{
+  color: #222;
+  font-weight: 600;
+}
+
+/* navbar */
+#cheongju .navbar .navi{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin: auto;
+}
+
+#cheongju .navbar .navi li a{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+
+#cheongju .navbar .navi li a:hover{
+  color: #008787;
+}
+
+/* common */
+#cheongju .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
+#cheongju .btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem auto 10rem;
+}
+
+#cheongju .btn h3{
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#cheongju .btn a{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #666;
+}
+
+#cheongju .btn .watch_sec, .map_sec .btn a{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  opacity: 0;
+}
+
+/* exhibition_sec */
+#cheongju .exhibition_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+#cheongju .exhibition_sec .swiper{
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 130rem;
+  height: 40%;
+}
+
+#cheongju .exhibition_sec .swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cheongju .exhibition_sec .swiper-slide img {
+  width: 65%;
+  display: block;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* education_sec */
+#cheongju .education_sec{
+  margin-top: 5rem;
+}
+#cheongju .education_sec .swiper{
+  margin-top: 5rem;
+  width: 100%;
+}
+
+#cheongju .education_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+#cheongju .education_sec .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cheongju .education_sec .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 65%;
+}
+
+/* watch_sec */
+#cheongju .watch_wrap{
+  width: 100%;
+  overflow-x: auto;
+  margin: auto;
+}
+
+#cheongju .watch_table{
+  margin: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#cheongju th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+#cheongju th {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#cheongju .center{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#cheongju .left{
+  text-align: left;
+}
+
+/* floor_sec */
+#cheongju .floor_wrap{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cheongju .floor_wrap .floor_header{
+  width: 100%;
+  max-width: 15%;
+}
+
+
+#cheongju .floor_header .floor li{
+  width: 100%;
+  border-bottom:1px solid #f0f0f0;
+  color:#333;
+  font-size:1.6rem;
+  z-index:100;  
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 10rem;
+}
+
+#cheongju .floor_header .floor li.active{
+  background: #333;
+  color: #fff;
+}
+
+#cheongju .floor_img{
+  width: 100%;
+  margin: auto;
+}
+
+#cheongju .floor_img div{
+  display: none;
+}
+
+#cheongju .floor_img .img_box{
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+#cheongju .floor_img .img_box img:nth-child(1){
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+
+#cheongju .floor_img .img_box img:nth-of-type(2){
+  display: block;
+  width: 30%;
+}
+
+#cheongju .floor_img .img_box img:nth-of-type(3){
+  display: none;
+  width: 45%;
+}
+
+#cheongju .floor_img div.active{
+  display: block;
+}
+
+/* map_sec */
+#cheongju .map_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#cheongju .map_wrap iframe{
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  outline: none;
+}
+
+/* Media Query */
+@media (max-width: 1400px){
+  #cheongju .container_wrap{
+    padding: 0 1.5rem;
+    margin: auto;
+  }
+
+  /* bg_sec */
+  #cheongju .bg_sec .bg_text h2{
+    font-size: 3.6rem;
+  }
+
+  /* exhibition_sec */
+  #cheongju .exhibition_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+  }
+
+  /* education_sec */
+  #cheongju .education_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+  }
+
+  #cheongju .watch_wrap {
+    overflow-x: auto;
+  }
+
+  #cheongju .watch_table {
+    width: max-content;
+    white-space: nowrap;
+  }
+}
+
+
+@media (max-width: 1200px){
+  #cheongju .bg_img img{
+    height: 80rem;
+    object-fit: cover;
+  }
+
+  #cheongju .floor_wrap{
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #cheongju .floor_header{
+    min-width: 100%;
+  }
+
+  #cheongju .floor_header .floor{
+    display: flex;
+  }
+
+  #cheongju .floor_header .floor li{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 670px){
+  #cheongju .bg_sec .bg_text h2{
+    font-size: 3.2rem;
+  }
+
+  #cheongju .bg_sec .time_sec p{
+    font-size: 1.6rem;
+  }
+
+  #cheongju .navbar .navi{
+    gap: 4rem;
+  }
+
+  #cheongju .navbar .navi li a{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px){
+  #cheongju .floor_img .img_box{
+    flex-direction: column;
+  }
+
+  #cheongju .floor_header .floor li{
+    font-size: 1.6rem;
+  }
+
+  #cheongju .floor_img .img_box img:nth-child(1){
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  #cheongju .floor_img .img_box img:nth-child(2){
+    display: none;
+    width: 100%;
+    margin: auto;
+  }
+
+  #cheongju .floor_img .img_box img:nth-child(3){
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width:540px){
+  #cheongju .container_wrap{
+    padding: 0 1.5rem;
+  }
+
+  #cheongju .bg_img img{
+    height: 60rem;
+    object-fit: cover;
+  }
+
+  #cheongju .btn h3{
+    font-size: 2.2rem;
+  }
+  
+  #cheongju .bg_sec .bg_text h2{
+    font-size: 3rem;
+  }
+
+  #cheongju .bg_sec .bg_text p{
+    font-size: 2rem;
+  }
+
+  #cheongju .bg_sec .time_sec{
+    flex-direction: column;
+    height: 20%;
+  }
+}
+
+@media (max-width:400px){
+  #cheongju .bg_img img{
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  #cheongju .bg_sec .bg_text h2{
+    font-size: 2.6rem;
+  }
+
+  #cheongju .bg_sec .bg_text p{
+    display: none;
+  }
+
+  #cheongju .bg_sec .time_sec p{
+    font-size: 1.4rem;
+  }
+}

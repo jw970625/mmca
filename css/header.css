@@ -1,13 +1,33 @@
+<<<<<<< HEAD
 @import url(reset.css);
+=======
+/* body{
+  background: #e8e8e8;
+} */
+>>>>>>> jeongwoo
 
 /* .desk_header, */
 .tab_header{
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+.header_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+>>>>>>> jeongwoo
 /* 데스크톱 메뉴 */
 .desk_header{
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   width: 100vw;
   height: 8rem;
   display: flex;
@@ -16,6 +36,16 @@
   border-bottom: 1px solid #f0f0f0;
   background-color: #fff;
   z-index: 99999;
+=======
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  z-index: 99;
+>>>>>>> jeongwoo
 }
 
 ul.gnb{
@@ -43,6 +73,7 @@ ul.gnb{
 .sub{
   position: absolute;
   height: 4rem;
+<<<<<<< HEAD
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -52,6 +83,18 @@ ul.gnb{
 }
 .sub li{
   height: 4rem;
+=======
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.4rem;
+  text-align: center;
+  margin-left: 3rem;
+}
+.sub li{
+  height: 6rem;
+>>>>>>> jeongwoo
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +120,10 @@ ul.gnb{
 }
 
 .desk_header_right{
+<<<<<<< HEAD
+=======
+  display: flex;
+>>>>>>> jeongwoo
   font-size: 1.6rem;
 }
 .desk_header_right a{
@@ -97,26 +144,47 @@ ul.gnb{
 /* Desktop Menu end */
 
 /* Tab / Mobile Header start */
+<<<<<<< HEAD
 
 .tab_header{
   width: 100vw;
   height: 8rem;
   display: flex;
   justify-content: space-around;
+=======
+.tab_header{
+  width: 100%;
+  height: 8rem;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+>>>>>>> jeongwoo
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   position: fixed;
   background-color: #fff;
+<<<<<<< HEAD
   z-index: 999;
+=======
+  z-index: 99;
+  margin: auto;
+  padding: 0 1.5rem;
+>>>>>>> jeongwoo
 }
 
 .tab_header_left,
 .tab_header_logo,
 .trigger {
+<<<<<<< HEAD
   flex: 1; /* 1:1:1 비율 */
   display: flex;
   align-items: center;
   justify-content: center; /* 내부 요소 가운데 정렬 */
+=======
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> jeongwoo
   padding: 0;
   margin: 0;
 }
@@ -124,11 +192,16 @@ ul.gnb{
 .menu_all{
   position: absolute;
   top: 8rem; 
+<<<<<<< HEAD
   right: -120%;
+=======
+  right: -150%;
+>>>>>>> jeongwoo
   width: 50%;
   height: 80rem;
   background-color: #fff;
   transition: right 0.1s;
+<<<<<<< HEAD
   z-index: 999;
   border-top: 1px solid #f0f0f0;
 }
@@ -143,6 +216,21 @@ ul.gnb{
   margin-bottom: 2rem;
   margin-right: 3rem;
   margin-top: 2rem;
+=======
+  z-index: 99;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 탭메뉴 로그인 */
+.menu_user {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: #333;
+  margin: 3rem auto 0;
+  /* border: 1px solid #000; */
+>>>>>>> jeongwoo
 }
 .menu_user a {
   text-decoration: none;
@@ -153,6 +241,7 @@ ul.gnb{
   color: #888;
 }
 
+<<<<<<< HEAD
 .tab_header_left a{
   margin-right: 5rem;
 }
@@ -208,14 +297,71 @@ ul.gnb{
 }
 
 .tgnb .tmain > a {
+=======
+/* Trigger*/
+/* .tab_header_left a img,
+.tab_header_logo a img {
+  height: 3rem;
+  object-fit: contain;
+} */
+.tab_header_left a img{
+  height: 3rem;
+  object-fit: contain;
+}
+.tab_header_logo a img {
+  height: 4rem;
+  object-fit: contain;
+}
+
+.mright{
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.mright .tmain{
+  margin: auto;
+}
+.mright .tsub{margin-bottom: 1rem;}
+
+.mright .tsub li a:hover{
+  color: #008787;
+}
+.mlogo img{ 
+	width:100%;
+}
+
+
+.mright .mlogo{margin-top: 5rem;}
+
+.mright .tgnb{
+  margin-top: 3rem;
+}
+
+.mright>ul>li>a{
+  width: 100%;
+	color:#333;
+	font-weight:400;
+	font-size:1.8rem;
+  margin: auto;
+}
+
+.tgnb .tmain>a {
+>>>>>>> jeongwoo
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
   color: #222;
+<<<<<<< HEAD
   padding: 1.2rem 0;
 }
 /* Boxicon으로 바꿀 범위 */
+=======
+  padding: 1.5rem 0;
+}
+
+>>>>>>> jeongwoo
 .tgnb>.tmain>a:after{ 
   content: "\f107";
   font-family: fontawesome;
@@ -229,11 +375,86 @@ ul.gnb{
 
 .tsub{display: none;}
 .tsub>li{
+<<<<<<< HEAD
 	margin-top: 1rem;
+=======
+  width: 100%;
+  margin: auto;
+  padding: 1.3rem 0;
+>>>>>>> jeongwoo
 }
 .tsub>li:last-child {border-bottom: none;}
 .tsub>li>a{  
 	display:block;
+<<<<<<< HEAD
 	color:#999;
   font-size: 1.6rem;
 }
+=======
+	color:#666;
+  font-size: 1.6rem;
+}
+
+/* select_menu */
+.menu_user a{
+  width: 2.6rem;
+  color: #333;
+}
+
+.menu_user a:hover img{
+  color: #008787;
+}
+
+.select_menu .select_box{
+  outline: none;
+  border: none;
+  height: 3rem;
+  color: #333;
+}
+
+.select_menu .select_box option{
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+/* Media Query */
+
+@media (min-width: 1000px){
+  .desk_header { display: block;}
+  .tab_header { display: none;}
+}
+
+@media (max-width: 768px) {
+  .desk_header { display: none;}
+  .tab_header { display: flex;}
+  .menu_all {
+    width: 50%;
+  }
+
+}
+@media (max-width: 540px){
+
+  .tab_header_left img{
+    width: 2.4rem;
+  }
+  .tab_header_logo img{
+    width: 14rem;
+  }
+
+  .menu_all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 320px){
+  .tab_header_logo a img{
+    width: 12rem;
+  }
+}
+>>>>>>> jeongwoo

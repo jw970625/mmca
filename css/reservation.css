@@ -1,0 +1,249 @@
+@import url(style.css);
+
+#reservation .bg_sec .bg_wrap{
+  width: 100%;
+  height: 65rem;
+}
+
+#reservation .bg_sec .bg_wrap img{
+  position: relative;
+  width: 100%;
+  height: 65rem;
+  object-fit: cover;
+}
+
+#reservation .bg_wrap .bg_text{
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  color: #fff;
+}
+
+#reservation .bg_wrap .bg_text h2{
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+#reservation .bg_wrap .bg_text p{
+  font-size: 2rem;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+#reservation .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
+#reservation section .menubar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem auto 8rem;
+}
+
+#reservation section .menubar h3{
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+#reservation section .menubar a{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+}
+
+#reservation section .reser_wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5rem;
+  max-width: 130rem;
+}
+
+#reservation .reser_wrap .reserbox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#reservation section .reserimg{
+  width: 50%;
+  object-fit: cover;
+}
+
+#reservation section .reserimg img{
+  display: block;
+  width: 80%;
+}
+
+#reservation section .resertext{
+  width: 50%;
+}
+
+#reservation section .resertext table .reser_title tr th{
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+#reservation section .resertext tr{
+  display: flex;
+  justify-content: space-between;
+}
+
+#reservation section .resertext tr .tit{
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#reservation section .resertext tr td{
+  margin: 0.3rem 0;
+  font-size: 1.6rem;
+  color: #666;
+  white-space: nowrap;
+  border: none;
+  line-height: 2rem;
+  text-align: right;
+}
+
+#reservation section .resertext .btn a{
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+#reservation section .btn a:hover{
+  background: #333;
+  color: #fff;
+}
+
+#reservation .deoksu_sec .reserbox:nth-of-type(2){
+  opacity: 0;
+}
+
+/* Media Query */
+@media (max-width: 1200px){
+  #reservation .container_wrap{
+    padding: 0 1rem;
+  }
+
+  #reservation .reserbox:last-child{
+    display: none;
+  }
+
+  #reservation .deoksu_sec .reserbox:nth-of-type(2){
+    opacity: 1;
+  }
+
+  #reservation section .resertext .btn a{
+    opacity: 1;
+  }
+
+  #reservation .reserbox .reserimg{
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px){
+  
+  #reservation .reserbox .reserimg{
+    width: 30%;
+  }
+
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 2.2rem;
+  }
+
+  #reservation section .resertext tr td{
+    font-size: 1.6rem;
+  }
+
+  #reservation section .menubar h3{
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+#reservation section .menubar a{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+}
+}
+
+@media (max-width: 540px){
+  #reservation .reser_wrap .reserbox{
+    flex-direction: column;
+  }
+
+  #reservation .reser_wrap .reserbox .reserimg{
+    width: 100%;
+  }
+  #reservation .reser_wrap .reserbox .reserimg img{
+    width: 65%;
+    display: block;
+    margin: auto;
+  }
+  #reservation .reser_wrap .reserbox .resertext{
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  #reservation .reser_wrap .reserbox .resertext table{
+    margin: auto;
+    width: 80%;
+  }
+
+  #reservation section .resertext .btn{
+    margin: 3rem auto 0;
+  }
+  
+} 
+
+@media (max-width: 540px){
+  #reservation .bg_wrap .bg_text h2{
+    font-size: 3.6rem;
+    font-weight: 500;
+  }
+
+  #reservation .bg_wrap .bg_text p{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px){
+  
+  #reservation .bg_wrap .bg_text{
+    margin: auto;
+    left: 30%;
+    top: 35%;
+  }
+  #reservation .bg_wrap .bg_text h2{
+    text-align: center;
+  }
+
+  #reservation .bg_wrap .bg_text p{
+    display: none;
+  }
+
+  #reservation section .menubar h3{
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  #reservation section .menubar a{
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
