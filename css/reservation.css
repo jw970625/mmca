@@ -127,9 +127,8 @@
 }
 
 /* Media Query */
-
 @media (max-width: 1200px){
-  #reservation .reserbox:first-child{
+  #reservation .reserbox:last-child{
     display: none;
   }
 
@@ -196,6 +195,9 @@
     width: 80%;
   }
 
+  #reservation section .resertext .btn{
+    margin: 3rem auto 0;
+  }
   
 } 
 
@@ -214,7 +216,7 @@
   
   #reservation .bg_wrap .bg_text{
     margin: auto;
-    left: 25%;
+    left: 30%;
     top: 35%;
   }
   #reservation .bg_wrap .bg_text h2{
@@ -225,12 +227,12 @@
     display: none;
   }
 
-  #reservation section .menubar a:nth-of-type(1){
+  #reservation section .menubar h3{
     font-weight: 600;
     font-size: 2rem;
   }
 
-  #reservation section .menubar a:nth-of-type(2){
+  #reservation section .menubar a{
     font-size: 1.6rem;
     font-weight: 400;
   }

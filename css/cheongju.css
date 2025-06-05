@@ -24,9 +24,9 @@
 }
 
 #cheongju .bg_sec .bg_text h2{
-  line-height: 6rem;
   text-align: center;
   color: #fff;
+  margin-bottom: 4rem;
 }
 
 #cheongju .bg_sec .bg_text p{
@@ -425,7 +425,8 @@
   }
 
   #cheongju .bg_sec .bg_text h2{
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    line-height: 4rem;
   }
 
   #cheongju .bg_sec .bg_text p{

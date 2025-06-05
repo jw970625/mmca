@@ -62,6 +62,11 @@
   background-color: #fff;
 }
 
+/* common */
+.container_wrap img{
+  cursor: pointer;
+}
+
 /* collection_sec */
 #shop .collection_sec{margin-top: 10rem;}
 
