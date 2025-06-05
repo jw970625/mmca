@@ -1,21 +1,33 @@
-@import url(reset.css);
+/* body{
+  background: #e8e8e8;
+} */
 
 /* .desk_header, */
 .tab_header{
   display: none;
 }
+
+.header_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* 데스크톱 메뉴 */
 .desk_header{
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 8rem;
+  width: 100%;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   background-color: #fff;
-  z-index: 99999;
+  z-index: 99;
 }
 
 ul.gnb{
@@ -43,15 +55,16 @@ ul.gnb{
 .sub{
   position: absolute;
   height: 4rem;
-  z-index: 100;
+  z-index: 98;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 2rem;
+  column-gap: 2.4rem;
   text-align: center;
+  margin-left: 3rem;
 }
 .sub li{
-  height: 4rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +90,7 @@ ul.gnb{
 }
 
 .desk_header_right{
+  display: flex;
   font-size: 1.6rem;
 }
 .desk_header_right a{
@@ -97,26 +111,27 @@ ul.gnb{
 /* Desktop Menu end */
 
 /* Tab / Mobile Header start */
-
 .tab_header{
-  width: 100vw;
+  width: 100%;
   height: 8rem;
+  top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   position: fixed;
   background-color: #fff;
-  z-index: 999;
+  z-index: 99;
+  margin: auto;
+  padding: 0 5rem;
 }
 
 .tab_header_left,
 .tab_header_logo,
 .trigger {
-  flex: 1; /* 1:1:1 비율 */
   display: flex;
   align-items: center;
-  justify-content: center; /* 내부 요소 가운데 정렬 */
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -124,25 +139,24 @@ ul.gnb{
 .menu_all{
   position: absolute;
   top: 8rem; 
-  right: -120%;
+  right: -150%;
   width: 50%;
   height: 80rem;
   background-color: #fff;
   transition: right 0.1s;
-  z-index: 999;
+  z-index: 99;
   border-top: 1px solid #f0f0f0;
 }
 
-/* login / join */
+/* 탭메뉴 로그인 */
 .menu_user {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  gap: 0.8rem;
+  justify-content: space-between;
   font-size: 1.4rem;
   color: #333;
-  margin-bottom: 2rem;
-  margin-right: 3rem;
-  margin-top: 2rem;
+  margin: 3rem auto 0;
+  /* border: 1px solid #000; */
 }
 .menu_user a {
   text-decoration: none;
@@ -153,61 +167,54 @@ ul.gnb{
   color: #888;
 }
 
-.tab_header_left a{
-  margin-right: 5rem;
-}
 /* Trigger*/
-.tab_header_left a img,
+/* .tab_header_left a img,
 .tab_header_logo a img {
   height: 3rem;
   object-fit: contain;
+} */
+.tab_header_left a img{
+  height: 3rem;
+  object-fit: contain;
 }
-
-.trigger {
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
-  position: relative;
-}
-.trigger span {
-  display: block;
-  width: 2.5rem;
-  height: 0.3rem;
-  background: #000;
-  border-radius: 2px;
-}
-.trigger span:nth-of-type(1){
-  width: 2rem;
-}
-.trigger span:nth-of-type(3){
-  width: 1rem;
+.tab_header_logo a img {
+  height: 4rem;
+  object-fit: contain;
 }
 
 .mright{
-  flex: 7;
-  padding: 30px;
   font-size: 2rem;
+  margin: 0 auto;
 }
 
+.mright .tmain{
+  margin: auto;
+}
+.mright .tsub{margin-bottom: 1rem;}
+
+.mright .tsub li a:hover{
+  color: #008787;
+}
 .mlogo img{ 
 	width:100%;
-	max-width:100%;
 }
 
 
-.mright .mlogo{margin-top: 50px;}
+.mright .mlogo{margin-top: 5rem;}
 
-.mright>ul>li:nth-child(n+3):nth-child(-n+10){ /*li의 3번째~10번째까지*/
-	padding:12px 0;
+.mright .tgnb{
+  margin-top: 3rem;
 }
+
 .mright>ul>li>a{
+  width: 80%;
 	color:#333;
 	font-weight:400;
-	font-size:18px;
-	font-size:1.125rem;
+	font-size:1.8rem;
+  margin: auto;
 }
 
-.tgnb .tmain > a {
+.tgnb .tmain>a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,7 +222,7 @@ ul.gnb{
   color: #222;
   padding: 1.2rem 0;
 }
-/* Boxicon으로 바꿀 범위 */
+
 .tgnb>.tmain>a:after{ 
   content: "\f107";
   font-family: fontawesome;
@@ -229,11 +236,78 @@ ul.gnb{
 
 .tsub{display: none;}
 .tsub>li{
-	margin-top: 1rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0;
 }
 .tsub>li:last-child {border-bottom: none;}
 .tsub>li>a{  
 	display:block;
 	color:#999;
   font-size: 1.6rem;
+}
+
+/* select_menu */
+.menu_user a{
+  width: 2.6rem;
+  color: #333;
+}
+
+.menu_user a:hover img{
+  color: #008787;
+}
+
+.select_menu .select_box{
+  outline: none;
+  border: none;
+  height: 3rem;
+  color: #333;
+}
+
+.select_menu .select_box option{
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+/* Media Query */
+@media (min-width: 1400px) {
+  .desk_header { display: flex; }
+  .tab_header { display: none; }
+}
+
+@media (max-width: 1200px) {
+  .desk_header { display: none; }
+  .tab_header { display: flex;}
+  .menu_all {
+    width: 50%;
+  }
+
+}
+@media (max-width: 540px){
+  .tab_header{
+    padding: 0 1.5rem;
+  }
+  .tab_header_left img{
+    width: 2.4rem;
+  }
+  .tab_header_logo img{
+    width: 14rem;
+  }
+
+  .menu_all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    padding: 2rem;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 320px){
+  .tab_header_logo a img{
+    width: 12rem;
+  }
 }
