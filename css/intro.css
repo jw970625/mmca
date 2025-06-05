@@ -1,0 +1,189 @@
+/* intro title */
+.intro.title{
+  margin-top: 6rem;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg/bg_01.png);
+  color: #fff;
+}
+.intro.title h1{
+  font-size: 4.8rem;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+}
+/* intro1______________intro */
+#intro1 .title_bg{
+  width: 100%;
+  height: 10rem;
+  margin: 12rem 0 8rem;
+  background: linear-gradient(90deg,#f0f0f0, #fff);
+}
+#intro1 .intro_title{
+  max-width: 140rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+#intro1 h2{
+  font-size: 3.2rem;
+  margin-top: 4rem;
+}
+#intro1 .intro_title img{
+  height: 10rem;
+}
+#intro1 .intro_desc{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  font-size: 1.6rem;
+}
+#intro1 .intro_desc span{
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#intro1 .mi_items{
+  font-size: 1.6rem;
+  max-width: 140rem;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 10rem;
+}
+#intro1 .mi_grid,
+#intro1 .mi_space{
+  display: flex;
+}
+#intro1 .mi_grid{
+  margin-bottom: 10rem;
+}
+#intro1 .desc_item{
+  margin-bottom: 5rem;
+}
+#intro1 .mi_title{
+  margin-right: 10rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* intro2______________history */
+#intro2 .history_sec{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+  padding: 12rem 0;
+}
+#intro2 .hist{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+#intro2 .hist .hist_years{
+  font-size: 18rem;
+  color: #f0f0f0;
+  font-weight: 900;
+}
+#intro2 .hist_items{
+  width: 60%;
+}
+
+#intro2 .hist_item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+#intro2 .hist_item .hist_year{
+  width: 10rem;
+  height: 10rem;
+  color: #fff;
+  text-align: center;
+  line-height: 10rem;
+  border-radius: 10rem;
+  background-color: var(--color-primary);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-right: 5rem;
+}
+#intro2 .hist_item .hist_title{
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#intro2 .hist_item .hist_content{
+  margin-bottom: 2rem;
+}
+
+/* intro3______________FAQ */
+#intro3 .tabmenu{
+	max-width: 120rem;
+	margin: 10rem auto;
+  text-align: center;
+}
+#intro3 .tab{
+	display: flex;
+	justify-content: center;
+}
+#intro3 .tab li{
+	margin: 0 5rem;
+	font-size: 2rem;
+	color: #666;
+	font-weight: 600;
+	cursor: pointer;
+}
+#intro3 .tab li.active{
+	border-bottom: 0.2rem solid var(--color-primary);
+  color: #222;
+}
+
+#intro3 .faq {
+  margin: 5rem auto;
+  max-width: 120rem;
+  color: #222;
+  text-align: left;
+}
+#intro3 .faq .question {
+  background:#f0f0f0; 
+  padding: 2rem 5rem; 
+  margin: 2rem 0;
+  border:solid 0.1rem #f0f0f0; 
+  cursor:pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#intro3 .faq .question span{
+  margin-right: 2rem;
+}
+#intro3 .faq .question.active {
+  background: var(--color-primary); 
+  color: #fff;
+}
+#intro3 .faq .question.active i {
+  transform: rotate(180deg);
+}
+#intro3 .faq p {
+  background:#fff; 
+  padding: 2rem 5rem; 
+  border:solid 1px #f0f0f0; 
+  height: 0;
+}
+#intro3 .faq .question.active + p{
+  height: 100%;
+}
+#intro3 .faq .faq_link{
+  color: blue;
+}
+#intro3 .panel li.active .faq{
+  display: block;
+}
+#intro3 .panel .faq{
+  display: none;
+}
