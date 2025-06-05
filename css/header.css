@@ -156,7 +156,6 @@ ul.gnb{
   font-size: 1.4rem;
   color: #333;
   margin: 3rem auto 0;
-  padding: 0 1.5rem;
   /* border: 1px solid #000; */
 }
 .menu_user a {
@@ -186,6 +185,7 @@ ul.gnb{
 .mright{
   font-size: 2rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .mright .tmain{
@@ -213,16 +213,15 @@ ul.gnb{
 	font-weight:400;
 	font-size:1.8rem;
   margin: auto;
-  padding: 0 1.5rem;
 }
 
-.tgnb .tmain a{
+.tgnb .tmain>a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
   color: #222;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .tgnb>.tmain>a:after{ 
@@ -240,12 +239,12 @@ ul.gnb{
 .tsub>li{
   width: 100%;
   margin: auto;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
 }
 .tsub>li:last-child {border-bottom: none;}
 .tsub>li>a{  
 	display:block;
-	color:#999;
+	color:#666;
   font-size: 1.6rem;
 }
 
@@ -273,13 +272,14 @@ ul.gnb{
 }
 
 /* Media Query */
-@media (min-width: 1400px) {
-  .desk_header { display: flex; }
-  .tab_header { display: none; }
+
+@media (min-width: 1000px){
+  .desk_header { display: block;}
+  .tab_header { display: none;}
 }
 
 @media (max-width: 768px) {
-  .desk_header { display: none; }
+  .desk_header { display: none;}
   .tab_header { display: flex;}
   .menu_all {
     width: 50%;
@@ -287,9 +287,7 @@ ul.gnb{
 
 }
 @media (max-width: 540px){
-  .tab_header{
-    padding: 0 1.5rem;
-  }
+
   .tab_header_left img{
     width: 2.4rem;
   }
