@@ -134,6 +134,10 @@
 
 /* Media Query */
 @media (max-width: 1200px){
+  #reservation .container_wrap{
+    padding: 0 1rem;
+  }
+
   #reservation .reserbox:last-child{
     display: none;
   }

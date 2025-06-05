@@ -24,9 +24,11 @@
 }
 
 #deoksu .bg_sec .bg_text h2{
-  line-height: 6rem;
+  margin-bottom: 4rem;
   text-align: center;
   color: #fff;
+  word-break: keep-all;
+  line-height: 4rem;
 }
 
 #deoksu .bg_sec .bg_text p{

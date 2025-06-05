@@ -27,6 +27,8 @@
   text-align: center;
   color: #fff;
   margin-bottom: 4rem;
+  word-break: keep-all;
+  line-height: 4rem;
 }
 
 #seoul .bg_sec .bg_text p{
