@@ -1,6 +1,6 @@
 @import url(reset.css);
 /* 상단 제목 */
-#main-edu .edu-top{no-repeat center/cover;
+#main-edu .edu-top{
   width: 100%;
   height: 300px;
   margin-top: 120px;
@@ -37,7 +37,7 @@
 }
 
 /* swiper container style------ */
-.section-body{
+#main-edu .section-body{
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
@@ -49,7 +49,7 @@
 	margin-bottom: 30px;
 } */
 
-.swiper{
+#main-edu .swiper{
 	width: 100%;
 	height: 600px;
 	max-width: 1300px;
@@ -57,7 +57,7 @@
 	overflow: hidden;
 	margin: 20px auto;
 }
-.swiper-wrapper{
+#main-edu .swiper-wrapper{
 	display: flex;
 	width: 100%;
 	max-width: 1300px;
@@ -66,7 +66,7 @@
 	box-sizing: border-box;
 }
 
-.swiper-slide{
+#main-edu .swiper-slide{
 	height: 98%;
 	display: flex;
 	flex-direction: column;
@@ -82,7 +82,7 @@
 	transition: transform 0.3 ease-in;
 	/* border: 1px solid #000; */
 }
-.swiper-slide img{
+#main-edu .swiper-slide img{
 	width: 100%; /* 이미지가 슬라이드 너비에 꽉 차도록 */
 	height: 200px;
 	object-fit: cover;
@@ -90,32 +90,32 @@
 	margin-bottom: 15px;
 	opacity: 0.5;
 }
-.swiper-slide:hover img{
+#main-edu .swiper-slide:hover img{
 	opacity: 1;
 	transition: 0.3s ease-in;
 }
 
-.slide-content{
+#main-edu .slide-content{
 	margin: 10px;
 }
-.slide-content h3{
+#main-edu .slide-content h3{
 	font-size: 1.8em;
 	color: #333;
 	margin: 20px auto;
 }
 
-.slide-content p{
+#main-edu .slide-content p{
 	font-size: 1.2em;
 	color: #666;
 	letter-spacing: 0;
 	word-break: keep-all;
 }
-.slide-content p strong{
+#main-edu .slide-content p strong{
 	text-transform: capitalize;
 	color: var(--color-primary);
 }
 
-.slide-arrow{
+#main-edu .slide-arrow{
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -127,14 +127,14 @@
 	cursor: pointer;
 	margin-top: 20px;
 }
-.slide-arrow:hover{
+#main-edu .slide-arrow:hover{
 	background-color: #003d3d;
 	cursor: pointer;
 	transform: translateY(5px);
 	transition: 0.3s ease-in;
 }
 
-.slide-arrow svg{
+#main-edu .slide-arrow svg{
 	fill: white; /* 화살표 아이콘 색상 */
 	width: 25px;
 	height: 25px;
@@ -160,7 +160,7 @@
   	margin: 20px 55px 0;
 		word-break: keep-all;
 	}
-	.slide-content h3{
+	#main-edu .slide-content h3{
 		font-size: 2.2rem;
 		margin-bottom: 20px;
 	}
@@ -183,11 +183,11 @@
 		height: 25%;
 		margin: 30px 50px;
 	}
-	.slide-content h3{
+	#main-edu .slide-content h3{
 		font-size: 2.4rem;
 		margin-bottom: 20px;
 	}
-	.slide-content p{
+	#main-edu .slide-content p{
 		margin-bottom: 15px;
 		word-break: keep-all;	
 	}
@@ -209,11 +209,11 @@
 		height: 25%;
 		margin: 28px;
 	}
-	.slide-content h3{
+	#main-edu .slide-content h3{
 		font-size: 2.4rem;
 		margin-bottom: 20px;
 	}
-	.slide-content p{
+	#main-edu .slide-content p{
 		margin-bottom: 10px;
 		word-break: keep-all;	
 	}

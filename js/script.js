@@ -45,7 +45,7 @@ $(document).ready(function(){
       newImgIndicator=0,
       count = $img.length;
 
-  $("#index .ban ul li:last").prependTo(".ban ul");
+  $("#index .ban ul li:last").prependTo("#index .ban ul");
   $("#index .ban ul").css({"left":-bannerWidth+"px"});
 
   //indicator 전환효과 함수
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
   function bannerAuto(){
     $("#index .ban ul").stop().animate({left:"-="+bannerWidth+"px"},500,function(){
-      $("#index .ban ul li:first-child").appendTo(".ban ul"); 
+      $("#index .ban ul li:first-child").appendTo("#index .ban ul"); 
       $(this).css({left:-bannerWidth+"px"}); 
     });
     newImgIndicator++;
