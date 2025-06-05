@@ -84,11 +84,16 @@
 
 /* common */
 
+#seoul .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
 #seoul .btn{
-  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 7rem auto 10rem;
+  margin: 7rem auto 5rem;
 }
 
 #seoul .btn h3{
@@ -119,7 +124,6 @@
 #seoul .exhibition_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
   height: 40%;
 }
 
@@ -130,7 +134,7 @@
 }
 
 #seoul .exhibition_sec .swiper-slide img {
-  width: 60%;
+  width: 65%;
   display: block;
   object-fit: cover;
   margin: auto;
@@ -143,7 +147,6 @@
 #seoul .education_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
 }
 
 #seoul .education_sec .swiper-wrapper{
@@ -166,7 +169,6 @@
 /* watch_sec */
 #seoul .watch_wrap{
   width: 100%;
-  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -208,7 +210,6 @@
 /* floor_sec */
 #seoul .floor_wrap{
   width: 100%;
-  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -275,7 +276,6 @@
 /* map_sec */
 #seoul .map_wrap{
   width: 100%;
-  max-width: 80%;
   height: 100%;
   margin: 0 auto 30rem;
 }
@@ -289,6 +289,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
+  #seoul .container_wrap{
+    padding: 0 1.5rem;
+    margin: auto;
+  }
+
   /* bg_sec */
   #seoul .bg_sec .bg_text h2{
     font-size: 3.6rem;

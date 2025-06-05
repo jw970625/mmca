@@ -31,8 +31,14 @@
   color: #fff;
 }
 
+#reservation .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
 #reservation section .menubar{
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 8rem;

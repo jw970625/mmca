@@ -48,8 +48,3 @@ p, a {
   font-size: 1.6rem; /* 16px */
 }
 
-.container-wrap{
-  width: 100%;
-  max-width: 130rem;
-  margin: 0 auto;
-}

@@ -83,8 +83,14 @@
 }
 
 /* common */
+#cheongju .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
 #cheongju .btn{
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 10rem;
@@ -143,7 +149,6 @@
 #cheongju .education_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
 }
 
 #cheongju .education_sec .swiper-wrapper{
@@ -166,7 +171,6 @@
 /* watch_sec */
 #cheongju .watch_wrap{
   width: 100%;
-  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -208,7 +212,6 @@
 /* floor_sec */
 #cheongju .floor_wrap{
   width: 100%;
-  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -275,7 +278,6 @@
 /* map_sec */
 #cheongju .map_wrap{
   width: 100%;
-  max-width: 80%;
   height: 100%;
   margin: 0 auto;
 }
@@ -289,6 +291,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
+  #cheongju .container_wrap{
+    padding: 0 1.5rem;
+    margin: auto;
+  }
+
   /* bg_sec */
   #cheongju .bg_sec .bg_text h2{
     font-size: 3.6rem;

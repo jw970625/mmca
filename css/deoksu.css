@@ -63,7 +63,6 @@
 /* navbar */
 #deoksu .navbar .navi{
   width: 100%;
-  max-width: 130rem;
   height: 10rem;
   display: flex;
   justify-content: center;
@@ -84,8 +83,14 @@
 }
 
 /* common */
+#deoksu .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
 #deoksu .btn{
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 10rem;
@@ -119,7 +124,6 @@
 #deoksu .exhibition_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
   height: 40%;
 }
 
@@ -167,7 +171,6 @@
 #deoksu .education_sec .no_swiper{
   width: 100%;
   height: 50rem;
-  max-width: 130rem;
   margin: auto;
   text-align: center;
 }
@@ -180,7 +183,6 @@
 /* watch_sec */
 #deoksu .watch_wrap{
   width: 100%;
-  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -222,7 +224,6 @@
 /* floor_sec */
 #deoksu .floor_wrap{
   width: 100%;
-  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -289,7 +290,6 @@
 /* map_sec */
 #deoksu .map_wrap{
   width: 100%;
-  max-width: 80%;
   height: 100%;
   margin: 0 auto;
 }
@@ -303,6 +303,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
+  #deoksu .container_wrap{
+    padding: 0 1.5rem;
+    margin: auto;
+  }
+
   /* bg_sec */
   #deoksu .bg_sec .bg_text h2{
     font-size: 3.6rem;

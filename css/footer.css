@@ -1,17 +1,28 @@
 @import url(reset.css);
 
 *{margin: 0;
-  font-family: "Noto Sans KR", sans-serif; letter-spacing: -1px;}
+  font-family: "Noto Sans KR", sans-serif; letter-spacing: -1px;
+}
 
 footer{
   position: relative;
   width: 100%;
   height: 37rem;
-  background-color: #fff;}
+  background-color: #fff;
+}
+
+.footer_wrap{
+  width: 100%;
+  max-width: 140rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
 
 footer address{
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
 
 .sns_footer{
   display: flex;
@@ -21,7 +32,7 @@ footer address{
   width: 100%;
   height: 5rem;
   background-color: #333;
-  padding: 0rem 5rem;}
+}
 
 .sns_footer .sns_box_footer{
   display: flex;
@@ -31,7 +42,7 @@ footer address{
   line-height: 0.5rem;}
 
 .sns_footer .sns_box_footer img{
-  width: 3rem;
+  width: 2rem;
   height: 2.5rem;
   transition: 0.5s;
   color: #fff;}
@@ -45,25 +56,36 @@ footer address{
   align-items: center;
   border: 1px solid #fff;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  transition: 0.5s;}
+  padding: 0.3rem 1rem;
+  transition: 0.5s;
+}
 .btn_footer:hover{background-color: #008484;}
 
 .btn_footer a{text-decoration: none;}
-.btn_footer a img{display:inline-block; height: 2.5rem;}
+.btn_footer a img{display:inline-block; height: 2rem;}
 
 .btn_footer p{
-  display: inline;
+  display: inline-block;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
-  padding-left: 0.5rem;}
-.btn_footer p:hover{color: #fff;}
+}
+.btn_footer p:hover{color: #fff;
+}
+
+.top_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 5rem;
+}
 
 .set_ft{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;}
+  align-items: flex-start;
+}
 
 .set_ft img{margin-right: 1rem;}
 
@@ -71,24 +93,26 @@ footer address{
   display: inline-flex;
   flex-direction: column;
   font-style: normal;
-  gap: 2rem;}
+  gap: 2rem;
+}
 
 .set_footer img{width: 2rem;}
+
 .setting_footer{
+  border: 1px solid #000;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  gap: 25rem;
-  margin: 5rem 5rem;}
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+}
 
-.setting_footer .logo_footer{
-  width: 20%;
-  max-width: 22rem;
-  height: 20%;
-  max-height: 5rem;}
 
-.sitemap_footer{margin-right: 3rem;}
+.setting_footer .logo_footer img{
+  width: 15rem;
+  height: 30%;
+  max-height: 5rem;
+}
+
 .sitemap_footer a{
   display: flex;
   flex-direction: column;
@@ -97,7 +121,8 @@ footer address{
   width: 100%;
   text-decoration: none;
   line-height: 3rem;
-  transition: 0.3s;}
+  transition: 0.3s;
+}
 .sitemap_footer a:hover{color: #008484;}
 .sitemap_footer a:first-child{font-weight: bold;}
 
@@ -107,20 +132,23 @@ footer address{
   color: #666;
   font-style: normal;
   width: 100%;
-  height: 10rem;}
+  height: 10rem;
+}
 
 .family_footer{
   display: inline-block;
   width: 100%;
   height: 5rem;
-  color: #666;}
+  color: #666;
+}
 
-.dropdown_footer {
+.dropdown_footer{
   width: 20rem;
   position: relative;
   background-color: #fff;
   padding: 0.25rem;
-  border: 1px solid #999;}
+  border: 1px solid #999;
+}
 
 .sub-navi_footer{
   display: none;
@@ -131,11 +159,13 @@ footer address{
   width: 100%;
   background-color: #58595b;
   border: 1px solid#999;
-  border-bottom: none;}
+  border-bottom: none;
+}
 
 .sub-navi_footer li {
   padding: 0.1rem 1rem;
-  border-bottom: 1px solid #777;}
+  border-bottom: 1px solid #777;
+}
 .sub-navi_footer li:hover {background-color: #333;}
 .sub-navi_footer li a {color: #999;}
 
@@ -143,7 +173,8 @@ footer address{
 
 .title_footer{
   font-size: 1.4rem;
-  font-style: normal}
+  font-style: normal
+}
 
 .title_footer:after{
   content:"▼";
@@ -154,7 +185,8 @@ footer address{
   width: 3rem;
   height: 100%;
   text-align: center;
-  line-height: 3rem;}
+  line-height: 3rem;
+}
 .title_footer.active:after {transform: rotateX(180deg);}
 
 
@@ -162,8 +194,7 @@ footer address{
 /* PC: 1200px 이상 */
 @media screen and (min-width: 1200px) {
 
-.family_footer{display: none;}
-
+  .family_footer{display: none;}
 }
 
 
@@ -217,7 +248,10 @@ address{padding: 2rem;}
   right: 1%;
   top: 25%;
   width: 5rem;
-  gap: 3rem;}
-.shopicon_footer img{width: 50%;}
+  gap: 3rem;
+}
+.shopicon_footer img{
+  width: 50%;
+}
 
 }

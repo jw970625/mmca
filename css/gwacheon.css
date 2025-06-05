@@ -85,9 +85,14 @@
 }
 
 /* common */
+#gwacheon .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
 #gwacheon .btn{
   width: 100%;
-  max-width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 7rem auto 10rem;
@@ -146,7 +151,6 @@
 #gwacheon .education_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
 }
 
 #gwacheon .education_sec .swiper-wrapper{
@@ -169,7 +173,6 @@
 /* watch_sec */
 #gwacheon .watch_wrap{
   width: 100%;
-  max-width: 80%;
   overflow-x: auto;
   margin: auto;
 }
@@ -211,7 +214,6 @@
 /* floor_sec */
 #gwacheon .floor_wrap{
   width: 100%;
-  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -278,7 +280,6 @@
 /* map_sec */
 #gwacheon .map_wrap{
   width: 100%;
-  max-width: 80%;
   height: 100%;
   margin: 0 auto;
 }
@@ -292,18 +293,12 @@
 
 /* Media Query */
 @media (max-width: 1400px){
+  #gwacheon .container_wrap{
+    padding: 0 1.5rem;
+  }
+
   #gwacheon .bg_sec .bg_text h2{
     font-size: 3.6rem;
-  }
-
-  #gwacheon .exhibition_sec .swiper-wrapper{
-  width: 100%;
-  margin: auto;
-  }
-
-  #gwacheon .education_sec .swiper-wrapper{
-  width: 100%;
-  margin: auto;
   }
 
   #gwacheon .watch_wrap {
