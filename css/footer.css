@@ -5,15 +5,9 @@
   letter-spacing: -1px;
 }
 
-img{
-	image-rendering: -webkit-optimize-contrast; 
-	transform: translateZ(0);
-	backface-visibility: hidden;
-    }
-
 footer{
   width: 100%;
-  height: 50rem;
+  height: 100rem;
   margin: auto;
   position: relative;
   background-color: #fff;
@@ -53,28 +47,31 @@ footer{
 
 .btn_footer:hover{background-color: #008484;}
 
-
 .btn_footer{
-  width: 10rem;
+  width: 12rem;
   border: 1px solid #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 0.5rem;
 }
 
 .btn_footer a{
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .btn_footer a img{
-  display: block;
+  width: 2rem;
   height: 2rem;
+  display: block;
+  margin: auto;
 }
 
 .btn_footer p{
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
 }
 
@@ -82,22 +79,25 @@ footer{
   color: #fff;
 }
 
+.address_wrap{
+  width: 100%;
+}
+
 .top_footer{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
-.set_ft{
+.setting_footer{
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: row;
-}
-
-.set_ft img{
-  display: block;
-  margin-right: 1rem;
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .set_footer{
@@ -107,22 +107,22 @@ footer{
   gap: 2rem;
 }
 
-.setting_footer{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4rem;
-}
-
 .set_footer img{
   display: block;
   width: 2rem;
 }
 
+.set_ft{
+  display: flex;
+}
+
+.set_ft img{
+  display: block;
+}
 
 .setting_footer .logo_footer{
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   gap: 15rem;
 }
 
@@ -149,8 +149,8 @@ footer{
   text-align: center;
   color: #666;
   font-style: normal;
+  margin: auto;
   width: 100%;
-  height: 10rem;
 }
 
 .family_footer{
@@ -210,9 +210,6 @@ footer{
 
 @media (min-width: 1000px){
 
-  .family_footer{
-    display: none;
-  }
 }
 
 @media (max-width: 768px){
@@ -226,14 +223,10 @@ footer{
     display: none;
   }
 
-  
   .copylight_footer{
     text-align: left; 
   }
-  .family_footer{
-    display: none;
-  }
-
+  
   .copylight_footer{
     padding: 0 1.5rem;
     font-size: 1.4rem;
@@ -242,10 +235,6 @@ footer{
 
 /* 모바일 사이즈 */
 @media screen and (max-width: 540px) {
-
-  .top_footer{
-    padding: 0 2rem;
-  }
 
   .family_footer{
     display: block;
@@ -265,9 +254,10 @@ footer{
     margin: 0 0.8rem;
   }
 
-  .logo_footer .ft_logo img{
+  .logo_footer .ft_logo{
     display: block;
     width: 15rem;
+    max-width: 15rem;
   }
 
   .set_footer .set_ft span{
@@ -295,7 +285,11 @@ footer{
     font-size: 1.4rem;
     padding: 0 2rem;
   }
+}
 
-
-
+@media screen and (max-width: 320px){
+  .sns_box_footer a{
+    display: block;
+    margin: 0 0.3rem;
+  }
 }

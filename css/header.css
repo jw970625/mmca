@@ -167,12 +167,6 @@ ul.gnb{
   color: #888;
 }
 
-/* Trigger*/
-/* .tab_header_left a img,
-.tab_header_logo a img {
-  height: 3rem;
-  object-fit: contain;
-} */
 .tab_header_left a img{
   height: 3rem;
   object-fit: contain;
