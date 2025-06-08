@@ -144,7 +144,7 @@ ul.gnb{
   height: 80rem;
   background-color: #fff;
   transition: right 0.1s;
-  z-index: 99;
+  z-index: 98;
   border-top: 1px solid #f0f0f0;
 }
 
@@ -186,6 +186,9 @@ ul.gnb{
   font-size: 2rem;
   margin: 0 auto;
   padding: 0 2rem;
+  background: #fff;
+  z-index: 99;
+
 }
 
 .mright .tmain{
@@ -300,7 +303,7 @@ ul.gnb{
     height: 100%;
     position: fixed;
     background-color: #fff;
-    z-index: 9999;
+    z-index: 99;
     box-shadow: none;
   }
 }

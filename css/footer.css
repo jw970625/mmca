@@ -12,8 +12,10 @@ img{
     }
 
 footer{
-  position: relative;
   width: 100%;
+  height: auto;
+  margin: auto;
+  position: relative;
   background-color: #fff;
 }
 
@@ -43,7 +45,6 @@ footer{
 }
 .sns_footer .sns_box_footer img{
   display: block;
-  width: 2.2rem;
   color: #fff;
 }
 
@@ -118,8 +119,8 @@ footer{
 
 .setting_footer .logo_footer{
   display: flex;
+  align-items: center;
   gap: 15rem;
-  border: 1px solid #000;
 }
 
 .setting_footer .logo_footer .ft_logo{

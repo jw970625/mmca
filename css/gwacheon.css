@@ -233,7 +233,6 @@
   border-bottom:1px solid #f0f0f0;
   color:#333;
   font-size:1.6rem;
-  z-index:100;  
   font-size: 2.4rem;
   text-align: center;
   line-height: 10rem;
@@ -283,7 +282,7 @@
 #gwacheon .map_wrap{
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30rem;
 }
 
 #gwacheon .map_wrap iframe{
