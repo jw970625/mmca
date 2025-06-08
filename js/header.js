@@ -20,11 +20,11 @@ $(".trigger").click(function () {
   const $menu = $(".menu_all");
 
   if ($menu.hasClass("active")) {
-    $menu.stop(true, true).animate({ right: "-100%" });
+    $menu.stop(true, true).animate({right: "-100%"});
     $menu.removeClass("active");
   } else {
     
-    $menu.stop(true, true).animate({ right: "0" });
+    $menu.stop(true, true).animate({right: "0"});
     $menu.addClass("active");
   }
   $(".tmain").click(function(){
