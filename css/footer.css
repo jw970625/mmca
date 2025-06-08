@@ -98,7 +98,7 @@ footer{
   height: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .set_footer{
@@ -118,6 +118,7 @@ footer{
 }
 
 .set_ft img{
+  margin-right: 1rem;
   display: block;
 }
 
