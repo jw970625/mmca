@@ -16,20 +16,29 @@ $(document).ready(function () {
 });
 
 /* Tab Header */
-$(".trigger").click(function () {
-  const $menu = $(".menu_all");
+$(document).ready(function () {
+  $(".trigger").click(function () {
+    const $menu = $(".menu_all");
 
-  if ($menu.hasClass("active")) {
-    $menu.stop(true, true).animate({right: "-100%"});
-    $menu.removeClass("active");
-  } else {
-    
-    $menu.stop(true, true).animate({right: "0"});
-    $menu.addClass("active");
-  }
-  $(".tmain").click(function(){
+    if ($menu.hasClass("active")) {
+      $menu.stop(true, true).animate({ right: "-100%" });
+      $menu.removeClass("active");
+
+      // 서브메뉴 초기화
+      $(".tsub").slideUp(300);
+      $(".tmain > a").removeClass("uparrow");
+    } else {
+      $menu.stop(true, true).animate({ right: "0" });
+      $menu.addClass("active");
+    }
+  });
+
+  $(".tmain").click(function (e) {
+    e.preventDefault();
+
     $(this).siblings().find(".tsub").slideUp(300);
-    $(this).siblings().find(">a").removeClass("uparrow")
+    $(this).siblings().find(">a").removeClass("uparrow");
+
     $(this).find(".tsub").stop().slideToggle(200);
     $(this).find(">a").toggleClass("uparrow");
   });
