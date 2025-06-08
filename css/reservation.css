@@ -23,6 +23,7 @@
   font-size: 4.2rem;
   margin-bottom: 3rem;
   text-shadow: 0 0 2px rgba(0,0,0,0.5);
+  font-weight: bold;
 }
 
 #reservation .bg_wrap .bg_text p{
