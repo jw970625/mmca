@@ -1,5 +1,10 @@
 @import url(reset.css);
 /* 상단 제목 */
+.hd-img img{
+  width: 100%;
+  height: 30rem;
+  background-position: top;
+}
 #main-edu .edu-top{
   width: 100%;
   max-width: 1400px;
@@ -13,16 +18,17 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 50px;
   box-sizing: border-box;
 }
 #main-edu .edu-top h2{
-  margin: 0 50px;
+  margin: 0 50px auto;
   color: var(--color-black);
   font-size: 4.4rem;
   line-height: 5.5rem;
+  font-weight: bold;
 }
-#main-edu .edu-top p {
+#main-edu .edu-top p{
   max-width: 1400px;
   width: 100%;
   color: var(--color-black);
@@ -32,7 +38,7 @@
 }
 
 /* 상단 신청버튼 */
-#main-edu .edu-top .apply-btn-wrap .apply-btn {
+#main-edu .edu-top .apply-btn-wrap .apply-btn{
   border: 1px solid #222;
   background-color: transparent;
   color: var(--color-black);
@@ -48,7 +54,7 @@
   padding-bottom: 50px;
 }
 /* swiper container style------ */
-#program-list .section-body {
+#program-list .section-body{
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -84,8 +90,8 @@
   overflow: hidden;
   box-sizing: border-box;
   padding: 20px;
-  transition: 0.3s ease-in;
-  /* border: 1px solid #000; */
+  margin: auto;
+  transition: transform 0.3 ease-in;
 }
 #program-list .swiper-slide img{
   width: 100%;
@@ -100,28 +106,29 @@
   transition: 0.3s ease-in;
 }
 
-#program-list .slide-content {
+#program-list .slide-content{
   margin: 10px;
 }
-#program-list .slide-content h3 {
+#program-list .slide-content h3{
   font-size: 1.8em;
   color: #333;
   margin: 20px auto;
   font-weight: bold;
 }
 
-#program-list .slide-content p {
+#program-list .slide-content p{
   font-size: 1.2em;
   color: #666;
   letter-spacing: 0;
   word-break: keep-all;
 }
-#program-list .slide-content p strong {
+#program-list .slide-content p strong{
   text-transform: capitalize;
   color: var(--color-primary);
+  font-weight: 700px;
 }
 
-#program-list .slide-content .slide-arrow {
+#program-list .slide-content .slide-arrow{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -133,14 +140,14 @@
   cursor: pointer;
   margin-top: 20px;
 }
-#program-list .slide-content .slide-arrow:hover {
+#program-list .slide-content .slide-arrow:hover{
   background-color: #003d3d;
   cursor: pointer;
   transform: translateY(5px);
   transition: 0.3s ease-in;
 }
 
-#program-list .slide-content .slide-arrow svg {
+#program-list .slide-content .slide-arrow svg{
   fill: white;
   width: 25px;
   height: 25px;
@@ -165,16 +172,21 @@
 @media (max-width: 1000px){
   #main-edu .edu-top{
     max-width: 900px;
+    margin-top: 10px;
   }
   #main-edu .edu-top p{
     width: auto;
-    max-width: calc(100% -50px);
+    max-width: 950px;
     font-size: 2.2rem;
     word-break: keep-all;
   }
 }
 
+
 @media (max-width: 890px){
+  #main-edu .info-wrap{
+    padding-top: 5px;
+  }
   #main-edu .edu-top{
     max-width: 700px;
     margin-left: 10px;
@@ -185,7 +197,7 @@
   }
   #main-edu .edu-top p{
     width: auto;
-    max-width: calc(100% -50px);
+    max-width: 850px;
     font-size: 2rem;
     line-height: 2.8rem;
     margin: 20px 55px 0;
@@ -200,14 +212,13 @@
 @media (max-width: 768px) {
   #main-edu .edu-top{
     max-width: 600px;
-    margin-left: 2px;
   }
   #main-edu .edu-top h2{
     font-size: 4rem;
   }
   #main-edu .edu-top p{
     width: auto;
-    max-width: calc(100% -50px);
+    max-width: 750px;
     font-size: 1.8rem;
     line-height: 2.8rem;
     margin: 20px 55px 0;
@@ -230,17 +241,12 @@
   }
 }
 
-@media(max-width: 755px){
-  #main-edu .edu-top .apply-btn-wrap button.apply-btn{
-    font-size: 1.6rem;
-    padding: 5px;
-    width: 90px;
-    height: 35px;
+
+@media(max-width: 570px){
+  #main-edu .edu-top{
+    max-width: 480px;
+    word-break: keep-all;
   }
-}
-
-
-@media(max-width: 410px){
   #program-list .section-body{
     padding-top: 20px;
   }
@@ -265,7 +271,7 @@
   }
   #main-edu .edu-top p{
     width: auto;
-    max-width: calc(100% -50px);
+    max-width: 350px;
     font-size: 1.4rem;
     line-height: 2rem;
     word-break: keep-all;
