@@ -84,7 +84,7 @@
   overflow: hidden;
   box-sizing: border-box;
   padding: 20px;
-  transition: transform 0.3 ease-in;
+  transition: 0.3s ease-in;
   /* border: 1px solid #000; */
 }
 #program-list .swiper-slide img{
@@ -173,7 +173,6 @@
     word-break: keep-all;
   }
 }
-
 
 @media (max-width: 890px){
   #main-edu .edu-top{

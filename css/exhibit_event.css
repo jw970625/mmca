@@ -10,28 +10,33 @@ body{margin:auto;}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 .hd_image{
   width: 100%;
-  height: 30rem;}
+  height: 30rem;
+}
 
 .hd_image>img{
   width: 100vw;
   height: 30rem;
   object-fit: cover;
   filter: brightness(75%);
-  background-position: top;}
+  background-position: top;
+}
 
 .eh_title{
   text-align: center;
-  padding: 10rem 0 4rem 0;}
+  padding: 10rem 0 4rem 0;
+}
 
 .eh_title img{width: 1rem; height: 2rem;}
 
 .eh_title h1{
   font-family: 'S-CoreDream-5Light';
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 .eh_btns{
   display: flex;
@@ -41,7 +46,8 @@ body{margin:auto;}
   height: 3rem;
   margin-bottom: 10rem;
   text-decoration: none;
-  gap: 1rem;}
+  gap: 1rem;
+}
 
 .eh_tab_btn{
   display: flex;
@@ -68,13 +74,16 @@ body{margin:auto;}
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;}
+  margin-bottom: 10rem;
+  border: 1px solid #0044ff;
+}
 
 .ev_img{
   width: 30rem;
   height: 30rem;
   transition: 0.5s;
-  margin-right: 2rem;}
+  margin-right: 2rem;
+}
 .ev_img:hover{opacity: 0.5;}
 
 .ev_tit{
@@ -83,33 +92,47 @@ body{margin:auto;}
   transform: translateY(-15%);
   display: flex;
   flex-direction: column;
-  text-align: center;}
+  text-align: center;
+}
 
 .ev_tit h4{
-  width: 60rem;
-  font-size: 2rem;}
+  font-size: 2rem;
+}
 
 .ev_tit h3{
   font-size: 2.4rem;
-  white-space: normal;}
+  white-space: normal;
+}
 
 .ev_tit span{
   display: block;
-  margin-top: 2rem;}
+  margin-top: 2rem;
+}
 
 .ev_tit p{
   margin-bottom: 2rem;
   font-size: 2rem;
-  font-weight: 500;}
+  font-weight: 500;
+}
+
+.ev_tit .ev_btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
+}
 
 .ev_tit .ev_btns>a{
+  display: inline-block;
   border: 1px solid #004747;
   border-radius: 1rem;
   color: #004747;
-  width: 40rem;
-  min-width: 40rem;
+  width: 18rem;
   font-weight: 600;
-  padding: 0.5rem 6rem;}
+  padding: 0.5rem 6rem;
+}
 
 .ev_tit .ev_btns>a:first-child{margin-right: 0.5rem;}
 
@@ -235,9 +258,19 @@ body{margin:auto;}
 .ex_downmenu{width: 100%;}
 }
 
-/* ============================ 모바일 767px ============================ */
+@media screen and (max-width: 768px){
+  .ev_tit .ev_btns{
+    flex-direction: column;
+  }
+  #ev_all .ev_tit h3{
+    font-size: 2rem;
+  }
+}
 
-@media screen and (max-width: 767px) {
+
+/* ============================ 모바일 540px ============================ */
+
+@media screen and (max-width: 540px) {
 
 #exhibit_event{width: 100%;}
 
@@ -248,7 +281,7 @@ body{margin:auto;}
   display: block;
   position: relative;
   width: 100%;
-  max-width: 76.7rem;
+  max-width: 54rem;
   height: 60rem;
   background: url(../images/exh/evt/main.jpg) no-repeat center/cover;}
 
@@ -257,26 +290,27 @@ body{margin:auto;}
   position: absolute;
   width: 50%;
   transform: translateX(50%);
-  max-width: 76.7rem;
+  max-width: 54rem;
   bottom: 2rem;
   color: #fff;}
 
 #ev_all{
   text-align: center;
   width: 100%;
-  max-width: 76.7rem;
+  max-width: 54rem;
   height: 100%;
   text-align: center;
   object-fit: cover;}
 
 #ev_all .ev_items{
   width: 100%;
-  max-width: 76.7rem;
+  max-width: 54rem;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 #ev_all .ev_img{
   width: 100%;
@@ -312,7 +346,7 @@ body{margin:auto;}
 
 #ev_all .ev_tit{
   width: 100%;
-  max-width: 76.7rem;
+  max-width: 54rem;
   height: 5rem;
   display: flex;
   justify-content: center; 
@@ -321,7 +355,7 @@ body{margin:auto;}
 
 #ev_all .ev_tit h3{
   width: 100%;
-  max-width: 65rem;
+  max-width: 54rem;
   height: 100%;
   max-height: 10rem;
   font-size: 2.4rem;
@@ -342,7 +376,7 @@ body{margin:auto;}
   font-size: 1.6rem;}
 
 #ev_all .ex_downmenu{
-  width: 50%;}
+  width: 1rem; height: 1rem;}
 
 .ev_item:hover{display: none;}
 .ev_items:after{display: none;}

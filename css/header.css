@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
 }
 
 /* 데스크톱 메뉴 */
@@ -270,6 +269,12 @@ ul.gnb{
 }
 
 /* Media Query */
+
+@media (max-width:1400px){
+  .header_wrap{
+    padding: 0 1.5rem;
+  }
+}
 
 @media (min-width: 1000px){
   .desk_header {
