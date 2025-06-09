@@ -2,219 +2,285 @@
 /* 상단 제목 */
 #main-edu .edu-top{
   width: 100%;
+  max-width: 1400px;
   height: 300px;
-  margin-top: 120px;
+  margin: 0 auto;
   padding: 60px 0;
 }
 
 /* 상단 텍스트 */
+#main-edu .info-wrap{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
 #main-edu .edu-top h2{
   margin: 0 50px;
   color: var(--color-black);
-  font-size: 4.4rem; /* 24px */
-	line-height: 5.5rem;
+  font-size: 4.4rem;
+  line-height: 5.5rem;
 }
-#main-edu .edu-top p{
-	max-width: 1400px;
-	width: 100%;
-  color:var(--color-black);
+#main-edu .edu-top p {
+  max-width: 1400px;
+  width: 100%;
+  color: var(--color-black);
   font-size: 2.4rem;
-	line-height: 4rem;
+  line-height: 4rem;
   margin: 40px 50px 0;
 }
 
 /* 상단 신청버튼 */
-#main-edu .edu-top .apply-btn-wrap .apply-btn{
+#main-edu .edu-top .apply-btn-wrap .apply-btn {
   border: 1px solid #222;
   background-color: transparent;
   color: var(--color-black);
   padding: 5px;
   width: 98px;
-  /* height: 29px; */
-	height: 50%;
+  height: 50%;
   margin: 30px 50px 0;
-	font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
+#program-list{
+  margin: auto 30px;
+  padding-bottom: 50px;
+}
 /* swiper container style------ */
-#main-edu .section-body{
-	width: 100%;
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 50px 0;
-	box-sizing: border-box;
-}
-/* .section-title{
-	text-align: center;
-	margin-bottom: 30px;
-} */
-
-#main-edu .swiper{
-	width: 100%;
-	height: 600px;
-	max-width: 1300px;
-	box-sizing: border-box;
-	overflow: hidden;
-	margin: 20px auto;
-}
-#main-edu .swiper-wrapper{
-	display: flex;
-	width: 100%;
-	max-width: 1300px;
-	height: 550px;
-	margin: auto;
-	box-sizing: border-box;
+#program-list .section-body {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
 }
 
-#main-edu .swiper-slide{
-	height: 98%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	/* align-items: center; */
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	box-sizing: border-box;
-	padding: 20px;
-	text-align: left;
-	transition: transform 0.3 ease-in;
-	/* border: 1px solid #000; */
+#program-list .swiper{
+  width: 100%;
+  height: 600px;
+  max-width: 1300px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 20px auto 20px;
 }
-#main-edu .swiper-slide img{
-	width: 100%; /* 이미지가 슬라이드 너비에 꽉 차도록 */
-	height: 200px;
-	object-fit: cover;
-	border-radius: 8px;
-	margin-bottom: 15px;
-	opacity: 0.5;
-}
-#main-edu .swiper-slide:hover img{
-	opacity: 1;
-	transition: 0.3s ease-in;
+#program-list .swiper-wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  height: 550px;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
-#main-edu .slide-content{
-	margin: 10px;
+#program-list .swiper-slide{
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+  transition: transform 0.3 ease-in;
+  /* border: 1px solid #000; */
 }
-#main-edu .slide-content h3{
-	font-size: 1.8em;
-	color: #333;
-	margin: 20px auto;
+#program-list .swiper-slide img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  opacity: 0.5;
 }
-
-#main-edu .slide-content p{
-	font-size: 1.2em;
-	color: #666;
-	letter-spacing: 0;
-	word-break: keep-all;
-}
-#main-edu .slide-content p strong{
-	text-transform: capitalize;
-	color: var(--color-primary);
-}
-
-#main-edu .slide-arrow{
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-color: var(--color-primary); 
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	margin-top: 20px;
-}
-#main-edu .slide-arrow:hover{
-	background-color: #003d3d;
-	cursor: pointer;
-	transform: translateY(5px);
-	transition: 0.3s ease-in;
+#program-list .swiper-slide:hover img{
+  opacity: 1;
+  transition: 0.3s ease-in;
 }
 
-#main-edu .slide-arrow svg{
-	fill: white; /* 화살표 아이콘 색상 */
-	width: 25px;
-	height: 25px;
+#program-list .slide-content {
+  margin: 10px;
+}
+#program-list .slide-content h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 20px auto;
+  font-weight: bold;
 }
 
+#program-list .slide-content p {
+  font-size: 1.2em;
+  color: #666;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+#program-list .slide-content p strong {
+  text-transform: capitalize;
+  color: var(--color-primary);
+}
 
+#program-list .slide-content .slide-arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#program-list .slide-content .slide-arrow:hover {
+  background-color: #003d3d;
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: 0.3s ease-in;
+}
 
+#program-list .slide-content .slide-arrow svg {
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
 
 /* PC ~1400px */
-@media(max-width:1400px){
-
+@media (max-width: 1400px){
+  #main-edu .edu-top{
+    width: 1100px;
+    margin-left: 30px;
+    word-break: keep-all;
+  }
 }
-@media(max-width: 890px){
-	#main-edu .edu-top h2{
-  	font-size: 4rem;
-		word-break: keep-all;
-	}
-	#main-edu .edu-top p{
-		width: auto;
-		max-width: calc(100% -50px);
-  	font-size :1.8rem;
-		line-height: 2.8rem;
-  	margin: 20px 55px 0;
-		word-break: keep-all;
-	}
-	#main-edu .slide-content h3{
-		font-size: 2.2rem;
-		margin-bottom: 20px;
-	}
+@media (max-width: 1200px){
+  #main-edu .edu-top{
+    margin: 60px;
+    padding-top: 100px;
+    word-break: keep-all;
+    max-width: 900px;
+  }
+}
+@media (max-width: 1000px){
+  #main-edu .edu-top{
+    max-width: 900px;
+  }
+  #main-edu .edu-top p{
+    width: auto;
+    max-width: calc(100% -50px);
+    font-size: 2.2rem;
+    word-break: keep-all;
+  }
 }
 
 
-@media(max-width: 768px){
-	#main-edu .edu-top h2{
-  	font-size: 4rem;
-	}
-	#main-edu .edu-top p{
-		width: auto;
-		max-width: calc(100% -50px);
-  	font-size :1.8rem;
-		line-height: 2.8rem;
-  	margin: 20px 55px 0;
-		word-break: keep-all;
-	}
-	#main-edu .edu-top .apply-btn-wrap .apply-btn{
-		height: 25%;
-		margin: 30px 50px;
-	}
-	#main-edu .slide-content h3{
-		font-size: 2.4rem;
-		margin-bottom: 20px;
-	}
-	#main-edu .slide-content p{
-		margin-bottom: 15px;
-		word-break: keep-all;	
-	}
-}
-@media(max-width: 380px){
+@media (max-width: 890px){
+  #main-edu .edu-top{
+    max-width: 700px;
+    margin-left: 10px;
+  }
   #main-edu .edu-top h2{
-		margin: 0 20px;
-  	font-size: 3.2rem;
-	}
-	#main-edu .edu-top p{
-		width: auto;
-		max-width: calc(100% -50px);
-  	font-size :1.4rem;
-		line-height: 2rem;
-  	margin: 20px 25px 0;
-		word-break: keep-all;
-	}
-	#main-edu .edu-top .apply-btn-wrap .apply-btn{
-		height: 25%;
-		margin: 28px;
-	}
-	#main-edu .slide-content h3{
-		font-size: 2.4rem;
-		margin-bottom: 20px;
-	}
-	#main-edu .slide-content p{
-		margin-bottom: 10px;
-		word-break: keep-all;	
-	}
+    font-size: 4rem;
+    word-break: keep-all;
+  }
+  #main-edu .edu-top p{
+    width: auto;
+    max-width: calc(100% -50px);
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 20px 55px 0;
+    word-break: keep-all;
+  }
+  #program-list .slide-content h3{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-edu .edu-top{
+    max-width: 600px;
+    margin-left: 2px;
+  }
+  #main-edu .edu-top h2{
+    font-size: 4rem;
+  }
+  #main-edu .edu-top p{
+    width: auto;
+    max-width: calc(100% -50px);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin: 20px 55px 0;
+    word-break: keep-all;
+  }
+  #main-edu .edu-top .apply-btn-wrap .apply-btn{
+    height: 25%;
+    margin: 30px 50px;
+  }
+  #program-list .section-body{
+    padding-top: 3px;
+  }
+  #program-list .slide-content h3{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  #program-list .slide-content p{
+    margin-bottom: 15px;
+    word-break: keep-all;
+  }
+}
+
+@media(max-width: 755px){
+  #main-edu .edu-top .apply-btn-wrap button.apply-btn{
+    font-size: 1.6rem;
+    padding: 5px;
+    width: 90px;
+    height: 35px;
+  }
+}
+
+
+@media(max-width: 410px){
+  #program-list .section-body{
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 380px){
+  #main-edu .edu-top{
+    max-width: 350px;
+    margin-left: 10px;
+  }
+  #main-edu .edu-top .apply-btn-wrap{
+    margin-left: 20px;
+  }
+  #main-edu .edu-top .apply-btn-wrap button.apply-btn{
+    font-size: 1.4rem;
+    padding: 3px;
+    width: 80px;
+    height: 30px;
+  }
+  #main-edu .edu-top h2{
+    font-size: 3.2rem;
+  }
+  #main-edu .edu-top p{
+    width: auto;
+    max-width: calc(100% -50px);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    word-break: keep-all;
+  }
+  #main-edu .edu-top .apply-btn-wrap .apply-btn{
+    height: 25%;
+    margin: 28px;
+  }
+  #program-list .slide-content h3{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  #program-list .slide-content p{
+    margin-bottom: 10px;
+    word-break: keep-all;
+  }
 }

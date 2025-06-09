@@ -8,15 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/webfontworld/sCoreDream/sCoreDream.css" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
+  <header>
       <div class="desk_header">
-        <div class="bg_box"></div>
-        <div class="desk_header_left">
-          <a href="index.html"><img src="images/ui/ui_logo.png" alt="로고"></a>
-        </div>
+        <div class="header_wrap">
+          <div class="bg_box"></div>
+          <div class="desk_header_left">
+            <a href="index.html"><img src="images/ui/ui_logo.png" alt="로고"></a>
+          </div>
           <div class="desk_header_center">
             <ul class="gnb"> 
               <li class="main"><a href="intro1.html">소개</a>
@@ -65,336 +64,350 @@
               </select>
             </div>
           </div>
+        </div>
       </div>
       <div class="tab_header">
-        <div class="tab_header_left">
-          <a href="shop.html"><img src="images/ui/store.svg" alt="온라인숍"></a>
-        </div>
-        <div class="tab_header_logo">
-          <a href="index.html">
-            <img src="images/ui/ui_logo.png" alt="로고">
-          </a>
-        </div>
-        <div class="trigger">
-          <img src="images/ui/menu.svg" alt="메뉴아이콘">
-        </div>
-        <div class="menu_all">
-          <div class="mright">
-            <ul class="tgnb">
-              <li class="tmain"><a href="intro1.html">소개</a>
-                <ul class="tsub">
-                  <li><a href="intro1.html">미술관소개</a></li>
-                  <li><a href="intro2.html">연혁</a></li>
-                  <li><a href="intro3.html">FAQ</a></li>
-                </ul>
-              </li>
-              <li class="tmain"><a href="seoul.html">관람</a>
-                <ul class="tsub">
-                  <li><a href="seoul.html">전시관</a></li>
-                  <li><a href="reservation.html">전시예약</a></li>
-                </ul>
-              </li>
-              <li class="tmain"><a href="exhibit_now.html">전시</a>
-                <ul class="tsub">
-                  <li><a href="exhibit_now.html">현재전시</a></li>
-                  <li><a href="exhibit_deu.html">예정전시</a></li>
-                  <li><a href="exhibit_event.html">이벤트</a></li>
-                </ul>      
-              </li>
-              <li class="tmain"><a href="edu_intro.html">교육</a>
-                <ul class="tsub">
-                  <li><a href="edu_intro.html">교육소개</a></li>
-                  <li><a href="edu.html">프로그램</a></li>
-                </ul>      
-              </li>
-              <li class="tmain"><a href="archive.html">소장품</a>
-                <ul class="tsub">
-                  <li><a href="archive.html">아카이브</a></li>
-                </ul>      
-              </li>
-            </ul>
-            <div class="menu_user">
-            <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
-            <div class="select_menu">
-              <select class="select_box">
-                <option value="/">KOR</option>
-                <option value="/">CHN</option>
-                <option value="/">ENG</option>
-                <option value="/">JPN</option>
-              </select>
-            </div>
+        <div class="header_wrap">
+          <div class="tab_header_left">
+            <a href="#"><img src="images/ui/store.svg" alt="스토어"></a>
           </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-<div id="exhibit_now" class="wrap"> 
-<div class="ex_main_m">
-    <!-- CSS -->
-      <div class="ex_main_t">
-        <div class="eh_title">
-          <h1>현재 전시</h1>
-          <p>각 지역별 국립현대미술관에서 전시 중인 전시회를 안내 드립니다.</p>
-          <img src="images/logo/down_svg.svg" alt="아래로 슬라이드 되는 화살표">
-        </div>
-      </div>
-</div>
-
-  <div class="ehn_header">
-    <div class="hd_image">
-      <img src="images/exh/now/header1.jpg" alt="국립현대미술관의 로비 이미지">
-    </div>
-    <div class="eh_title">
-      <h1>현재 전시</h1>
-      <p>각 지역별 국립현대미술관에서 전시 중인 전시회를 안내 드립니다.</p>
-    </div>
-  </div>
-
-  <div class="now_btns">
-    <a class="en_tab_btn 1" href="#ex_seoul"><span><img src="images/logo/marker.svg" alt="서울관 탭 버튼">서울관</span></a>
-    <a class="en_tab_btn 2" href="#ex_kwachoen"><span><img src="images/logo/marker.svg" alt="과천관 탭 버튼">과천</span></a>
-    <a class="en_tab_btn 3" href="#ex_deoksu"><span><img src="images/logo/marker.svg" alt="덕수궁관 탭 버튼">덕수궁</span></a>
-    <a class="en_tab_btn 4" href="#ex_cheongju"><span><img src="images/logo/marker.svg" alt="청주관 탭 버튼">청주</span></a>
-  </div>
-
-  <div id="en_all">
-    <div class="eh_blank"></div>
-    <div id="ex_seoul">
-      <div class="en_items">
-        <div class="eh_it">
-          <img class="it_img" src="images/exh/now/01.png" alt="기울인 몸들: 서로의 취약함이 만날 때. LOOKING AFTER EACH OTHER이라고 쓰여진 전시회 포스터">
-          <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-            <h4>서울</h4>
-            <h3>기울인 몸들: 서로의 취약함이 만날 때</h3>
-            <p>신체 다양성을 장애, 노년, 돌봄의 시각으로 조명하는 기획 전시</p>
-          </a>
-          <div class="eh_tag"><i>#장애</i><i>#노년</i><i>#돌봄</i></div>
-          <b>2025-05-16 ~ 2025-07-20</b>
-          <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
-          </div>
-          <div class="eh_it">
-            <img class="it_img" src="images/exh/now/02.jpg" alt="옅은 회색의 배경에 얇고 검은 곡선으로 크고 작은 마음을 표현한 전시회 포스터">
-            <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-              <h4>서울</h4>
-              <h3>마음_봄<br>　</h3>
-            <p>어린이와 가족을 위하여 새롭게 조성하는〈MMCA 아이공간〉의 첫 전시</p>
+          <div class="tab_header_logo">
+            <a href="#">
+              <img src="images/ui/ui_logo.png" alt="로고">
             </a>
-            <div class="eh_tag"><i>#MMCA아이공간</i><i>#어린이</i><i>#마음_봄</i></div>
-            <b>2025-05-02 ~ 2026-02-27</b>
-            <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+          </div>
+          <div class="trigger">
+            <img src="images/ui/menu.svg" alt="메뉴아이콘">
+          </div>
+          <div class="menu_all">
+            <div class="mright">
+              <ul class="tgnb">
+                <li class="tmain"><a href="#">소개</a>
+                  <ul class="tsub">
+                    <li><a href="intro1.html">미술관소개</a></li>
+                    <li><a href="intro2.html">연혁</a></li>
+                    <li><a href="intro3.html">FAQ</a></li>
+                  </ul>
+                </li>
+                <li class="tmain"><a href="#">관람</a>
+                  <ul class="tsub">
+                    <li><a href="seoul.html">전시관</a></li>
+                    <li><a href="reservation.html">전시예약</a></li>
+                  </ul>
+                </li>
+                <li class="tmain"><a href="exhibit_now.html">전시</a>
+                  <ul class="tsub">
+                    <li><a href="exhibit_now.html">현재전시</a></li>
+                    <li><a href="exhibit_deu.html">예정전시</a></li>
+                    <li><a href="exhibit_event.html">이벤트</a></li>
+                  </ul>		
+                </li>
+                <li class="tmain"><a href="edu_intro.html">교육</a>
+                  <ul class="tsub">
+                    <li><a href="edu_intro.html">교육소개</a></li>
+                    <li><a href="edu.html">프로그램</a></li>
+                  </ul>		
+                </li>
+                <li class="tmain"><a href="archive.html">소장품</a>
+                  <ul class="tsub">
+                    <li><a href="archive.html">아카이브</a></li>
+                  </ul>		
+                </li>
+              </ul>
+              <div class="menu_user">
+              <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
+              <div class="select_menu">
+                <select class="select_box">
+                  <option value="/">KOR</option>
+                  <option value="/">CHN</option>
+                  <option value="/">ENG</option>
+                  <option value="/">JPN</option>
+                </select>
+              </div>
             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div id="exhibit_now" class="wrap"> 
+  <div class="ex_main_m">
+      <!-- CSS -->
+        <div class="ex_main_t">
+          <div class="eh_title">
+            <h1>현재 전시</h1>
+            <p>각 지역별 국립현대미술관에서 전시 중인 전시회를 안내 드립니다.</p>
+            <img src="images/logo/down_svg.svg" alt="아래로 슬라이드 되는 화살표">
+          </div>
+        </div>
+  </div>
+
+    <div class="ehn_header">
+      <div class="hd_image">
+        <img src="images/exh/now/header1.jpg" alt="국립현대미술관의 로비 이미지">
+      </div>
+      <div class="eh_title">
+        <h1>현재 전시</h1>
+        <p>각 지역별 국립현대미술관에서 전시 중인 전시회를 안내 드립니다.</p>
+      </div>
+    </div>
+
+    <div class="now_btns">
+      <a class="en_tab_btn 1" href="#ex_seoul"><span><img src="images/logo/marker.svg" alt="서울관 탭 버튼">서울관</span></a>
+      <a class="en_tab_btn 2" href="#ex_kwachoen"><span><img src="images/logo/marker.svg" alt="과천관 탭 버튼">과천</span></a>
+      <a class="en_tab_btn 3" href="#ex_deoksu"><span><img src="images/logo/marker.svg" alt="덕수궁관 탭 버튼">덕수궁</span></a>
+      <a class="en_tab_btn 4" href="#ex_cheongju"><span><img src="images/logo/marker.svg" alt="청주관 탭 버튼">청주</span></a>
+    </div>
+
+    <div id="en_all">
+      <div class="eh_blank"></div>
+      <div id="ex_seoul">
+        <div class="en_items">
           <div class="eh_it">
-            <img class="it_img" src="images/exh/now/04.jpg" alt="몇 가지 바위 위에 이어진 바위를 비추는 텔레비전이 올려 진 돌탑 이미지의 전시회 포스터">
+            <img class="it_img" src="images/exh/now/01.png" alt="기울인 몸들: 서로의 취약함이 만날 때. LOOKING AFTER EACH OTHER이라고 쓰여진 전시회 포스터">
             <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
               <h4>서울</h4>
-              <h3>MMCA 서울 상설전<br>《한국현대미술 하이라이트》</h3>
-              <p>1960년대에서 2010년대에 이르는 국립현대미술관 대표 소장품 상설 전시</p>
+              <h3>기울인 몸들: 서로의 취약함이 만날 때</h3>
+              <p>신체 다양성을 장애, 노년, 돌봄의 시각으로 조명하는 기획 전시</p>
+            </a>
+            <div class="eh_tag"><i>#장애</i><i>#노년</i><i>#돌봄</i></div>
+            <b>2025-05-16 ~ 2025-07-20</b>
+            <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
+            </div>
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/02.jpg" alt="옅은 회색의 배경에 얇고 검은 곡선으로 크고 작은 마음을 표현한 전시회 포스터">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>마음_봄<br>　</h3>
+              <p>어린이와 가족을 위하여 새롭게 조성하는〈MMCA 아이공간〉의 첫 전시</p>
+              </a>
+              <div class="eh_tag"><i>#MMCA아이공간</i><i>#어린이</i><i>#마음_봄</i></div>
+              <b>2025-05-02 ~ 2026-02-27</b>
+              <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+              </div>
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/04.jpg" alt="몇 가지 바위 위에 이어진 바위를 비추는 텔레비전이 올려 진 돌탑 이미지의 전시회 포스터">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>MMCA 서울 상설전<br>《한국현대미술 하이라이트》</h3>
+                <p>1960년대에서 2010년대에 이르는 국립현대미술관 대표 소장품 상설 전시</p>
+              </a>
+              <div class="eh_tag"><i>#한국근대미술</i><i>#소장품</i><i>#1900-1960</i></div>
+              <b>2025-05-01 ~ 2026-05-03</b>
+              <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
+            </div>
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/08.png" alt="흠집 없는 백골이 쌓인 감각적인 이미지의 전시회 포스터, 푸른색으로 론 뮤익이라 쓰여 있다">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>론 뮤익<br>　</h3>
+                <p>프랑스 까르띠에 현대미술재단과 공동주최로 개최하는 론 뮤익의 아시아 첫 회고전</p>
+              </a>
+              <div class="eh_tag"><i>#조각</i><i>#론뮤익</i><i>#공동주최</i></div>
+              <b>2025-04-11 ~ 2025-07-13</b>
+              <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
+            </div>
+          </div>
+          <div class="en_items">
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/09.jpg" alt="검은색, 노란색, 파란색의 원, 홀따옴표, 네모로 이루어져 다양한 대화를 나타내는 이미지의 전시회 포스터">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>열린공간7 《우리를 바꾸는 다섯 가지 대화》</h3>
+                <p>모두가 함께하는 소통과 공유, 대화의 장 그리고 쉼터</p>
+              </a>
+              <div class="eh_tag"><i>#장애비장애</i><i>#열린공간</i><i>#다섯가지대화</i></div>
+            <b>2025-04-04 ~ 2025-07-13</b>
+            <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+          </div>
+          <div class="eh_it" id="eh_fv">            
+            <img class="it_img" src="images/exh/now/11.jpg" alt="예술가인 남자의 옆 모습과 그 뒤로 공방이 보이는 이미지의 전시회 포스터">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>창작의 순간 - 예술가의 작업실</h3>
+                <p>동시대 대표 예술가들의 창작 과정에 주목한 다큐멘터리를 소개하는 상영 프로그램</p>
+              </a>
+              <div class="eh_tag"><i>#현대예술</i><i>#다큐멘터리</i><i>#창작과정</i></div>
+              <b>2025-02-14 ~ 2025-05-24</b>
+              <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+          </div>
+          <div class="eh_it" id="eh_ba">
+              <img class="it_img" src="images/exh/now/14.png" alt="녹색 배경에 하얀 글씨로 숲 waiting the forest라는 문장이 숲처럼 빼곡하게 그려진 숲을 연상시키는 전시회 포스터">
+              <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
+                <h4>서울</h4>
+                <h3>MMCA 다원예술 2025: 숲</h3>
+                <p>인류세 시대, 숲을 정동의 관점에서 다양한 예술로 탐구하는 프로젝트</p>
+              </a>
+            <div class="eh_tag"><i>#숲</i><i>#정원</i><i>#정동</i><i>#다원예술</i></div>
+            <b>2025-05-23 ~ 2026-01-15</b>
+            <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+          </div>
+          <div class="eh_it empty"></div>
+        </div>
+      </div>
+        
+      <div id="ex_kwachoen">
+        <div class="en_items">
+          <div class="eh_it">
+            <img class="it_img" src="images/exh/now/05.png" alt="1900년대의 까치가 날아가고 아이들이 웃고 떠드는 이미지를 싣은 이미지의 전시회 포스터">
+            <a class="it_tit" href="#">
+              <h4>과천</h4>
+              <h3>MMCA 과천 상설전 《한국근현대미술I》</h3>
+              <p>1900년대에서 1960년대의 한국근대시기의 주요흐름과 대표작가를 선보이는 상설전시</p>
             </a>
             <div class="eh_tag"><i>#한국근대미술</i><i>#소장품</i><i>#1900-1960</i></div>
-            <b>2025-05-01 ~ 2026-05-03</b>
-            <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
-          </div>
-          <div class="eh_it">
-            <img class="it_img" src="images/exh/now/08.png" alt="흠집 없는 백골이 쌓인 감각적인 이미지의 전시회 포스터, 푸른색으로 론 뮤익이라 쓰여 있다">
-            <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-              <h4>서울</h4>
-              <h3>론 뮤익<br>　</h3>
-              <p>프랑스 까르띠에 현대미술재단과 공동주최로 개최하는 론 뮤익의 아시아 첫 회고전</p>
-            </a>
-            <div class="eh_tag"><i>#조각</i><i>#론뮤익</i><i>#공동주최</i></div>
-            <b>2025-04-11 ~ 2025-07-13</b>
-            <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드</span>
-          </div>
-        </div>
-        <div class="en_items">
-          <div class="eh_it">
-            <img class="it_img" src="images/exh/now/09.jpg" alt="검은색, 노란색, 파란색의 원, 홀따옴표, 네모로 이루어져 다양한 대화를 나타내는 이미지의 전시회 포스터">
-            <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-              <h4>서울</h4>
-              <h3>열린공간7 《우리를 바꾸는 다섯 가지 대화》</h3>
-              <p>모두가 함께하는 소통과 공유, 대화의 장 그리고 쉼터</p>
-            </a>
-            <div class="eh_tag"><i>#장애비장애</i><i>#열린공간</i><i>#다섯가지대화</i></div>
-          <b>2025-04-04 ~ 2025-07-13</b>
-          <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
-        </div>
-        <div class="eh_it" id="eh_fv">            
-          <img class="it_img" src="images/exh/now/11.jpg" alt="예술가인 남자의 옆 모습과 그 뒤로 공방이 보이는 이미지의 전시회 포스터">
-            <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-              <h4>서울</h4>
-              <h3>창작의 순간 - 예술가의 작업실</h3>
-              <p>동시대 대표 예술가들의 창작 과정에 주목한 다큐멘터리를 소개하는 상영 프로그램</p>
-            </a>
-            <div class="eh_tag"><i>#현대예술</i><i>#다큐멘터리</i><i>#창작과정</i></div>
-            <b>2025-02-14 ~ 2025-05-24</b>
-            <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
-        </div>
-        <div class="eh_it" id="eh_ba">
-            <img class="it_img" src="images/exh/now/14.png" alt="녹색 배경에 하얀 글씨로 숲 waiting the forest라는 문장이 숲처럼 빼곡하게 그려진 숲을 연상시키는 전시회 포스터">
-            <a class="it_tit" href="https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1">
-              <h4>서울</h4>
-              <h3>MMCA 다원예술 2025: 숲</h3>
-              <p>인류세 시대, 숲을 정동의 관점에서 다양한 예술로 탐구하는 프로젝트</p>
-            </a>
-          <div class="eh_tag"><i>#숲</i><i>#정원</i><i>#정동</i><i>#다원예술</i></div>
-          <b>2025-05-23 ~ 2026-01-15</b>
-          <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
-        </div>
-        <div class="eh_it empty"></div>
-      </div>
-    </div>
-      
-    <div id="ex_kwachoen">
-      <div class="en_items">
-        <div class="eh_it">
-          <img class="it_img" src="images/exh/now/05.png" alt="1900년대의 까치가 날아가고 아이들이 웃고 떠드는 이미지를 싣은 이미지의 전시회 포스터">
-          <a class="it_tit" href="#">
-            <h4>과천</h4>
-            <h3>MMCA 과천 상설전 《한국근현대미술I》</h3>
-            <p>1900년대에서 1960년대의 한국근대시기의 주요흐름과 대표작가를 선보이는 상설전시</p>
-          </a>
-          <div class="eh_tag"><i>#한국근대미술</i><i>#소장품</i><i>#1900-1960</i></div>
-          <b>2025-05-02 ~ 2026-02-27</b>
-          <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
-        </div>
-          <div class="eh_it">
-          <img class="it_img" src="images/exh/now/06.png" alt="붉은 바탕, 검고 굵은 선으로 뻗은 가지를 표현한 이미지의 전시회 포스터">
-          <a class="it_tit" href="#">
-            <h4>과천</h4>
-            <h3>젊은 모색 2025: 지금, 여기</h3>
-            <p>다양한 매체의 실험적이고 도전적인 신작, 동시대 한국 미술의 경향과 가능성 습득</p>
-          </a>
-          <div class="eh_tag"><i>#젊은모색</i><i>#현대미술</i><i>#신진작가</i></div>
             <b>2025-05-02 ~ 2026-02-27</b>
             <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
           </div>
-          <div class="eh_it empty"></div>
-          <div class="eh_it empty"></div>
-      </div>
-    </div>
-      
-    <div id="ex_deoksu">
-      <div class="en_items">
-        <div class="eh_it">
-          <img class="it_img" src="images/exh/now/07.gif" alt="초현실주의의 포스터 몇 가지가 반복해서 비추고 있는 전시회 포스터 이미지">
-          <a class="it_tit" href="#">
-            <h4>덕수궁</h4>
-            <h3>초현실주의와 한국근대미술 　</h3>
-            <p>한국근대미술사에서 주목받지 못했던 초현실주의 경향의 작가와 작품을 소개하는 전시</p>
-          </a>
-          <div class="eh_tag"><i>#재발견</i><i>#한국근대미술</i><i>#초현실주의</i></div>
-          <b>2025-04-17 ~ 2025-07-06</b>
-          <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
-          </div>
-          <div class="eh_it empty"></div>
-          <div class="eh_it empty"></div>
-          <div class="eh_it empty"></div>
+            <div class="eh_it">
+            <img class="it_img" src="images/exh/now/06.png" alt="붉은 바탕, 검고 굵은 선으로 뻗은 가지를 표현한 이미지의 전시회 포스터">
+            <a class="it_tit" href="#">
+              <h4>과천</h4>
+              <h3>젊은 모색 2025: 지금, 여기</h3>
+              <p>다양한 매체의 실험적이고 도전적인 신작, 동시대 한국 미술의 경향과 가능성 습득</p>
+            </a>
+            <div class="eh_tag"><i>#젊은모색</i><i>#현대미술</i><i>#신진작가</i></div>
+              <b>2025-05-02 ~ 2026-02-27</b>
+              <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
+            </div>
+            <div class="eh_it empty"></div>
+            <div class="eh_it empty"></div>
         </div>
       </div>
-      
-      <div id="ex_cheongju">
+        
+      <div id="ex_deoksu">
         <div class="en_items">
           <div class="eh_it">
-            <img class="it_img" src="images/exh/now/10.png" alt="간단한 몇 색의 수채화로 그려진 전시회 포스터">
+            <img class="it_img" src="images/exh/now/07.gif" alt="초현실주의의 포스터 몇 가지가 반복해서 비추고 있는 전시회 포스터 이미지">
             <a class="it_tit" href="#">
-              <h4>청주</h4>
-              <h3>MMCA 소장품 기획전 - 수채(水彩):물을 그리다</h3>
-              <p>수채화만을 단독 장르로 구성하여 선보이는 미술관 소장품 전시</p>
+              <h4>덕수궁</h4>
+              <h3>초현실주의와 한국근대미술 　</h3>
+              <p>한국근대미술사에서 주목받지 못했던 초현실주의 경향의 작가와 작품을 소개하는 전시</p>
             </a>
-            <div class="eh_tag"><i>#수채화</i><i>#소장품</i><i>#한국미술</i></div>
-            <b>2025-03-21 ~ 2025-09-07</b>
+            <div class="eh_tag"><i>#재발견</i><i>#한국근대미술</i><i>#초현실주의</i></div>
+            <b>2025-04-17 ~ 2025-07-06</b>
             <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
+            </div>
+            <div class="eh_it empty"></div>
+            <div class="eh_it empty"></div>
+            <div class="eh_it empty"></div>
           </div>
-          <div class="eh_it">
-            <img class="it_img" src="images/exh/now/12.png" alt="검은 배경에 다양한 팝업 일러스트가 그려진 전시회 포스터">
-            <a class="it_tit" href="#">
-              <h4>청주</h4>
-              <h3>개방 수장고 개편 　</h3>
-              <p>국립현대미술관 소장품을 통해 연대별, 재료별로 조각의 흐름을 살펴볼 수 있는 전시</p>
+        </div>
+        
+        <div id="ex_cheongju">
+          <div class="en_items">
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/10.png" alt="간단한 몇 색의 수채화로 그려진 전시회 포스터">
+              <a class="it_tit" href="#">
+                <h4>청주</h4>
+                <h3>MMCA 소장품 기획전 - 수채(水彩):물을 그리다</h3>
+                <p>수채화만을 단독 장르로 구성하여 선보이는 미술관 소장품 전시</p>
+              </a>
+              <div class="eh_tag"><i>#수채화</i><i>#소장품</i><i>#한국미술</i></div>
+              <b>2025-03-21 ~ 2025-09-07</b>
+              <span class="eh_audio"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 유무</span>
+            </div>
+            <div class="eh_it">
+              <img class="it_img" src="images/exh/now/12.png" alt="검은 배경에 다양한 팝업 일러스트가 그려진 전시회 포스터">
+              <a class="it_tit" href="#">
+                <h4>청주</h4>
+                <h3>개방 수장고 개편 　</h3>
+                <p>국립현대미술관 소장품을 통해 연대별, 재료별로 조각의 흐름을 살펴볼 수 있는 전시</p>
+              </a>
+              <div class="eh_tag"><i>#개방수장고</i><i>#소통</i><i>#열린미술관</i></div>
+              <b>2020-12-03 ~ 2026-12-31</b>
+              <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
+            </div>
+            <div class="eh_it empty"></div>
+            <div class="eh_it empty"></div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  <footer>
+      <div class="sns_footer">
+        <div class="footer_wrap">
+          <div class="sns_box_footer">
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fmmcakorea%2F&source=omni_redirect"><img src="images/logo/logo_insta.svg" alt="instagram의 국립현대미술관 계정으로 통하는 아이콘"></a>
+            <a href="https://www.youtube.com/user/MMCAKorea"><img src="images/logo/logo_youtube.svg" alt="youtube의 국립현대미술관 계정으로 통하는 아이콘"></a>
+            <a href="https://www.facebook.com/mmcakorea"><img src="images/logo/logo_face.svg" alt="facebook의 국립현대미술관 계정으로 통하는 아이콘"></a>
+            <a href="https://x.com/mmcakorea"><img src="images/logo/logo_x.svg" alt="구 트위터 현 X의 국립현대미술관 계정으로 통하는 아이콘"></a>
+            <a href="https://tv.naver.com/mmca"><img src="images/logo/logo_naver.svg" alt="국민포탈사이트 네이버로 통하는 아이콘"></a>
+          </div>
+          <div class="btn_footer">
+            <a href="https://www.mmcashop.co.kr/">
+              <img src="images/logo/logo_shop.svg" alt="온라인샵으로 통하는 아이콘">
+              <p>online shop</p>
             </a>
-            <div class="eh_tag"><i>#개방수장고</i><i>#소통</i><i>#열린미술관</i></div>
-            <b>2020-12-03 ~ 2026-12-31</b>
-            <span class="eh_audio not"><img src="images/logo/audioguide.svg" alt="헤드셋 아이콘">오디오가이드 없음</span>
           </div>
-          <div class="eh_it empty"></div>
-          <div class="eh_it empty"></div>
         </div>
       </div>
-    </div>
-  
-</div>
-
-<footer>
-    <div class="sns_footer">
-      <div class="sns_box_footer">
-        <a href="https://www.instagram.com/accounts/login/?next=%2Fmmcakorea%2F&source=omni_redirect"><img src="images/logo/insta.svg" alt="instagram의 국립현대미술관 계정으로 통하는 아이콘"></a>
-        <a href="https://www.youtube.com/user/MMCAKorea"><img src="images/logo/youtube.svg" alt="youtube의 국립현대미술관 계정으로 통하는 아이콘"></a>
-        <a href="https://www.facebook.com/mmcakorea"><img src="images/logo/facebook.svg" alt="facebook의 국립현대미술관 계정으로 통하는 아이콘"></a>
-        <a href="https://x.com/mmcakorea"><img src="images/logo/x.svg" alt="구 트위터 현 X의 국립현대미술관 계정으로 통하는 아이콘"></a>
-        <a href="https://tv.naver.com/mmca"><img src="images/logo/naver.svg" alt="국민포탈사이트 네이버로 통하는 아이콘"></a>
-      </div>
-      <div class="btn_footer">
-        <a href="https://www.mmcashop.co.kr/">
-          <img src="images/logo/shop.svg" alt="온라인샵으로 통하는 아이콘">
-          <p>online shop</p>
-        </a>
-      </div>
-    </div>
-    <address>
-      <div class="top_footer">
-        <div class="setting_footer">
-          <img src="images/logo/korean_signature.png" class="logo_footer" alt="MMCA라는 마크가 그려진 국립현대미술관 로고">
-          <div class="set_footer">
-            <div class="set_ft 1">
-              <img src="images/logo/info.svg" alt="사업자 정보와 관련된 아이콘">
-              <span>대표 : 김성희<br>
-              사업자등록번호 : 138-83-00313<br></span>
+      <address>
+        <div class="top_footer">
+          <div class="footer_wrap">
+            <div class="setting_footer">
+              <div class="logo_footer">
+                <div class="ft_logo">
+                  <img src="images/ui/tab_logo.png" alt="MMCA라는 마크가 그려진 국립현대미술관 로고">
+                </div>
+                <div class="set_footer">
+                  <div class="set_ft">
+                    <img src="images/logo/info.svg" alt="사업자 정보와 관련된 아이콘">
+                    <span>대표 : 김성희<br>
+                    사업자등록번호 : 138-83-00313<br></span>
+                  </div>
+                  <div class="set_ft">
+                    <img src="images/logo/tell.svg" alt="고객센터 번호와 관련된 아이콘">
+                    <span>서울(대표전화) : 02-3701-9500<br>
+                    과천 : 02-2188-6000<br>
+                    덕수궁 : 02-2022-0600<br>
+                    청주 : 043-261-1400</span>
+                  </div>
+                </div>
+              </div>
+              <div class="sitemap_footer">
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">개인정보처리방침</a>
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">이용약관</a>
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">저작권정책</a>
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">국민신문고</a>
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">정보공개</a>
+                <a href="https://www.mmca.go.kr/civil/memberPolicy.do">클린신고센터</a>
+              </div>  
+              <div class="shopicon_footer">
+                <a href="02-3701-9500">
+                  <img src="images/logo/tell.svg" alt="대표전화 통화버튼">
+                </a>
+                <a href="shop.html">
+                  <img src="images/logo/shop_color.svg" alt="온라인샵으로 통하는 아이콘">
+                </a>
+              </div>
             </div>
-            <div class="set_ft 2">
-              <img src="images/logo/tell.svg" alt="고객센터 번호와 관련된 아이콘">
-              <span>서울(대표전화) : 02-3701-9500<br>
-              과천 : 02-2188-6000<br>
-              덕수궁 : 02-2022-0600<br>
-              청주 : 043-261-1400</span>
-            </div>
+          </div>   
+        </div>     
+        <div class="family_footer">
+          <div class="dropdown_footer">
+            <div class="title_footer">개인정보처리방침</div>
+            <ul class="sub-navi_footer">
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">개인정보처리방침</a></li>
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">이용약관</a></li>
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">저작권정책</a></li>
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">국민신문고</a></li>
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">정보공개</a></li>
+              <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do">클린신고센터</a></li>
+            </ul>
           </div>
-          <div class="sitemap_footer">
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="개인정보처리방침">개인정보처리방침</a>
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="이용약관">이용약관</a>
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="저작권정책">저작권정책</a>
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="국민신문고">국민신문고</a>
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="정보공개">정보공개</a>
-            <a href="https://www.mmca.go.kr/civil/memberPolicy.do" alt="클린신고센터">클린신고센터</a>
-          </div>
-        </div>   
-      </div>     
-      <div class="family_footer">
-        <div class="dropdown_footer">
-          <div class="title_footer">개인정보처리방침</div>
-          <ul class="sub-navi_footer">
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="개인정보처리방침">개인정보처리방침</a></li>
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="이용약관">이용약관</a></li>
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="저작권정책">저작권정책</a></li>
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="국민신문고">국민신문고</a></li>
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="정보공개">정보공개</a></li>
-            <li><a href="https://www.mmca.go.kr/civil/memberPolicy.do" target="_blank" alt="클린신고센터">클린신고센터</a></li>
-          </ul>
         </div>
-        <div class="shopicon_footer">
-          <a href="02-3701-9500"><img src="images/logo/tell.svg" alt="대표전화 통화버튼"></a>
-          <a href="https://www.mmcashop.co.kr/"><img src="images/logo/shop_color.svg" alt="온라인샵으로 통하는 아이콘"></a>
-        </div>        
-      </div>
-
-      <p class="copylight_footer">© 2021 National Museum of Modern and Contemporary Art, Korea<br>
-        이 사이트는 개인/팀의 교육 및 포트폴리오 용도로 제작되어 국립현대미술관의 지적재산권을 침해할 의도가 없습니다.<br>
-        모든 이미지 및 저작권은 국립현대미술관에 귀속되어 있습니다.</p>
-    </address>
+        <p class="copylight_footer">© 2021 National Museum of Modern and Contemporary Art, Korea<br>
+          이 사이트는 개인/팀의 교육 및 포트폴리오 용도로 제작되어 국립현대미술관의 지적재산권을 침해할 의도가 없습니다.<br>
+          모든 이미지 및 저작권은 국립현대미술관에 귀속되어 있습니다.</p>
+      </address>
   </footer>
 
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 <script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
 </body>
 </html>

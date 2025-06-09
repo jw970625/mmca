@@ -27,6 +27,8 @@ body{margin:auto;}
   text-align: center;
   padding: 10rem 0 4rem 0;}
 
+.eh_title img{width: 1rem; height: 2rem;}
+
 .eh_title h1{
   font-family: 'S-CoreDream-5Light';
   font-weight: bold;}
@@ -229,6 +231,7 @@ body{margin:auto;}
 .ev_item:hover{display: none;}
 .ev_items:after{display: none;}
 .ev_items:after:hover{display: none;}
+.ex_downmenu img{width: 1rem; height: 1rem;}
 .ex_downmenu{width: 100%;}
 }
 
@@ -289,6 +292,8 @@ body{margin:auto;}
   text-align: center;}
 
 .eh_title>img{
+  width: 1rem;
+  height: 2rem;
   transition: 0.3s;
   animation: ArrowAction 2s infinite;}
 

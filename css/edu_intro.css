@@ -15,15 +15,16 @@
   position: absolute;
   width: inherit;
   height: inherit;
-  margin-top: 120px;
   padding: 200px 0;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 #edu_intro .caption h2{
   text-align: center;
   margin: 30px;
-  padding: 55px;
+  padding: 55px auto 20px;
   font-size: 4.8rem;
   animation: title-ani 1.2s ease;
+  line-height: 5rem;
 }
 #edu_intro .caption p{
   margin: 50px;
@@ -31,6 +32,7 @@
   font-size: 2rem;
   color: var(--color-gray-100);
   animation: cap-ani 1.3 ease-in;
+  font-weight: 400;
 }
 #edu_intro .container .btn{
   width: 150px;
@@ -46,6 +48,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+#edu_intro .container .btn:hover{
+  background: #fff;
+  color: #333;
 }
 
 /* 애니메이션 */
@@ -100,9 +108,9 @@
   word-break: keep-all;
   }
   #edu_intro .caption h2{
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
   #edu_intro .caption p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 };
