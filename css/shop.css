@@ -525,4 +525,8 @@
   #shop .end_wrap .end_img img{
     height: 30rem;
   }
+
+  #shop .end_wrap .end_title h3{
+    font-size: 2.4rem;
+  }
 }
