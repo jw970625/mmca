@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 #main-edu .edu-top h2{
-  margin: 0 50px auto;
+  margin: 0 auto;
   color: var(--color-black);
   font-size: 4.4rem;
   line-height: 5.5rem;
@@ -34,7 +34,7 @@
   color: var(--color-black);
   font-size: 2.4rem;
   line-height: 4rem;
-  margin: 40px 50px 0;
+  margin: 0 auto;
 }
 
 /* 상단 신청버튼 */
@@ -45,7 +45,6 @@
   padding: 5px;
   width: 98px;
   height: 50%;
-  margin: 30px 50px 0;
   font-size: 1.8rem;
 }
 
@@ -157,7 +156,7 @@
 @media (max-width: 1400px){
   #main-edu .edu-top{
     width: 1100px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     word-break: keep-all;
   }
 }
@@ -189,7 +188,7 @@
   }
   #main-edu .edu-top{
     max-width: 700px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   #main-edu .edu-top h2{
     font-size: 4rem;
@@ -200,7 +199,7 @@
     max-width: 850px;
     font-size: 2rem;
     line-height: 2.8rem;
-    margin: 20px 55px 0;
+    /* margin: 20px 55px 0; */
     word-break: keep-all;
   }
   #program-list .slide-content h3{
@@ -221,7 +220,7 @@
     max-width: 750px;
     font-size: 1.8rem;
     line-height: 2.8rem;
-    margin: 20px 55px 0;
+    /* margin: 20px 55px 0; */
     word-break: keep-all;
   }
   #main-edu .edu-top .apply-btn-wrap .apply-btn{
