@@ -230,11 +230,11 @@
   
   #reservation .bg_wrap .bg_text{
     margin: auto;
-    left: 30%;
-    top: 35%;
+    text-align: center;
   }
   #reservation .bg_wrap .bg_text h2{
     text-align: center;
+    font-weight: bold;
   }
 
   #reservation .bg_wrap .bg_text p{
