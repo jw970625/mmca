@@ -58,6 +58,7 @@ body{margin:auto;}
   border: 1px solid #004747;
   border-radius: 1rem;
 }
+
 .eh_tab_btn img{width: 1.5rem; height: 1.5rem; margin-right: 0.2rem;}
 .eh_tab_btn.select{background-color: #004747; color: #fff;}
 .eh_tab_btn.select img{filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(326deg) brightness(103%) contrast(103%);}
