@@ -280,7 +280,7 @@
 #cheongju .map_wrap{
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30rem;
 }
 
 #cheongju .map_wrap iframe{
