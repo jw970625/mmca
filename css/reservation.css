@@ -133,6 +133,10 @@
   opacity: 0;
 }
 
+#reservation .cheongju_sec{
+  margin-bottom: 10rem;
+}
+
 /* Media Query */
 @media (max-width: 1200px){
   #reservation .container_wrap{
