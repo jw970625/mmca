@@ -262,9 +262,7 @@ body{margin:auto;}
   .ev_tit .ev_btns{
     flex-direction: column;
   }
-  #ev_all .ev_tit h3{
-    font-size: 2rem;
-  }
+  
 }
 
 
