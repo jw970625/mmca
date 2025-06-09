@@ -1,12 +1,12 @@
 @import url(style.css);
 
 #reservation .bg_sec .bg_wrap{
+  position: relative;
   width: 100%;
   height: 65rem;
 }
 
 #reservation .bg_sec .bg_wrap img{
-  position: relative;
   width: 100%;
   height: 65rem;
   object-fit: cover;
@@ -15,7 +15,7 @@
 #reservation .bg_wrap .bg_text{
   position: absolute;
   left: 10%;
-  top: 35%;
+  top: 45%;
   color: #fff;
 }
 
@@ -219,6 +219,7 @@
 @media (max-width: 540px){
   #reservation .bg_wrap .bg_text h2{
     font-size: 3.6rem;
+    font-weight: bold;
   }
 
   #reservation .bg_wrap .bg_text p{
@@ -234,7 +235,6 @@
   }
   #reservation .bg_wrap .bg_text h2{
     text-align: center;
-    font-weight: bold;
   }
 
   #reservation .bg_wrap .bg_text p{
