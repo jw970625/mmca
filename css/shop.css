@@ -44,7 +44,7 @@
   left: 13%;
   color: #fff;
 }
-#shop .main_text p{
+#shop .main_text h2{
   margin-top: 3rem;
   text-align: left;
   color: #fff;
@@ -70,16 +70,11 @@
 #shop .collection_sec{
   width: 100%;
   max-width: 140rem;
-  margin: auto;
+  margin: 3rem auto 0;
 }
 
 #shop .collection_title{
   text-align: left;
-}
-
-#shop .collection_title h2{
-  font-size: 3.2rem;
-  color: #333;
 }
 
 #shop .collection_wrap{
@@ -112,11 +107,6 @@
 
 #shop .publication_title{
   text-align: left;
-}
-
-#shop .publication_title h2{
-  font-size: 3.2rem;
-  color: #333;
 }
 
 #shop .publication_wrap{
@@ -276,16 +266,14 @@
   text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-#shop .end_wrap .end_title h3{
+#shop .end_wrap .end_title h1{
   text-align: center;
-  font-size: 4.4rem;
   color: #fff;
   padding-bottom: 3rem;
 }
 
-#shop .end_wrap .end_title p{
+#shop .end_wrap .end_title h2{
   text-align: center;
-  font-size: 1.8rem;
   color: #fff;
   padding-bottom: 5rem;
 }
@@ -397,13 +385,10 @@
 
   #shop .end_wrap .end_title h3{
   text-align: center;
-  font-size: 3rem;
-  padding-bottom: 1rem;
 }
 
-  #shop .end_wrap .end_title p{
+  #shop .end_wrap .end_title h2{
     text-align: center;
-    font-size: 1.8rem;
     padding-bottom: 5rem;
   }
 
@@ -414,17 +399,10 @@
 }
 
 @media (max-width: 540px){
-  #shop .main_text h2{
-    font-size: 3.2rem;
-  }
-
 
   #shop .collection_title{
     text-align: center;
     margin: 0;
-  }
-  #shop .collection_title h2{
-    font-size: 3rem;
   }
 
   #shop .collection_wrap .swiper-slide h3{
@@ -438,9 +416,6 @@
   #shop .publication_title{
     text-align: center;
     margin: 0;
-  }
-  #shop .publication_title h2{
-    font-size: 3rem;
   }
 
   #shop .publication_wrap .swiper-slide h3{
@@ -456,7 +431,7 @@
     height: 40rem;
   }
 
-  #shop .end_wrap .end_title p{
+  #shop .end_wrap .end_title h2{
     display: none;
   }
 }
@@ -464,10 +439,6 @@
 @media (max-width: 370px){
 
   #shop .main_text h2{
-    font-size: 2.8rem;
-  }
-
-  #shop .main_text p{
     display: none;
   }
 
@@ -476,10 +447,6 @@
     text-align: left;
   }
 
-  #shop .collection_title h2{
-    font-size: 2.4rem;
-  }
-  
   #shop .collection_wrap .swiper-slide h3{
     font-size: 1.8rem;
   }
@@ -487,19 +454,11 @@
     font-size: 1.6rem;
   }
 
-  #shop .publication_title h2{
-    font-size: 2.4rem;
-  }
-
   #shop .publication_wrap .swiper-slide h3{
     font-size: 1.8rem;
   }
   #shop .publication_wrap .swiper-slide p{
     font-size: 1.6rem;
-  }
-
-  #shop .edition_wrap .edition_box h3{
-    font-size: 2.4rem;
   }
 
   #shop .edition_wrap .edition_box p{
@@ -511,19 +470,11 @@
   margin-bottom: 1rem;
 }
 
-  #shop .story_wrap .story_box h3{
-    font-size: 2.4rem;
-  }
-
   #shop .story_wrap .story_box p{
     font-size: 1.4rem;
   }
 
   #shop .end_wrap .end_img img{
     height: 30rem;
-  }
-
-  #shop .end_wrap .end_title h3{
-    font-size: 2.4rem;
   }
 }
