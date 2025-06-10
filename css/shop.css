@@ -70,7 +70,7 @@
 #shop .collection_sec{
   width: 100%;
   max-width: 140rem;
-  margin: 5rem auto 5rem;
+  margin: auto;
 }
 
 #shop .collection_title{
@@ -103,14 +103,15 @@
 }
 
 /* publication_sec */
+
 #shop .publication_sec{
-  margin: 5rem auto 10rem;
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
 }
 
 #shop .publication_title{
   text-align: left;
-  width: 100%;
-  max-width: 140rem;
 }
 
 #shop .publication_title h2{
@@ -142,7 +143,7 @@
 #shop .edition_sec{
   width: 100%;
   max-width: 140rem;
-  margin: 20rem auto 0;
+  margin: auto;
 }
 
 #shop .edition_wrap{
@@ -199,7 +200,7 @@
 #shop .story_sec{
   width: 100%;
   max-width: 140rem;
-  margin: 20rem auto 30rem;
+  margin: auto;
 }
 
 #shop .story_wrap{

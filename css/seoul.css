@@ -143,11 +143,8 @@
 }
 
 /* education_sec */
-#seoul .education_sec{
-  margin-top: 5rem;
-}
+
 #seoul .education_sec .swiper{
-  margin-top: 5rem;
   width: 100%;
 }
 
@@ -290,10 +287,6 @@
 
 /* Media Query */
 @media (max-width: 1400px){
-  #seoul .container_wrap{
-    padding: 0 1.5rem;
-    margin: auto;
-  }
 
   /* bg_sec */
   #seoul .bg_sec .bg_text h2{
@@ -324,6 +317,9 @@
 
 
 @media (max-width: 1200px){
+  #seoul .container_wrap{
+    padding: 0 2rem;
+  }
   
   #seoul .bg_img img{
     height: 80rem;
@@ -397,10 +393,6 @@
 }
 
 @media (max-width:540px){
-  #seoul .container_wrap{
-    padding: 0 1.5rem;
-  }
-
   #seoul .bg_img img{
     height: 60rem;
     object-fit: cover;
