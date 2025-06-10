@@ -19,14 +19,12 @@
   color: #fff;
 }
 
-#reservation .bg_wrap .bg_text h2{
-  font-size: 4.2rem;
+#reservation .bg_wrap .bg_text h1{
   margin-bottom: 3rem;
   text-shadow: 0 0 2px rgba(0,0,0,0.5);
-  font-weight: bold;
 }
 
-#reservation .bg_wrap .bg_text p{
+#reservation .bg_wrap .bg_text h2{
   font-size: 2rem;
   text-shadow: 0 0 2px rgba(0,0,0,0.5);
   color: #fff;
@@ -63,28 +61,32 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  gap: 5rem;
-  max-width: 130rem;
+  gap: 3rem;
 }
 
 #reservation .reser_wrap .reserbox{
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 
 #reservation section .reserimg{
-  width: 50%;
+  width: 100%;
   object-fit: cover;
 }
 
 #reservation section .reserimg img{
   display: block;
-  width: 80%;
+  width: 100%;
 }
 
 #reservation section .resertext{
-  width: 50%;
+  width: 100%;
+}
+
+#reservation section table{
+  min-width: 100%;
 }
 
 #reservation section .resertext table .reser_title tr th{
@@ -133,14 +135,10 @@
   opacity: 0;
 }
 
-#reservation .cheongju_sec{
-  margin-bottom: 10rem;
-}
-
 /* Media Query */
 @media (max-width: 1200px){
   #reservation .container_wrap{
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   #reservation .reserbox:last-child{
@@ -156,14 +154,14 @@
   }
 
   #reservation .reserbox .reserimg{
-    width: 30%;
+    width: 100%;
   }
 }
 
 @media (max-width: 768px){
   
   #reservation .reserbox .reserimg{
-    width: 30%;
+    width: 100%;
   }
 
   #reservation section .resertext table .reser_title tr th{
@@ -196,7 +194,7 @@
     width: 100%;
   }
   #reservation .reser_wrap .reserbox .reserimg img{
-    width: 65%;
+    width: 100%;
     display: block;
     margin: auto;
   }
@@ -207,7 +205,6 @@
 
   #reservation .reser_wrap .reserbox .resertext table{
     margin: auto;
-    width: 80%;
   }
 
   #reservation section .resertext .btn{
@@ -216,28 +213,13 @@
   
 } 
 
-@media (max-width: 540px){
-  #reservation .bg_wrap .bg_text h2{
-    font-size: 3.6rem;
-    font-weight: bold;
-  }
-
-  #reservation .bg_wrap .bg_text p{
-    font-size: 2rem;
-  }
-}
-
 @media (max-width: 320px){
-  
-  #reservation .bg_wrap .bg_text{
-    margin: auto;
-    text-align: center;
-  }
-  #reservation .bg_wrap .bg_text h2{
-    text-align: center;
-  }
 
-  #reservation .bg_wrap .bg_text p{
+  #reservation .bg_wrap .bg_text h1{
+    margin: auto;
+  }
+  
+  #reservation .bg_wrap .bg_text h2{
     display: none;
   }
 
