@@ -208,7 +208,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
+  border: 1px solid #666;
 }
 
 #seoul .floor_wrap .floor_header{
@@ -226,6 +226,9 @@
   color:#333;
   font-size: 2.4rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #seoul .floor_header .floor li.active{
@@ -284,13 +287,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
-  /* exhibition_sec */
   #seoul .exhibition_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
   }
 
-  /* education_sec */
   #seoul .education_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
@@ -336,7 +337,7 @@
 
   #seoul .floor_header .floor li{
     font-size: 2rem;
-    border: 1px solid #000;
+    height: 5rem;
   }
 }
 

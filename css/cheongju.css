@@ -4,6 +4,7 @@
 /* bg_sec */
 #cheongju .bg_sec{
   position: relative;
+  padding: 0;
 }
 
 #cheongju .bg_img{
@@ -23,7 +24,7 @@
   text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
 }
 
-#cheongju .bg_sec .bg_text h2{
+#cheongju .bg_sec .bg_text h1{
   text-align: center;
   color: #fff;
   margin-bottom: 4rem;
@@ -31,30 +32,28 @@
   line-height: 4rem;
 }
 
-#cheongju .bg_sec .bg_text p{
+#cheongju .bg_sec .bg_text h2{
   text-align: center;
   color: #fff;
-  font-size: 2.4rem;
 }
 
 #cheongju .bg_sec .time_sec{
   width: 100%;
   height: 10%;
-  display: flex;
   bottom: 0;
+  display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
   column-gap: 4rem;
   background: rgba(240, 240, 240, 0.8);
-  padding: 0 0.3rem;
 }
 
 #cheongju .bg_sec .time_sec p{
   font-size: 2rem;
   color: #333;
   font-weight: 400;
-  text-align: center
+  text-align: center;
 }
 
 #cheongju .bg_sec .time_sec p.bold{
@@ -85,6 +84,7 @@
 }
 
 /* common */
+
 #cheongju .container_wrap{
   width: 100%;
   max-width: 140rem;
@@ -92,15 +92,12 @@
 }
 
 #cheongju .btn{
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 7rem auto 10rem;
+  margin: 7rem auto 5rem;
 }
 
 #cheongju .btn h3{
-  font-size: 2.8rem;
-  font-weight: 600;
   color: #333;
 }
 
@@ -126,30 +123,25 @@
 #cheongju .exhibition_sec .swiper{
   margin-top: 5rem;
   width: 100%;
-  max-width: 130rem;
   height: 40%;
 }
 
 #cheongju .exhibition_sec .swiper-slide {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #cheongju .exhibition_sec .swiper-slide img {
-  width: 65%;
+  width: 100%;
   display: block;
   object-fit: cover;
   margin: auto;
 }
 
 /* education_sec */
-#cheongju .education_sec{
-  margin-top: 5rem;
-}
+
 #cheongju .education_sec .swiper{
-  margin-top: 5rem;
   width: 100%;
 }
 
@@ -167,7 +159,7 @@
 #cheongju .education_sec .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 65%;
+  width: 100%;
 }
 
 /* watch_sec */
@@ -214,26 +206,29 @@
 /* floor_sec */
 #cheongju .floor_wrap{
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  border: 1px solid #666;
 }
 
 #cheongju .floor_wrap .floor_header{
-  width: 100%;
-  max-width: 15%;
+  width: 20%;
 }
 
+#cheongju .floor_header .floor{
+  height: 100%;
+}
 
 #cheongju .floor_header .floor li{
   width: 100%;
+  height: 20%;
   border-bottom:1px solid #f0f0f0;
   color:#333;
-  font-size:1.6rem;
   font-size: 2.4rem;
   text-align: center;
-  line-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cheongju .floor_header .floor li.active{
@@ -243,7 +238,7 @@
 
 #cheongju .floor_img{
   width: 100%;
-  margin: auto;
+  object-fit: cover;
 }
 
 #cheongju .floor_img div{
@@ -253,23 +248,24 @@
 #cheongju .floor_img .img_box{
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
 }
 
 #cheongju .floor_img .img_box img:nth-child(1){
   display: block;
-  width: 40%;
-  margin: auto;
+  width: 100%;
 }
 
 #cheongju .floor_img .img_box img:nth-of-type(2){
   display: block;
-  width: 30%;
+  width: 100%;
 }
 
 #cheongju .floor_img .img_box img:nth-of-type(3){
   display: none;
-  width: 45%;
+  width: 100%;
 }
 
 #cheongju .floor_img div.active{
@@ -280,7 +276,6 @@
 #cheongju .map_wrap{
   width: 100%;
   height: 100%;
-  margin: 0 auto 30rem;
 }
 
 #cheongju .map_wrap iframe{
@@ -292,23 +287,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
-  #cheongju .container_wrap{
-    padding: 0 1.5rem;
-    margin: auto;
-  }
-
-  /* bg_sec */
-  #cheongju .bg_sec .bg_text h2{
-    font-size: 3.6rem;
-  }
-
-  /* exhibition_sec */
   #cheongju .exhibition_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
   }
 
-  /* education_sec */
   #cheongju .education_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
@@ -319,54 +302,42 @@
   }
 
   #cheongju .watch_table {
-    width: max-content;
+    width: 100%;
     white-space: nowrap;
   }
 }
 
 
 @media (max-width: 1200px){
+  #cheongju .container_wrap{
+    padding: 0 2rem;
+  }
+  
   #cheongju .bg_img img{
     height: 80rem;
     object-fit: cover;
   }
 
   #cheongju .floor_wrap{
+    width: 100%;
     flex-direction: column;
-    width: 80%;
+    justify-content: center;
   }
 
-  #cheongju .floor_header{
-    min-width: 100%;
+  #cheongju .floor_wrap .floor_header{
+    width: 100%;
   }
 
   #cheongju .floor_header .floor{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #cheongju .floor_header .floor li{
-    height: 5rem;
-    line-height: 5rem;
     font-size: 2rem;
-  }
-}
-
-
-@media (max-width: 670px){
-  #cheongju .bg_sec .bg_text h2{
-    font-size: 3.2rem;
-  }
-
-  #cheongju .bg_sec .time_sec p{
-    font-size: 1.6rem;
-  }
-
-  #cheongju .navbar .navi{
-    gap: 4rem;
-  }
-
-  #cheongju .navbar .navi li a{
-    font-size: 1.8rem;
+    height: 5rem;
   }
 }
 
@@ -398,31 +369,34 @@
   }
 }
 
-@media (max-width:540px){
-  #cheongju .container_wrap{
-    padding: 0 1.5rem;
+@media (max-width: 670px){
+  
+  #cheongju .bg_sec .time_sec p{
+    font-size: 1.8rem;
   }
 
+  #cheongju .navbar .navi{
+    gap: 4rem;
+  }
+
+  #cheongju .navbar .navi li a{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:540px){
   #cheongju .bg_img img{
     height: 60rem;
     object-fit: cover;
   }
 
-  #cheongju .btn h3{
-    font-size: 2.2rem;
-  }
-  
-  #cheongju .bg_sec .bg_text h2{
-    font-size: 3rem;
-  }
-
-  #cheongju .bg_sec .bg_text p{
-    font-size: 2rem;
-  }
-
   #cheongju .bg_sec .time_sec{
     flex-direction: column;
     height: 20%;
+  }
+
+  #cheongju .bg_sec .bg_text h2{
+    display: none;
   }
 }
 
@@ -432,15 +406,8 @@
     object-fit: cover;
   }
 
-  #cheongju .bg_sec .bg_text h2{
-    font-size: 2.6rem;
-  }
-
-  #cheongju .bg_sec .bg_text p{
-    display: none;
-  }
-
   #cheongju .bg_sec .time_sec p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
+  
 }

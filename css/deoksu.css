@@ -4,6 +4,7 @@
 /* bg_sec */
 #deoksu .bg_sec{
   position: relative;
+  padding: 0;
 }
 
 #deoksu .bg_img{
@@ -17,37 +18,35 @@
 
 #deoksu .bg_sec .bg_text{
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
 }
 
-#deoksu .bg_sec .bg_text h2{
-  margin-bottom: 4rem;
+#deoksu .bg_sec .bg_text h1{
   text-align: center;
   color: #fff;
+  margin-bottom: 4rem;
   word-break: keep-all;
   line-height: 4rem;
 }
 
-#deoksu .bg_sec .bg_text p{
+#deoksu .bg_sec .bg_text h2{
   text-align: center;
   color: #fff;
-  font-size: 2.4rem;
 }
 
 #deoksu .bg_sec .time_sec{
   width: 100%;
   height: 10%;
-  display: flex;
   bottom: 0;
+  display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
   column-gap: 4rem;
   background: rgba(240, 240, 240, 0.8);
-  padding: 0 0.3rem;
 }
 
 #deoksu .bg_sec .time_sec p{
@@ -70,7 +69,7 @@
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  margin: 3rem auto 0;
+  margin: auto;
 }
 
 #deoksu .navbar .navi li a{
@@ -85,6 +84,7 @@
 }
 
 /* common */
+
 #deoksu .container_wrap{
   width: 100%;
   max-width: 140rem;
@@ -92,15 +92,12 @@
 }
 
 #deoksu .btn{
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 7rem auto 10rem;
+  margin: 7rem auto 5rem;
 }
 
 #deoksu .btn h3{
-  font-size: 2.8rem;
-  font-weight: 600;
   color: #333;
 }
 
@@ -133,24 +130,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 #deoksu .exhibition_sec .swiper-slide img {
-  width: 60%;
+  width: 100%;
   display: block;
   object-fit: cover;
+  margin: auto;
 }
 
 /* education_sec */
-#deoksu .education_sec{
-  margin-top: 5rem;
-}
-/* #deoksu .education_sec .swiper{
-  margin-top: 5rem;
+
+#deoksu .education_sec .swiper{
   width: 100%;
-  max-width: 130rem;
 }
 
 #deoksu .education_sec .swiper-wrapper{
@@ -167,19 +159,7 @@
 #deoksu .education_sec .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 65%;
-} */
-
-#deoksu .education_sec .no_swiper{
   width: 100%;
-  height: 50rem;
-  margin: auto;
-  text-align: center;
-}
-
-#deoksu .education_sec .no_swiper p{
-  line-height: 50rem;
-  font-size: 2.4rem;
 }
 
 /* watch_sec */
@@ -226,26 +206,29 @@
 /* floor_sec */
 #deoksu .floor_wrap{
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  border: 1px solid #666;
 }
 
 #deoksu .floor_wrap .floor_header{
-  width: 100%;
-  max-width: 15%;
+  width: 20%;
 }
 
+#deoksu .floor_header .floor{
+  height: 100%;
+}
 
 #deoksu .floor_header .floor li{
   width: 100%;
+  height: 33.33%;
   border-bottom:1px solid #f0f0f0;
   color:#333;
-  font-size:1.6rem;
   font-size: 2.4rem;
   text-align: center;
-  line-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #deoksu .floor_header .floor li.active{
@@ -255,7 +238,7 @@
 
 #deoksu .floor_img{
   width: 100%;
-  margin: auto;
+  object-fit: cover;
 }
 
 #deoksu .floor_img div{
@@ -265,23 +248,24 @@
 #deoksu .floor_img .img_box{
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
 }
 
 #deoksu .floor_img .img_box img:nth-child(1){
   display: block;
-  width: 40%;
-  margin: auto;
+  width: 100%;
 }
 
 #deoksu .floor_img .img_box img:nth-of-type(2){
   display: block;
-  width: 30%;
+  width: 100%;
 }
 
 #deoksu .floor_img .img_box img:nth-of-type(3){
   display: none;
-  width: 45%;
+  width: 100%;
 }
 
 #deoksu .floor_img div.active{
@@ -292,7 +276,6 @@
 #deoksu .map_wrap{
   width: 100%;
   height: 100%;
-  margin: 0 auto 30rem;
 }
 
 #deoksu .map_wrap iframe{
@@ -304,23 +287,11 @@
 
 /* Media Query */
 @media (max-width: 1400px){
-  #deoksu .container_wrap{
-    padding: 0 1.5rem;
-    margin: auto;
-  }
-
-  /* bg_sec */
-  #deoksu .bg_sec .bg_text h2{
-    font-size: 3.6rem;
-  }
-
-  /* exhibition_sec */
   #deoksu .exhibition_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
   }
 
-  /* education_sec */
   #deoksu .education_sec .swiper-wrapper{
   width: 100%;
   margin: auto;
@@ -331,54 +302,42 @@
   }
 
   #deoksu .watch_table {
-    width: max-content;
+    width: 100%;
     white-space: nowrap;
   }
 }
 
 
 @media (max-width: 1200px){
+  #deoksu .container_wrap{
+    padding: 0 2rem;
+  }
+  
   #deoksu .bg_img img{
     height: 80rem;
     object-fit: cover;
   }
 
   #deoksu .floor_wrap{
+    width: 100%;
     flex-direction: column;
-    width: 80%;
+    justify-content: center;
   }
 
-  #deoksu .floor_header{
-    min-width: 100%;
+  #deoksu .floor_wrap .floor_header{
+    width: 100%;
   }
 
   #deoksu .floor_header .floor{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #deoksu .floor_header .floor li{
-    height: 5rem;
-    line-height: 5rem;
     font-size: 2rem;
-  }
-}
-
-
-@media (max-width: 670px){
-  #deoksu .bg_sec .bg_text h2{
-    font-size: 3.2rem;
-  }
-
-  #deoksu .bg_sec .time_sec p{
-    font-size: 1.6rem;
-  }
-
-  #deoksu .navbar .navi{
-    gap: 4rem;
-  }
-
-  #deoksu .navbar .navi li a{
-    font-size: 1.8rem;
+    height: 5rem;
   }
 }
 
@@ -410,11 +369,22 @@
   }
 }
 
-@media (max-width:540px){
-  #deoksu .container_wrap{
-    padding: 0 1.5rem;
+@media (max-width: 670px){
+  
+  #deoksu .bg_sec .time_sec p{
+    font-size: 1.8rem;
   }
 
+  #deoksu .navbar .navi{
+    gap: 4rem;
+  }
+
+  #deoksu .navbar .navi li a{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:540px){
   #deoksu .bg_img img{
     height: 60rem;
     object-fit: cover;
@@ -425,21 +395,8 @@
     height: 20%;
   }
 
-  #deoksu .btn h3{
-    font-size: 2.2rem;
-  }
-
-  #deoksu .btn a{
-    font-size: 1.6rem;
-  }
-
-  #deoksu .education_sec .no_swiper{
-    height: 30rem;
-  }
-
-  #deoksu .education_sec .no_swiper p{
-    line-height: 30rem;
-    font-size: 1.6rem;
+  #deoksu .bg_sec .bg_text h2{
+    display: none;
   }
 }
 
@@ -449,16 +406,8 @@
     object-fit: cover;
   }
 
-  #deoksu .bg_sec .bg_text h2{
-    font-size: 2.6rem;
-    line-height: 4rem;
-  }
-
-  #deoksu .bg_sec .bg_text p{
-    display: none;
-  }
-
   #deoksu .bg_sec .time_sec p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
+  
 }
