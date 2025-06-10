@@ -13,11 +13,11 @@
   --color-gray-900: #999;
 }
 
-
 *{ /* 추가 */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-break: keep-all;
 }
   
 html {
@@ -35,7 +35,7 @@ body { /* 본문 Noto Sans KR */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'SCoreDream', sans-serif;
   line-height: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -66,4 +66,29 @@ li{
 .container_fluid{
   width: 100%;
   margin: 0 auto;
+}
+
+section{
+  padding: 12rem 0;
+}
+
+/* 사이즈별 공통 변화 부분 */
+@media (max-width: 1200px){
+  section{
+    padding: 10rem 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 540px){
+  section{
+    padding: 8rem 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 3rem;
+  }
 }

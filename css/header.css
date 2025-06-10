@@ -123,7 +123,6 @@ ul.gnb{
   background-color: #fff;
   z-index: 99;
   margin: auto;
-  padding: 0 1.5rem;
 }
 
 .tab_header_left,
@@ -272,7 +271,7 @@ ul.gnb{
 
 @media (max-width:1400px){
   .header_wrap{
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 }
 

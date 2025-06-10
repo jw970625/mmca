@@ -136,7 +136,7 @@
 }
 
 #seoul .exhibition_sec .swiper-slide img {
-  width: 65%;
+  width: 100%;
   display: block;
   object-fit: cover;
   margin: auto;
@@ -165,7 +165,7 @@
 #seoul .education_sec .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 65%;
+  width: 100%;
 }
 
 /* watch_sec */
