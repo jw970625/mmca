@@ -69,13 +69,13 @@ li{
 }
 
 section{
-  padding: 12rem 0;
+  padding: 0 0 12rem;
 }
 
 /* 사이즈별 공통 변화 부분 */
 @media (max-width: 1200px){
   section{
-    padding: 10rem 0;
+    padding: 0 0 10rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -85,7 +85,7 @@ section{
 
 @media (max-width: 540px){
   section{
-    padding: 8rem 0;
+    padding: 0 0 8rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
