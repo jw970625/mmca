@@ -1,8 +1,5 @@
-@font-face {
-  font-family: 'S-CoreDream';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); 
-}
-#index h1, h2, h3, h4{
+
+#index h1, h3, h4{
   font-family: 'S-CoreDream';
 }
 

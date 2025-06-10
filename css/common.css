@@ -32,10 +32,8 @@ body { /* 본문 Noto Sans KR */
 }
 
 /* 제목 태그 S-Core Dream */
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: 'SCoreDream', sans-serif;
-  line-height: 2.5rem;
-  margin-bottom: 5rem;
 }
 
 h1 {
@@ -44,12 +42,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.8rem; /* 타이틀 내용 */
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2.4rem; /* 타이틀 내용 */
   font-weight: 400;
 }
 
 h3{
-  font-size: 3.2rem; /* 섹션 제목 */
+  font-size: 2.8rem; /* 섹션 제목 */
   font-weight: 600;
 }
 
@@ -62,6 +61,10 @@ a{
 }
 li{
   list-style-type: none;  /*목록에 점 없애기 */
+}
+
+img{
+  width: 100%;
 }
 
 /* 추가 */
@@ -86,9 +89,6 @@ section{
     padding: 0 0 10rem;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 4rem;
-  }
 }
 
 @media (max-width: 768px){
@@ -97,11 +97,11 @@ section{
   }
 
   h2{
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   h3{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -110,20 +110,16 @@ section{
     padding: 0 0 8rem;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 3rem;
-  }
-
   h1{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 
   h2{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   h3{
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   
 }

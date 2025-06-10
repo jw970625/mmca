@@ -32,10 +32,9 @@
   line-height: 4rem;
 }
 
-#seoul .bg_sec .bg_text p{
+#seoul .bg_sec .bg_text h2{
   text-align: center;
   color: #fff;
-  font-size: 2.4rem;
 }
 
 #seoul .bg_sec .time_sec{
@@ -48,7 +47,6 @@
   justify-content: center;
   column-gap: 4rem;
   background: rgba(240, 240, 240, 0.8);
-  border: 1px solid #000;
 }
 
 #seoul .bg_sec .time_sec p{
@@ -100,8 +98,6 @@
 }
 
 #seoul .btn h3{
-  font-size: 2.8rem;
-  font-weight: 600;
   color: #333;
 }
 
@@ -225,12 +221,11 @@
 
 #seoul .floor_header .floor li{
   width: 100%;
+  height: 25%;
   border-bottom:1px solid #f0f0f0;
   color:#333;
-  font-size:1.6rem;
   font-size: 2.4rem;
   text-align: center;
-  padding: 25%;
 }
 
 #seoul .floor_header .floor li.active{
@@ -278,7 +273,6 @@
 #seoul .map_wrap{
   width: 100%;
   height: 100%;
-  margin: 0 auto 30rem;
 }
 
 #seoul .map_wrap iframe{
@@ -290,12 +284,6 @@
 
 /* Media Query */
 @media (max-width: 1400px){
-
-  /* bg_sec */
-  #seoul .bg_sec .bg_text h2{
-    font-size: 3.6rem;
-  }
-
   /* exhibition_sec */
   #seoul .exhibition_sec .swiper-wrapper{
   width: 100%;
@@ -335,13 +323,15 @@
     justify-content: center;
   }
 
-  #seoul .floor_header{
+  #seoul .floor_wrap .floor_header{
     width: 100%;
   }
 
   #seoul .floor_header .floor{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #seoul .floor_header .floor li{
@@ -399,20 +389,12 @@
     object-fit: cover;
   }
 
-  #seoul .btn h3{
-    font-size: 2.2rem;
-  }
-
-  #seoul .bg_sec .bg_text h2{
-    font-size: 3rem;
-  }
-
   #seoul .bg_sec .time_sec{
     flex-direction: column;
     height: 20%;
   }
 
-  #seoul .bg_sec .bg_text p{
+  #seoul .bg_sec .bg_text h2{
     display: none;
   }
 }
@@ -421,11 +403,6 @@
   #seoul .bg_img img{
     height: 50rem;
     object-fit: cover;
-  }
-
-  #seoul .bg_sec .bg_text h2{
-    font-size: 2.6rem;
-    line-height: 4rem;
   }
 
   #seoul .bg_sec .time_sec p{
