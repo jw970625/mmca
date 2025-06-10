@@ -39,10 +39,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4.8rem; /* 30px */
+  font-size: 4.8rem; /* 타이틀 */
+  font-weight: 600;
 }
+
 h2 {
-  font-size: 4.4rem; /* 24px */
+  font-size: 2.8rem; /* 타이틀 내용 */
+  font-weight: 400;
+}
+
+h3{
+  font-size: 3.2rem; /* 섹션 제목 */
+  font-weight: 600;
 }
 
 p, a {
@@ -83,6 +91,20 @@ section{
   }
 }
 
+@media (max-width: 768px){
+  h1{
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 2.4rem;
+  }
+
+  h3{
+    font-size: 2.8rem;
+  }
+}
+
 @media (max-width: 540px){
   section{
     padding: 0 0 8rem;
@@ -91,4 +113,17 @@ section{
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3rem;
   }
+
+  h1{
+    font-size: 2.8rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 2.4rem;
+  }
+  
 }
