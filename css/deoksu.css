@@ -141,8 +141,19 @@
 
 /* education_sec */
 
+#deoksu .education_sec{
+  width: 100%;
+  height: 60rem;
+  margin: auto;
+}
+
 #deoksu .education_sec .swiper{
   width: 100%;
+}
+
+#deoksu .education_sec .no_swiper h3{
+  padding-top: 20rem;
+  text-align: center;
 }
 
 #deoksu .education_sec .swiper-wrapper{
