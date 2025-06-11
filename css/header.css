@@ -152,11 +152,13 @@ ul.gnb{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.4rem;
   color: #333;
   margin: 3rem auto 0;
   /* border: 1px solid #000; */
 }
+
 .menu_user a {
   text-decoration: none;
   color: #333;
