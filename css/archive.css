@@ -1,5 +1,5 @@
 @import url(reset.css);
-.hd-img img{
+.top-img img{
   width: 100%;
   height: 30rem;
   object-fit: cover;
@@ -7,38 +7,30 @@
 }
 #collection{
   width: 100%;
-  padding: 200px 0 80px 0;
+  padding: 80px 0;
   text-align: center;
 }
-#collection .collection-title h2{
-  padding: 5px;
-  margin: 40px;
-  max-width: 140rem;
-  margin: 0 auto;
-  word-break: keep-all;
-  line-height: 5.5rem;
-  font-weight: bold;
+#collection .collection-title h1{
+  margin: 5rem;
+  line-height: 4.5rem;
 }
 
-#collection .collection-title p{
+#collection .collection-title p.notice{
   font-size: 1.8rem;
-  margin-top: 40px;
   line-height: 3.2rem;
-  word-break: keep-all;
 }
-#collection .collection-title strong {
+#collection .collection-title .notice strong {
   color: var(--color-primary);
-  /* font-size: 1.8rem; */
   font-weight: 800;
 }
 
 /* 검색창 */
-#collection .search {
+#collection .search{
   padding: 5px;
   max-width: 140rem;
   margin: 25px auto;
 }
-#collection .search .search-input {
+#collection .search .search-input{
   border: 1px solid black;
   background-color: transparent;
   width: 480px;
@@ -70,10 +62,8 @@
 }
 
 #archive .image-container .art-items .art-sec{
-  opacity: 0;
   width: 100%;
   transform: translateY(50px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 #archive .image-container .art-items img{
   width: 100%;
@@ -84,28 +74,32 @@
 }
 
 /* 작품명 */
-#archive .image-container .art-items .art-info h3{
+#archive .image-container .art-items .art-info h6{
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   min-height: 5rem;
   font-weight: bold;
   letter-spacing: 0px;
 }
-#archive .image-container .art-items .art-info p{
+#archive .image-container .art-items .art-info p.since{
   padding-top: 8px;
   margin-top: 0px auto;
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--color-gray-600);
 }
-
 #archive .image-container .art-items .art-sec .see-more{
   border: 1px solid #000;
   width: 100px;
   height: 35px;
   text-align: center;
   font-size: 1.8rem;
+} 
+#archive .image-container .art-items .art-sec .see-more:hover{
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #000;
 }
 
 /* 페이지 */
@@ -128,9 +122,12 @@
 #more .page-num a{
   margin: 30px;
 }
-#more .page-num a:hover {
+#more .page-num a:hover{
   color: var(--color-primary);
+  font-weight: bold;
 }
+
+
 
 /* PC ~1400px */
 @media (max-width: 1300px) {
@@ -144,7 +141,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   #archive .image-container .art-items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -152,9 +149,9 @@
     width: 100%;
   }
   #collection{
-    padding: 200px 3rem 80px;
+    padding: 3rem 80px;
   }
-  #archive .art-info h3{
+  #archive .art-info h6{
     font-size: 2.6rem;
   }
   #archive .art-info p.since{
@@ -176,8 +173,8 @@
   #archive .image-container .art-items {
     grid-template-columns: repeat(1, 1fr);
   }
-  #archive .art-info h3{
-    font-size: 3rem;
+  #archive .art-info h6{
+    font-size: 1.8rem;
   }
   #archive .art-info p.since{
     font-size: 2.6rem;

@@ -1,40 +1,34 @@
 @import url(reset.css);
 /* 상단 제목 */
-.hd-img img{
+.top-img img{
   width: 100%;
   height: 30rem;
   background-position: top;
 }
 #main-edu .edu-top{
   width: 100%;
-  max-width: 1400px;
-  height: 300px;
-  margin: 0 auto;
-  padding: 60px 0;
+  padding: 80px 0;
+  margin-left: 50px;
 }
 
 /* 상단 텍스트 */
 #main-edu .info-wrap{
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: auto 20px;
   padding-top: 50px;
   box-sizing: border-box;
 }
-#main-edu .edu-top h2{
-  margin: 0 auto;
+#main-edu .edu-top h1{
   color: var(--color-black);
   font-size: 4.4rem;
   line-height: 5.5rem;
-  font-weight: bold;
+  margin-bottom: 50px;
 }
-#main-edu .edu-top p{
+#main-edu .edu-top h2{
   max-width: 1400px;
   width: 100%;
   color: var(--color-black);
   font-size: 2.4rem;
   line-height: 4rem;
-  margin: 0 auto;
 }
 
 /* 상단 신청버튼 */
@@ -45,7 +39,12 @@
   padding: 5px;
   width: 98px;
   height: 50%;
+  margin: 10px auto ;
   font-size: 1.8rem;
+}
+#main-edu .edu-top .apply-btn-wrap .apply-btn:hover{
+  background-color: #222;
+  color: #fff;
 }
 
 #program-list{
@@ -57,7 +56,6 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 50px 0;
   box-sizing: border-box;
 }
 
@@ -93,7 +91,7 @@
   transition: transform 0.3 ease-in;
 }
 #program-list .swiper-slide img{
-  width: 100%;
+  /* width: 100%; */
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -112,14 +110,13 @@
   font-size: 1.8em;
   color: #333;
   margin: 20px auto;
-  font-weight: bold;
+
 }
 
 #program-list .slide-content p{
   font-size: 1.2em;
   color: #666;
   letter-spacing: 0;
-  word-break: keep-all;
 }
 #program-list .slide-content p strong{
   text-transform: capitalize;
@@ -137,12 +134,15 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  right: 30px;
 }
 #program-list .slide-content .slide-arrow:hover{
   background-color: #003d3d;
   cursor: pointer;
-  transform: translateY(5px);
+  transform: translateX(5px);
   transition: 0.3s ease-in;
 }
 
@@ -153,58 +153,31 @@
 }
 
 /* PC ~1400px */
-@media (max-width: 1400px){
-  #main-edu .edu-top{
-    width: 1100px;
-    /* margin-left: 30px; */
-    word-break: keep-all;
-  }
+@media(max-width: 1400px){
 }
 @media (max-width: 1200px){
   #main-edu .edu-top{
-    margin: 60px;
-    padding-top: 100px;
-    word-break: keep-all;
-    max-width: 900px;
+
   }
 }
 @media (max-width: 1000px){
-  #main-edu .edu-top{
-    max-width: 900px;
-    margin-top: 10px;
-  }
-  #main-edu .edu-top p{
-    width: auto;
-    max-width: 950px;
-    font-size: 2.2rem;
-    word-break: keep-all;
-  }
+
 }
 
 
-@media (max-width: 890px){
-  #main-edu .info-wrap{
-    padding-top: 5px;
-  }
-  #main-edu .edu-top{
-    max-width: 700px;
-    /* margin-left: 10px; */
-  }
+@media (max-width: 920px){
   #main-edu .edu-top h2{
     font-size: 4rem;
     word-break: keep-all;
   }
   #main-edu .edu-top p{
-    width: auto;
-    max-width: 850px;
     font-size: 2rem;
-    line-height: 2.8rem;
-    /* margin: 20px 55px 0; */
+    line-height: 3.8rem;
     word-break: keep-all;
   }
   #program-list .slide-content h3{
     font-size: 2.2rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 }
 
@@ -216,11 +189,8 @@
     font-size: 4rem;
   }
   #main-edu .edu-top p{
-    width: auto;
-    max-width: 750px;
     font-size: 1.8rem;
     line-height: 2.8rem;
-    /* margin: 20px 55px 0; */
     word-break: keep-all;
   }
   #main-edu .edu-top .apply-btn-wrap .apply-btn{
@@ -241,7 +211,7 @@
 }
 
 
-@media(max-width: 570px){
+@media(max-width: 590px){
   #main-edu .edu-top{
     max-width: 480px;
     word-break: keep-all;

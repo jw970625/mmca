@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>국립현대미술관>소장품</title>
+    <title>소장품</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="images/logo/icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
   <body>
     <header>
@@ -67,9 +68,9 @@
       </div>
       <div class="tab_header">
         <div class="header_wrap">
-          <div class="tab_header_left">
+          <!-- <div class="tab_header_left">
             <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
-          </div>
+          </div> -->
           <div class="tab_header_logo">
             <a href="index.html">
               <img src="images/ui/ui_logo.png" alt="로고">
@@ -99,31 +100,34 @@
                     <li><a href="exhibit_now.html">현재전시</a></li>
                     <li><a href="exhibit_due.html">예정전시</a></li>
                     <li><a href="exhibit_event.html">이벤트</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">교육</a>
                   <ul class="tsub">
                     <li><a href="edu_intro.html">교육소개</a></li>
                     <li><a href="edu.html">프로그램</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">소장품</a>
                   <ul class="tsub">
                     <li><a href="archive-1.html">아카이브</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
               </ul>
               <div class="menu_user">
-              <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
-              <div class="select_menu">
-                <select class="select_box">
-                  <option value="/">KOR</option>
-                  <option value="/">CHN</option>
-                  <option value="/">ENG</option>
-                  <option value="/">JPN</option>
-                </select>
+                <div class="menu_icon">
+                  <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
+                  <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
+                </div>
+                <div class="select_menu">
+                  <select class="select_box">
+                    <option value="/">KOR</option>
+                    <option value="/">CHN</option>
+                    <option value="/">ENG</option>
+                    <option value="/">JPN</option>
+                  </select>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -131,11 +135,11 @@
     </header>
 
     <main>
-      <div class="hd-img">
+      <div class="top-img">
         <img src="images/bg/bg_06.gif" alt="">
       <section id="collection">
         <div class="collection-title">
-          <h2>MMCA이 소장하고 있는 작품</h2>
+          <h1>MMCA이 소장하고 있는 작품</h1>
           <p class="notice">
             국립현대미술관 소장품 이미지는 저작권법에 따라 어떠한 방식으로든
             무단 이용할 수 없으며,<br />
@@ -153,114 +157,112 @@
 
       <section id="archive">
         <div class="image-container">
-          <div class="art-items">
-            <div class="art-sec">
-              <img src="images/archive/a2-1.jpg" alt="a2-1" />
-              <div class="art-info">
-                <p class="since">2022</p>
-                <h3>크리스틴 선 김: 일상의 수어</h3>
-                <div class="see-more">
-                  <a
-                    href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=22442&artistnm=%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8B%B4%20%EC%84%A0%20%EA%B9%80"
-                    >자세히보기</a
-                  >
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="art-items">
+              <div class="art-sec">
+                <img src="images/archive/a2-1.jpg" alt="a2-1" />
+                <div class="art-info">
+                  <p class="since">2022</p>
+                  <h6>크리스틴 선 김: 일상의 수어</h6>
+                  <div class="see-more">
+                    <a
+                      href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=22442&artistnm=%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8B%B4%20%EC%84%A0%20%EA%B9%80"
+                      >자세히보기</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="art-sec">
-              <img src="images/archive/a2-2.jpeg" alt="a2-2" />
-              <div class="art-info">
-                <p class="since">2017-2021</p>
-                <h3>아이 웨이웨이: 검은 샹들리에</h3>
-                <div class="see-more">
-                  <a
-                    href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=22455&artistnm=%EC%95%84%EC%9D%B4%20%EC%9B%A8%EC%9D%B4%EC%9B%A8%EC%9D%B4"
-                    >자세히보기</a
-                  >
+              <div class="art-sec">
+                <img src="images/archive/a2-2.jpeg" alt="a2-2" />
+                <div class="art-info">
+                  <p class="since">2017-2021</p>
+                  <h6>아이 웨이웨이: 검은 샹들리에</h6>
+                  <div class="see-more">
+                    <a
+                      href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=22455&artistnm=%EC%95%84%EC%9D%B4%20%EC%9B%A8%EC%9D%B4%EC%9B%A8%EC%9D%B4"
+                      >자세히보기</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="art-sec">
-              <img src="images/archive/a2-3.jpg" alt="a2-3" />
-              <div class="art-info">
-                <p class="since">2013</p>
-                <h3>김보연: 트위스트 암체어</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7422&artistnm=%EA%B9%80%EB%B3%B4%EC%97%B0">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-3.jpg" alt="a2-3" />
+                <div class="art-info">
+                  <p class="since">2013</p>
+                  <h6>김보연: 트위스트 암체어</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7422&artistnm=%EA%B9%80%EB%B3%B4%EC%97%B0">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="art-sec">
-              <img src="images/archive/a2-4.jpg" alt="a2-4" />
-              <div class="art-info">
-                <p class="since">2012</p>
-                <h3>김상훈: 현상-룸 디바이더, 스크린</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7421&artistnm=%EA%B9%80%EC%83%81%ED%9B%88">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-4.jpg" alt="a2-4" />
+                <div class="art-info">
+                  <p class="since">2012</p>
+                  <h6>김상훈: 현상-룸 디바이더, 스크린</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7421&artistnm=%EA%B9%80%EC%83%81%ED%9B%88">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="art-sec">
-              <img src="images/archive/a2-5.jpg" alt="a2-5" />
-              <div class="art-info">
-                <p class="since">1996</p>
-                <h3>한정현: 두 사람을 위한 벤치</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7469&artistnm=%ED%95%9C%EC%A0%95%ED%98%84">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-5.jpg" alt="a2-5" />
+                <div class="art-info">
+                  <p class="since">1996</p>
+                  <h6>한정현: 두 사람을 위한 벤치</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=7469&artistnm=%ED%95%9C%EC%A0%95%ED%98%84">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="art-sec">
-              <img src="images/archive/a2-6.jpg" alt="a2-6" />
-              <div class="art-info">
-                <p class="since">1961</p>
-                <h3>한홍택: 가정생활 5월호 표지</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9491&artistnm=%ED%95%9C%ED%99%8D%ED%83%9D">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-6.jpg" alt="a2-6" />
+                <div class="art-info">
+                  <p class="since">1961</p>
+                  <h6>한홍택: 가정생활 5월호 표지</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9491&artistnm=%ED%95%9C%ED%99%8D%ED%83%9D">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="art-sec">
-              <img src="images/archive/a2-7.jpg" alt="a2-7" />
-              <div class="art-info">
-                <p class="since">1953</p>
-                <h3>한홍택: 디자인</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9403&artistnm=%EC%A0%95%EB%B3%91%EA%B7%9C">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-7.jpg" alt="a2-7" />
+                <div class="art-info">
+                  <p class="since">1953</p>
+                  <h6>한홍택: 디자인</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9403&artistnm=%EC%A0%95%EB%B3%91%EA%B7%9C">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="art-sec">
-              <img src="images/archive/a2-8.jpg" alt="a2-8" />
-              <div class="art-info">
-                <p class="since">2017</p>
-                <h3>하지훈: 원형소반 시리즈</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=8213&artistnm=%ED%95%98%EC%A7%80%ED%9B%88">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-8.jpg" alt="a2-8" />
+                <div class="art-info">
+                  <p class="since">2017</p>
+                  <h6>하지훈: 원형소반 시리즈</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=8213&artistnm=%ED%95%98%EC%A7%80%ED%9B%88">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="art-sec">
-              <img src="images/archive/a2-9.jpg" alt="a2-9" />
-              <div class="art-info">
-                <p class="since">2014(2020 재제작)</p>
-                <h3>정병규: 테이프타이포그래피_책 시리즈</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9403&artistnm=%EC%A0%95%EB%B3%91%EA%B7%9C">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-9.jpg" alt="a2-9" />
+                <div class="art-info">
+                  <p class="since">2014(2020 재제작)</p>
+                  <h6>정병규: 테이프타이포그래피_책 시리즈</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9403&artistnm=%EC%A0%95%EB%B3%91%EA%B7%9C">자세히보기</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="art-sec">
-              <img src="images/archive/a2-10.jpg" alt="a2-10" />
-              <div class="art-info">
-                <p class="since">1972</p>
-                <h3>한홍택: 인삼 수출 포스터</h3>
-                <div class="see-more">
-                  <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9488&artistnm=%ED%95%9C%ED%99%8D%ED%83%9D">자세히보기</a>
+              <div class="art-sec">
+                <img src="images/archive/a2-10.jpg" alt="a2-10" />
+                <div class="art-info">
+                  <p class="since">1972</p>
+                  <h6>한홍택: 인삼 수출 포스터</h6>
+                  <div class="see-more">
+                    <a href="https://www.mmca.go.kr/collections/collectionsDetailPage.do?menuId=0000000000&wrkinfoSeqno=9488&artistnm=%ED%95%9C%ED%99%8D%ED%83%9D">자세히보기</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -360,9 +362,12 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/archive.js"></script>
     <script src="js/footer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+  AOS.init();
+  </script>
   </body>
 </html>

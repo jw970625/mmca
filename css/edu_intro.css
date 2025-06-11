@@ -1,5 +1,5 @@
 @import url(reset.css);
-#edu_intro {
+#edu_intro{
   width: 100%;
   height: 100%;
   position: relative;
@@ -11,22 +11,22 @@
   color: var(--color-white);
 }
 
-#edu_intro .container {
+#edu_intro .container{
   width: 100%;
   height: 100%;
+  margin-top: 120px;
   padding: 200px 0;
 }
-#edu_intro .caption h2 {
+#edu_intro .caption h1{
   text-align: center;
   margin: 30px;
   padding: 55px;
   font-size: 4.8rem;
-  font-weight: bold;
   line-height: 5.5rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
   animation: title-ani 1.2s backwards;
 }
-#edu_intro .container .caption p {
+#edu_intro .container .caption p{
   margin: 50px;
   padding: 20px 0;
   font-size: 2rem;
@@ -39,7 +39,7 @@
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 
 }
-#edu_intro .container .btn {
+#edu_intro .container .btn{
   width: 150px;
   height: 40px;
   line-height: 15px;
@@ -57,6 +57,14 @@
   animation-fill-mode: both;
   opacity: 0;
 }
+#edu_intro .container .btn:hover{
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #000;
+  transition: 0.3s ease-in;
+}
+
+
 
 /* 애니메이션 */
 @keyframes title-ani{
@@ -79,7 +87,6 @@
 }
 
 
-
 /* PC ~1400px */
 @media (max-width: 1400px) {
 }
@@ -90,7 +97,6 @@
   #edu_intro .container {
     margin-top: 60px;
     padding: 100px 0;
-    word-break: keep-all;
   }
   #edu_intro .caption h2 {
     margin: 20px;
@@ -106,7 +112,7 @@
 @media (max-width: 380px) {
   #edu_intro .container {
     margin-top: 40px;
-    padding: 50px 0    word-break: keep-all;
+    padding: 50px 0;
   }
   #edu_intro .caption h2 {
     font-size: 3.2rem;
