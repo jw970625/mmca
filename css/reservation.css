@@ -114,8 +114,12 @@
   color: #666;
   white-space: nowrap;
   border: none;
-  line-height: 2rem;
   text-align: right;
+}
+
+#reservation section .resertext .btn{
+  margin-top: 2rem;
+  width: 100%;
 }
 
 #reservation section .resertext .btn a{
@@ -149,12 +153,20 @@
     opacity: 1;
   }
 
+  #reservation section .resertext table .reser_title tr th{
+    font-size: 2.8rem;
+  }
+
+  #reservation section .resertext tr td{
+    font-size: 2rem;
+  }
+
   #reservation section .resertext .btn a{
     opacity: 1;
   }
 
   #reservation .reserbox .reserimg{
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -208,7 +220,7 @@
   }
 
   #reservation section .resertext .btn{
-    margin: 3rem auto 0;
+    
   }
   
 } 
