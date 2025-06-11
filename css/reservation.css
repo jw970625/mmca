@@ -40,7 +40,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 7rem auto 8rem;
+  margin: 0 auto 5rem;
 }
 
 #reservation section .menubar h3{
@@ -219,9 +219,9 @@
     margin: auto;
   }
 
-  #reservation section .resertext .btn{
+  /* #reservation section .resertext .btn{
     
-  }
+  } */
   
 } 
 

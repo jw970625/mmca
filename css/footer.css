@@ -272,13 +272,13 @@ footer{
   }
 
   .shopicon_footer{
-    display: block;
+    display: flex;
+    gap: 2rem;
   }
 
   .shopicon_footer a img{
     display: block;
     width: 3rem;
-    margin-bottom: 5rem;
   }
 
   .copylight_footer{
