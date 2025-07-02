@@ -41,7 +41,7 @@
                   <li><a href="exhibit_due.html">예정전시</a></li>
                   <li><a href="exhibit_event.html">이벤트</a></li>
                 </ul>
-              </li>
+              </li>      
               <li class="main"><a href="edu_intro.html">교육</a>
                 <ul class="sub s4">
                   <li><a href="edu_intro.html">교육소개</a></li>
@@ -72,9 +72,9 @@
       </div>
       <div class="tab_header">
         <div class="header_wrap">
-          <div class="tab_header_left">
+          <!-- <div class="tab_header_left">
             <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
-          </div>
+          </div> -->
           <div class="tab_header_logo">
             <a href="index.html">
               <img src="images/ui/ui_logo.png" alt="로고">
@@ -99,36 +99,39 @@
                     <li><a href="reservation.html">전시예약</a></li>
                   </ul>
                 </li>
-                <li class="tmain"><a href="#">전시</a>
+      <li class="tmain"><a href="#">전시</a>
                   <ul class="tsub">
                     <li><a href="exhibit_now.html">현재전시</a></li>
                     <li><a href="exhibit_due.html">예정전시</a></li>
                     <li><a href="exhibit_event.html">이벤트</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">교육</a>
                   <ul class="tsub">
                     <li><a href="edu_intro.html">교육소개</a></li>
                     <li><a href="edu.html">프로그램</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">소장품</a>
                   <ul class="tsub">
                     <li><a href="archive-1.html">아카이브</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
               </ul>
               <div class="menu_user">
-              <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
-              <div class="select_menu">
-                <select class="select_box">
-                  <option value="/">KOR</option>
-                  <option value="/">CHN</option>
-                  <option value="/">ENG</option>
-                  <option value="/">JPN</option>
-                </select>
+                <div class="menu_icon">
+                  <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
+                  <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
+                </div>
+                <div class="select_menu">
+                  <select class="select_box">
+                    <option value="/">KOR</option>
+                    <option value="/">CHN</option>
+                    <option value="/">ENG</option>
+                    <option value="/">JPN</option>
+                  </select>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -147,9 +150,9 @@
                   <a href="exhibit_now.html">
                     <img src="images/main/visual/visual1.png" alt="메인배너 이미지">
                     <div class="visual_desc">
-                      <h2>MMCA 서울</h2>
+                      <h3>MMCA 서울</h3>
                       <h1>한국현대미술 하이라이트</h1>
-                      <h3>2025-05-01 <span></span> 2026-05-03</h3>
+                      <h2>2025-05-01 <br class="br_t3"><span></span><br class="br_t3"> 2026-05-03</h2>
                     </div>
                   </a>
                 </li>
@@ -157,9 +160,9 @@
                   <a href="exhibit_now.html">
                     <img src="images/main/visual/visual2.jpg" alt="메인배너 이미지">
                     <div class="visual_desc">
-                      <h2>MMCA 서울</h2>
+                      <h3>MMCA 서울</h3>
                       <h1>론 뮤익</h1>
-                      <h3>2025-04-11 <span></span> 2025-07-13</p>
+                      <h2>2025-04-11 <br class="br_t3"><span></span><br class="br_t3"> 2025-07-13</h2>
                     </div>
                   </a>
                 </li>
@@ -167,9 +170,9 @@
                   <a href="exhibit_now.html">
                     <img src="images/main/visual/visual3.png" alt="메인배너 이미지">
                     <div class="visual_desc">
-                      <h2>MMCA 덕수궁</h2>
+                      <h3>MMCA 덕수궁</h3>
                       <h1>초현실주의와 한국근대미술</h1>
-                      <h3>2025-04-17 <span></span> 2025-07-06</h3>
+                      <h2>2025-04-17 <br class="br_t3"><span></span><br class="br_t3"> 2025-07-06</h2>
                     </div>
                   </a>
                 </li>
@@ -177,9 +180,9 @@
                   <a href="exhibit_now.html">
                     <img src="images/main/visual/visual4.jpg" alt="메인배너 이미지">
                     <div class="visual_desc">
-                      <h2>MMCA 서울</h2>
-                      <h1>기울인 몸들: 서로의 취약함이 만날 때</h1>
-                      <h3>2025-05-16 <span></span> 2025-07-20</h3>
+                      <h3>MMCA 서울</h3>
+                      <h1>기울인 몸들: <br class="br_t">서로의 취약함이 <br class="br_t2">만날 때</h1>
+                      <h2>2025-05-16 <br class="br_t3"><span></span><br class="br_t3"> 2025-07-20</h2>
                     </div>
                   </a>
                 </li>
@@ -283,38 +286,52 @@
 
       <!-- display -->
       <section class="display_sec">
-        <!-- Swiper -->
-
         <div class="swiper swiper02">
-          <div class="dp_title">
-            <h2>전시</h2>
+          <div class="title_wrap dp_title">
+            <h3>전시</h3>
             <div class="title_desc">진행중인 전시들을 만나보세요.</div>
           </div>
 
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="images/main/display/dp1.png" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp1.png" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp2.png" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp2.png" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp3.png" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp3.png" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp4.jpg" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp4.jpg" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp5.gif" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp5.gif" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp6.jpg" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp6.jpg" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp7.png" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp7.png" alt="전시 이미지">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="images/main/display/dp8.png" alt="전시 이미지">
+              <a href="exhibit_now.html">
+                <img src="images/main/display/dp8.png" alt="전시 이미지">
+              </a>
             </div>
 
           </div>
@@ -322,73 +339,50 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-
       </section>
 
-      <!-- collection -->
+      <!-- collection -->      
       <section class="collection_sec">
         <div class="container_fluid">
           <div class="title_wrap col_title">
-            <h2>소장품</h2>
+            <h3>소장품</h3>
           </div>
-
-          <div class="col_container">
-            <div class="col_slide">
-              <div class='slide'>
-                <img src="images/main/collection/col1.jpg" alt="소장품 사진">
-                <div class="overlay img"></div>
+          <div class="swiper swiper03">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="archive-1.html"><img src="images/main/collection/col1.jpg" alt="소장품 사진"></a>
                 <div class="col_item_title">
                   <span>2025 국립현대미술관 캠페인</span><br>
                   "지금 여기, 국립현대미술관"
                 </div>
               </div>
-              <div class='slide'>
-                <img src="images/main/collection/col2.png" alt="소장품 사진">
-                <div class="overlay img"></div>
+              <div class="swiper-slide">
+                <a href="archive-1.html"><img src="images/main/collection/col2.png" alt="소장품 사진"></a>
                 <div class="col_item_title">
                   <span>국립현대미술관</span><br>
                   이건희컬렉션
                 </div>
               </div>
-              <div class='slide'>
-                <img src="images/main/collection/col3.png" alt="소장품 사진">
-                <div class="overlay img"></div>
+              <div class="swiper-slide">
+                <a href="archive-1.html"><img src="images/main/collection/col3.png" alt="소장품 사진"></a>
                 <div class="col_item_title">
-                  <span>국립현대미술관</span><br>
-                  소장품300
+                  <span>국립현대미술관 소장품300</span><br>
+                  1910년대-1920년대
                 </div>
               </div>
-              <div class='slide'>
-                <img src="images/main/collection/col1.jpg" alt="소장품 사진">
-                <div class="overlay img"></div>
+              <div class="swiper-slide">
+                <a href="archive-1.html"><img src="images/main/collection/col4.png" alt="소장품 사진"></a>
                 <div class="col_item_title">
-                  <span>2025 국립현대미술관 캠페인</span><br>
-                  "지금 여기, 국립현대미술관"
-                </div>
-              </div>
-              <div class='slide'>
-                <img src="images/main/collection/col2.png" alt="소장품 사진">
-                <div class="overlay img"></div>
-                <div class="col_item_title">
-                  <span>국립현대미술관</span><br>
-                  이건희컬렉션
-                </div>
-              </div>
-              <div class='slide'>
-                <img src="images/main/collection/col3.png" alt="소장품 사진">
-                <div class="overlay img"></div>
-                <div class="col_item_title">
-                  <span>국립현대미술관</span><br>
-                  소장품300
+                  <span>국립현대미술관 소장품300</span><br>
+                  1930년대-1940년대
                 </div>
               </div>
             </div>
-            <div class='col_buttons'>
-              <a class="prev" href="#none"><i class="xi-angle-left"></i></a>
-              <a class="next" href="#none"><i class="xi-angle-right"></i></a>
+            <div class="col_buttons">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
-    
         </div>
       </section>
 
@@ -396,7 +390,7 @@
       <section class="shop_sec">
         <div class="container_fluid">
           <div class="title_wrap shop_title">
-            <h2>MMCA COLLECTION</h2>
+            <h3>MMCA COLLECTION</h3>
             <a href="shop.html">온라인숍 바로가기</a>
           </div>
           <div class="shop_items">
@@ -465,8 +459,8 @@
         <div class="container_wrap">
           <div class="news">
             <div class="title_wrap news_title">
-              <h2>소식</h2>
-              <p>더보기 +</p>
+              <h3>소식</h3>
+              <a href="exhibit_event.html"><p>더보기 +</p></a>
             </div>
             <ul class="board_list">
               <li class="board_item">
@@ -514,8 +508,8 @@
 
           <div class="event">
             <div class="title_wrap news_title">
-              <h2>이벤트</h2>
-              <p>더보기 +</p>
+              <h3>이벤트</h3>
+              <a href="exhibit_event.html"><p>더보기 +</p></a>
             </div>
             <ul class="board_list">
               <li class="board_item">
@@ -685,6 +679,7 @@
       loop:true,
       centeredSlide: true,
       slidesPerView:1,
+      spaceBetween:20,
       autoplay:{
         delay: 3000,
       },
@@ -693,6 +688,9 @@
         prevEl:".swiper-button-prev",
       },
       breakpoints:{
+        540:{
+          slidesPerView:2
+        },
         768:{
           slidesPerView:3
         },
@@ -703,12 +701,13 @@
     });
   </script>
 
-    <script>
+  <script>
     var swiper2 = new Swiper(".swiper02", {
 
       loop:true,
       centeredSlide: true,
-      slidesPerView:1,
+      slidesPerView:2,
+      spaceBetween:20,
       autoplay:{
         delay: 3000,
       },
@@ -722,9 +721,6 @@
       },
       breakpoints:{
         768:{
-          slidesPerView:2
-        },
-        1024:{
           slidesPerView:3
         },
         1200:{
@@ -733,6 +729,23 @@
       }
     });
   </script>
+
+  <script>
+    var swiper = new Swiper(".swiper03", {
+      slidesPerView: "auto",
+
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
 
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>국립현대미술관 - 연혁</title>
   <link rel="shortcut icon" href="images/logo/icon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
                   <li><a href="exhibit_due.html">예정전시</a></li>
                   <li><a href="exhibit_event.html">이벤트</a></li>
                 </ul>
-              </li>
+              </li>      
               <li class="main"><a href="edu_intro.html">교육</a>
                 <ul class="sub s4">
                   <li><a href="edu_intro.html">교육소개</a></li>
@@ -69,9 +70,9 @@
       </div>
       <div class="tab_header">
         <div class="header_wrap">
-          <div class="tab_header_left">
+          <!-- <div class="tab_header_left">
             <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
-          </div>
+          </div> -->
           <div class="tab_header_logo">
             <a href="index.html">
               <img src="images/ui/ui_logo.png" alt="로고">
@@ -96,36 +97,39 @@
                     <li><a href="reservation.html">전시예약</a></li>
                   </ul>
                 </li>
-                <li class="tmain"><a href="#">전시</a>
+      <li class="tmain"><a href="#">전시</a>
                   <ul class="tsub">
                     <li><a href="exhibit_now.html">현재전시</a></li>
                     <li><a href="exhibit_due.html">예정전시</a></li>
                     <li><a href="exhibit_event.html">이벤트</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">교육</a>
                   <ul class="tsub">
                     <li><a href="edu_intro.html">교육소개</a></li>
                     <li><a href="edu.html">프로그램</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
                 <li class="tmain"><a href="#">소장품</a>
                   <ul class="tsub">
                     <li><a href="archive-1.html">아카이브</a></li>
-                  </ul>		
+                  </ul>      
                 </li>
               </ul>
               <div class="menu_user">
-              <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
-              <div class="select_menu">
-                <select class="select_box">
-                  <option value="/">KOR</option>
-                  <option value="/">CHN</option>
-                  <option value="/">ENG</option>
-                  <option value="/">JPN</option>
-                </select>
+                <div class="menu_icon">
+                  <a href="#"><img src="images/ui/profile.svg" alt="프로필"></a>
+                  <a href="shop.html"><img src="images/ui/store.svg" alt="스토어"></a>
+                </div>
+                <div class="select_menu">
+                  <select class="select_box">
+                    <option value="/">KOR</option>
+                    <option value="/">CHN</option>
+                    <option value="/">ENG</option>
+                    <option value="/">JPN</option>
+                  </select>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -142,11 +146,11 @@
       <section class="history_sec">
 
         <div class="hist">
-          <div class="hist_years">
+          <div class="hist_years" >
             2020's
           </div>
           <div class="hist_items">
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2024
               </div>
@@ -160,7 +164,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2020
               </div>
@@ -168,7 +172,7 @@
                 <div class="hist_title">
                   1월 7일 직제 개정
                 </div>
-                <div class="hist_content">
+                <div class="hist_content intro2_space">
                   - 1단 1실 7과 6팀 → 1단 1실 10과 2팀으로 변경<br>
                   - 행정시설관리과, 기획총괄과, 작품보존미술은행관리과, 홍보고객지원과, 미술품수장센터관리팀, 전시1과, 전시2과, 소장품자료관리과, 교육문화과, 미술품수장센터운영과, 연구기획출판과, 전시3팀
                 </div>
@@ -187,7 +191,7 @@
 
         <div class="hist">
           <div class="hist_items">
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2019
               </div>
@@ -197,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2018
               </div>
@@ -211,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2017
               </div>
@@ -225,7 +229,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2013
               </div>
@@ -240,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2010
               </div>
@@ -248,7 +252,7 @@
                 <div class="hist_title">
                   1월 14일 서울관팀 직제화
                 </div>
-                <div class="hist_content">
+                <div class="hist_content intro2_space">
                   - 1단 3과 2실 1팀 -> 1단 8팀 1관으로 변경
                 </div>
                 <div class="hist_title">
@@ -271,18 +275,18 @@
             2000's
           </div>
           <div class="hist_items">
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2006
               </div>
               <div class="hist_desc">
-                <div class="hist_title">
+                <div class="hist_title intro2_space">
                   1월 1일 책임운영기관 전환
                 </div>
                 <div class="hist_title">
                   1월 5일 직제개정
                 </div>
-                <div class="hist_content">
+                <div class="hist_content intro2_space">
                   - 사무국을 기획운영단으로 변경<br>
                   - 학예연구실 팀제 운영: 조사연구팀,전시기획운영팀,홍보마케팅팀,작품보존관리팀 등
                 </div>
@@ -295,7 +299,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2004
               </div>
@@ -308,7 +312,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 2002
               </div>
@@ -323,7 +327,7 @@
 
         <div class="hist">
           <div class="hist_items">
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 1998
               </div>
@@ -333,7 +337,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 1986
               </div>
@@ -346,7 +350,7 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 1973
               </div>
@@ -356,12 +360,12 @@
                 </div>
               </div>
             </div>
-            <div class="hist_item">
+            <div class="hist_item" data-aos="fade-up">
               <div class="hist_year">
                 1969
               </div>
               <div class="hist_desc">
-                <div class="hist_title">
+                <div class="hist_title intro2_space">
                   8월23일 국립현대미술관 직제제정
                 </div>
                 <div class="hist_title">
@@ -467,5 +471,9 @@
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/header.js"></script>  
   <script src="js/script.js"></script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -3,25 +3,29 @@
   margin-top: 6rem;
   width: 100%;
   height: 30rem;
+  background-image: url(../images/bg/bg_02.png);
+  background-size: cover;
+  margin-bottom: 12rem;
+  color: #fff;
+}
+.intro .title_wrap{
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bg/bg_02.png);
-  background-size: cover;
-  
-  color: #fff;
 }
 .intro.title h1{
-  font-size: 4.8rem;
   letter-spacing: 0.5rem;
-  font-weight: 500;
+  transform: translateY(50%);
 }
 /* intro1______________intro */
 #intro1 .title_bg{
   width: 100%;
   height: 10rem;
-  margin: 12rem 0 8rem;
   background: linear-gradient(90deg,#f0f0f0, #fff);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 #intro1 .intro_title{
   max-width: 140rem;
@@ -31,13 +35,8 @@
   justify-content: space-between;
   align-self: center;
 }
-#intro1 h2{
-  font-size: 3.2rem;
-  margin-top: 4rem;
-}
-#intro1 .intro_title img{
-  height: 10rem;
-  max-width: 26rem;
+#intro1 .intro1_br{
+  display: none;
 }
 #intro1 .intro_desc{
   width: 100%;
@@ -55,23 +54,21 @@
   max-width: 140rem;
   width: 100%;
   margin: auto;
-  padding: 0 0 10rem;
 }
 #intro1 .mi_grid,
 #intro1 .mi_space{
   display: flex;
 }
 #intro1 .mi_grid{
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 #intro1 .desc_item{
   margin-bottom: 5rem;
 }
 #intro1 .mi_title{
-  margin-right: 10rem;
   font-size: 2rem;
   font-weight: 500;
-  width: 20%;
+  width: 30%;
 }
 #intro1 .desc_img img{
   max-width: 30rem;
@@ -82,23 +79,23 @@
   width: 100%;
   max-width: 140rem;
   margin: auto;
-  padding: 12rem 0;
 }
 #intro2 .hist{
   width: 100%;
   max-width: 140rem;
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 10rem;
   position: relative;
 }
 #intro2 .hist .hist_years{
-  font-size: 18rem;
-  color: #f0f0f0;
+  font-size: 16rem;
+  color: #fcfcfc;
+  text-shadow: 0 5px 8px #ccc;
   font-weight: 900;
   z-index: -1;
+  transform: translateY(5rem);
 }
 #intro2 .hist_items{
   width: 70%;
@@ -111,49 +108,59 @@
   margin-bottom: 5rem;
 }
 #intro2 .hist_item .hist_year{
-  width: 12rem;
-  height: 9rem;
+  width: 11rem;
+  height: 10rem;
   color: #fff;
   text-align: center;
-  line-height: 9rem;
-  border-radius: 100rem;
+  line-height: 10rem;
+  border-radius: 10rem;
   background-color: var(--color-primary);
   font-size: 2.4rem;
   font-weight: 500;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 #intro2 .hist_item .hist_desc{
   width: 100%;
+  border-radius: 3rem;
+  padding: 2rem 3rem;
+  background-color: var(--color-gray-100);
 }
 
 #intro2 .hist_item .hist_title{
   font-weight: 500;
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 #intro2 .hist_item .hist_content{
   width: 100%;
-  margin-bottom: 2rem;
   word-break: keep-all;
 }
-
+  #intro2 .intro2_space{
+    margin-bottom: 2rem;
+  }
 /* intro3______________FAQ */
+#intro3 .faq_sec{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 #intro3 .tabmenu{
   width: 80%;
-	max-width: 120rem;
-	margin: 10rem auto;
+	max-width: 90rem;
   text-align: center;
 }
 #intro3 .tab{
 	display: flex;
 	justify-content: center;
+  margin-bottom: 5rem;
 }
 #intro3 .tab li{
-	margin: 0 5rem;
+  width: 8rem;
+  margin: 0 1rem;
 	font-size: 2rem;
 	color: #666;
 	font-weight: 600;
 	cursor: pointer;
+  padding-bottom: 1rem;
 }
 #intro3 .tab li.active{
 	border-bottom: 0.2rem solid var(--color-primary);
@@ -161,29 +168,33 @@
 }
 
 #intro3 .faq {
-  margin: 5rem auto;
   max-width: 120rem;
   color: #222;
   text-align: left;
 }
 #intro3 .faq .question {
   background:#f0f0f0; 
-  padding: 2rem 5rem; 
-  margin: 2rem 0;
   border:solid 0.1rem #f0f0f0; 
   cursor:pointer;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   transition: 0.2s;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
 }
 #intro3 .faq .question span{
-  margin-right: 2rem;
+  color: var(--color-primary);
+  margin-right: 1rem;
 }
+
 #intro3 .faq .question.active {
   background: var(--color-primary); 
+  color: #fff;
+}
+#intro3 .faq .question.active span{
   color: #fff;
 }
 #intro3 .faq .question.active i {
@@ -191,9 +202,11 @@
 }
 #intro3 .faq p {
   background:#fff; 
-  padding: 2rem 5rem; 
   border:solid 1px #f0f0f0; 
   height: 0;
+  padding: 2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 #intro3 .faq .question.active + p{
   height: 100%;
@@ -210,12 +223,13 @@
 
 
 @media (max-width:1400px){
-  #intro1 .title_bg,
+
+  #intro1 .intro_title,
   #intro1 .intro_desc,
-  #intro1 .mi_grid,
-  #intro1 .mi_space{
-    padding: 0 5rem;
+  #intro1 .mi_items{
+    padding: 0 2rem;
   }
+
   #intro1 .desc_img.logo_type{
     display: flex;
     flex-direction: column;
@@ -225,12 +239,32 @@
     width: 100%;
   }
 
-
   #intro2 .hist{
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
   #intro2 .hist .hist_years{
     font-size: 10rem;
+  }
+}
+
+@media (max-width:1200px){
+  .intro.title{
+    margin-bottom: 10rem;
+  }
+  #intro1 .title_bg{
+    margin-bottom: 4rem;
+  }
+  #intro1 .mi_grid{
+    margin-bottom: 10rem;
+  }
+  #intro1 .desc_item{
+    margin-bottom: 4rem;
+  }
+  #intro2 .hist_item{
+    margin-bottom: 4rem;
+  }
+  #intro3 .tab{
+    margin-bottom: 4rem;
   }
 }
 
@@ -239,30 +273,19 @@
     margin-top: 8rem;
     height: 20rem;
   }
-  .intro.title h1{
-    font-size: 3.6rem;
-  }
-  #intro1 h2{
-    font-size: 2.8rem;
-  }
-  #intro1 .intro_title img{
-    height: 10rem;
-    max-width: 20rem;
-    object-fit: contain;
-  }
-  #intro1 .mi_items{
-    padding: 0 0 8rem;
+  #intro1 .intro1_br{
+    display: block;
   }
 
   #intro2 .hist{
-    padding: 0 3rem;
+    padding: 0 2rem;
+    align-items: flex-start;
   }
   #intro2 .hist .hist_years{
     font-size: 7.2rem;
   }
   #intro2 .hist:nth-child(2n+1){
     flex-direction: row-reverse;
-    align-items: center;
   }
   #intro2 .hist .hist_year{
     font-size: 2rem;
@@ -272,46 +295,34 @@
   }
 
   #intro3 .tab li{
-    margin: 0 3rem;
-    font-size: 1.8rem;
-  }
-  #intro3 .panel .faq .question{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    width: 7rem;
+    margin: 0 0.7rem;
+    padding-bottom: 0.7rem;
   }
 }
 
 @media (max-width:768px){
-  .intro.title h1{
-    font-size: 3.2rem;
+
+  #intro1 .intro1_br{
+    display: none;
   }
 
-  #intro1 h2{
-    height: 6rem;
-    line-height: 6rem;
-    font-size: 2.4rem;
-    background: linear-gradient(90deg,#fff, #f0f0f0);
-  }
   #intro1 .title_bg{
-    background: none;
-    margin: 4rem 0 4rem;
+    height: 8rem;
+    margin-bottom: 5rem;
   }
-  #intro1 .title_bg:first-child{
-    margin-bottom: 10rem;
-  }
-
   #intro1 .intro_title{
     display: flex;
     flex-direction: column;
-  }
-
-  #intro1 .intro_title img{
-    height: 5rem;
-    max-width: 13rem;
   }
   #intro1 .mi_items .mi_grid,
   #intro1 .mi_items .mi_space{
     display: flex;
     flex-direction: column;
+  }
+  #intro1 .desc_item{
+    margin-bottom: 3rem;
   }
 
   #intro1 .mi_items .mi_title{
@@ -329,9 +340,6 @@
   #intro1 .mi_title{
     font-size: 1.8rem;
   }
-  #intro1 .mi_items{
-    padding: 0 0 4rem;
-  }
 
   #intro2 .hist {
     margin: 0;
@@ -342,10 +350,12 @@
   #intro2 .hist_items{
     width: 100%;
   }
+  #intro2 .hist_item .hist_desc{
+    padding: 2rem;
+  }
   #intro2 .hist .hist_item{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
   }
   #intro2 .hist .hist_year{
     font-size: 1.8rem;
@@ -354,9 +364,11 @@
     padding: 0 3rem ;
     line-height: 3rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     margin-right: 0;
+    border-radius: 3rem;
   }
+  
   #intro2 .hist .hist_title{
     font-size: 1.6rem;
   }
@@ -366,11 +378,12 @@
 
   #intro3 .tabmenu{
     width: 100%;
-    margin: 10rem auto;
+    margin: 0 2rem;
   }
   #intro3 .tab li{
-    margin: 0 2rem;
-    font-size: 1.6rem;
+    width: 6rem;
+    margin: 0 0.5rem;
+    padding-bottom: 0.5rem;
   }
   #intro3 .panel .faq{
     word-break: keep-all;
@@ -387,22 +400,28 @@
 
 @media (max-width:540px){
   .intro.title{
-    height: 15rem;
+    margin-bottom: 8rem;
   }
-  .intro.title h1{
-    font-size: 2.8rem;
+  #intro1 .title_bg{
+    height: 6rem;
+    margin-bottom: 3rem;
+  }
+  #intro1 .mi_grid{
+    margin-bottom: 8rem;
+  }
+  
+  #intro2 .hist .hist_item{
+    margin-bottom: 3rem;
   }
 
-  #intro1 h2{
-    font-size: 2rem;
-  }
-
-  #intro3 .tabmenu{
-    margin: 5rem auto;
+  #intro3 .tab{
+    margin-bottom: 3rem;
   }
   #intro3 .tab li{
-    margin: 0 1rem;
     font-size: 1.4rem;
+    width: 5rem;
+    margin: 0 0.3rem;
+    padding-bottom: 0.3rem;
   }
   #intro3 .panel .faq .question{
     font-size: 1.4rem;
