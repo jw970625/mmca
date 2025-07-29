@@ -1,0 +1,414 @@
+@import url(style.css);
+
+
+/* bg_sec */
+#gwacheon .bg_sec{
+  position: relative;
+  padding: 0;
+}
+
+#gwacheon .bg_img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#gwacheon .bg_img img{
+  width: 100%;
+}
+
+#gwacheon .bg_sec .bg_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+}
+
+#gwacheon .bg_sec .bg_text h1{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4rem;
+  word-break: keep-all;
+  line-height: 4rem;
+}
+
+#gwacheon .bg_sec .bg_text h2{
+  text-align: center;
+  color: #fff;
+}
+
+#gwacheon .bg_sec .time_sec{
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+  background: rgba(240, 240, 240, 0.8);
+}
+
+#gwacheon .bg_sec .time_sec p{
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+}
+
+#gwacheon .bg_sec .time_sec p.bold{
+  color: #222;
+  font-weight: 600;
+}
+
+/* navbar */
+#gwacheon .navbar .navi{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin: auto;
+}
+
+#gwacheon .navbar .navi li a{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+
+#gwacheon .navbar .navi li a:hover{
+  color: #008787;
+}
+
+/* common */
+
+#gwacheon .container_wrap{
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
+#gwacheon .btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 5rem;
+}
+
+#gwacheon .btn h3{
+  color: #333;
+}
+
+#gwacheon .btn a{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #666;
+}
+
+#gwacheon .btn .watch_sec, .map_sec .btn a{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  opacity: 0;
+}
+
+/* exhibition_sec */
+#gwacheon .exhibition_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+#gwacheon .exhibition_sec .swiper{
+  margin-top: 5rem;
+  width: 100%;
+  height: 40%;
+}
+
+#gwacheon .exhibition_sec .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gwacheon .exhibition_sec .swiper-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* education_sec */
+
+#gwacheon .education_sec .swiper{
+  width: 100%;
+}
+
+#gwacheon .education_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+#gwacheon .education_sec .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gwacheon .education_sec .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* watch_sec */
+#gwacheon .watch_wrap{
+  width: 100%;
+  overflow-x: auto;
+  margin: auto;
+}
+
+#gwacheon .watch_table{
+  margin: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#gwacheon th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+#gwacheon th {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#gwacheon .center{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#gwacheon .left{
+  text-align: left;
+}
+
+/* floor_sec */
+#gwacheon .floor_wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #666;
+}
+
+#gwacheon .floor_wrap .floor_header{
+  width: 20%;
+}
+
+#gwacheon .floor_header .floor{
+  height: 100%;
+}
+
+#gwacheon .floor_header .floor li{
+  width: 100%;
+  height: 33.33%;
+  border-bottom:1px solid #f0f0f0;
+  color:#333;
+  font-size: 2.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#gwacheon .floor_header .floor li.active{
+  background: #333;
+  color: #fff;
+}
+
+#gwacheon .floor_img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#gwacheon .floor_img div{
+  display: none;
+}
+
+#gwacheon .floor_img .img_box{
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#gwacheon .floor_img .img_box img:nth-child(1){
+  display: block;
+  width: 100%;
+}
+
+#gwacheon .floor_img .img_box img:nth-of-type(2){
+  display: block;
+  width: 100%;
+}
+
+#gwacheon .floor_img .img_box img:nth-of-type(3){
+  display: none;
+  width: 100%;
+}
+
+#gwacheon .floor_img div.active{
+  display: block;
+}
+
+/* map_sec */
+#gwacheon .map_wrap{
+  width: 100%;
+  height: 100%;
+}
+
+#gwacheon .map_wrap iframe{
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  outline: none;
+}
+
+/* Media Query */
+@media (max-width: 1400px){
+  #gwacheon .exhibition_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+  }
+
+  #gwacheon .education_sec .swiper-wrapper{
+  width: 100%;
+  margin: auto;
+  }
+
+  #gwacheon .watch_wrap {
+    overflow-x: auto;
+  }
+
+  #gwacheon .watch_table {
+    width: 100%;
+    white-space: nowrap;
+  }
+}
+
+
+@media (max-width: 1200px){
+  #gwacheon .container_wrap{
+    padding: 0 2rem;
+  }
+  
+  #gwacheon .bg_img img{
+    height: 80rem;
+    object-fit: cover;
+  }
+
+  #gwacheon .floor_wrap{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #gwacheon .floor_wrap .floor_header{
+    width: 100%;
+  }
+
+  #gwacheon .floor_header .floor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gwacheon .floor_header .floor li{
+    font-size: 2rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 768px){
+  #gwacheon .floor_img .img_box{
+    flex-direction: column;
+  }
+
+  #gwacheon .floor_header .floor li{
+    font-size: 1.6rem;
+  }
+
+  #gwacheon .floor_img .img_box img:nth-child(1){
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  #gwacheon .floor_img .img_box img:nth-child(2){
+    display: none;
+    width: 100%;
+    margin: auto;
+  }
+
+  #gwacheon .floor_img .img_box img:nth-child(3){
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 670px){
+  
+  #gwacheon .bg_sec .time_sec p{
+    font-size: 1.8rem;
+  }
+
+  #gwacheon .navbar .navi{
+    gap: 4rem;
+  }
+
+  #gwacheon .navbar .navi li a{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:540px){
+  #gwacheon .bg_img img{
+    height: 60rem;
+    object-fit: cover;
+  }
+
+  #gwacheon .bg_sec .time_sec{
+    flex-direction: column;
+    height: 20%;
+  }
+
+  #gwacheon .bg_sec .bg_text h2{
+    display: none;
+  }
+}
+
+@media (max-width:400px){
+  #gwacheon .bg_img img{
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  #gwacheon .bg_sec .time_sec p{
+    font-size: 1.6rem;
+  }
+  
+}

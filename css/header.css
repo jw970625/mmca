@@ -39,6 +39,7 @@ ul.gnb{
   height: 6.5rem;
   padding: 0 3.5rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: #222;
   font-size: 2rem;
@@ -95,6 +96,9 @@ ul.gnb{
 }
 .desk_header_right a{
   margin: 0 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.3rem;
 }
 .desk_header_right a:nth-of-type(2){
   padding-left: 1rem;
@@ -136,6 +140,12 @@ ul.gnb{
   margin: 0;
 }
 
+.trigger img{
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
 .menu_all{
   position: absolute;
   top: 8rem; 
@@ -145,6 +155,7 @@ ul.gnb{
   background-color: #fff;
   transition: right 0.1s;
   z-index: 99;
+  z-index: 98;
   border-top: 1px solid #f0f0f0;
 }
 
@@ -185,6 +196,9 @@ ul.gnb{
 .mright{
   font-size: 2rem;
   margin: 0 auto;
+  padding: 0 3rem;
+  background: #fff;
+  z-index: 99;
 }
 
 .mright .tmain{
@@ -198,8 +212,6 @@ ul.gnb{
 .mlogo img{ 
 	width:100%;
 }
-
-
 .mright .mlogo{margin-top: 5rem;}
 
 .mright .tgnb{
@@ -208,6 +220,7 @@ ul.gnb{
 
 .mright>ul>li>a{
   width: 80%;
+  width: 100%;
 	color:#333;
 	font-weight:400;
 	font-size:1.8rem;
@@ -220,7 +233,7 @@ ul.gnb{
   align-items: center;
   font-size: 1.6rem;
   color: #222;
-  padding: 1.2rem 0;
+  padding: 1.5rem 0;
 }
 
 .tgnb>.tmain>a:after{ 
@@ -238,7 +251,9 @@ ul.gnb{
 .tsub>li{
   width: 80%;
   margin: auto;
-  padding: 1rem 0;
+  width: 100%;
+  margin: auto;
+  padding: 1.3rem 0;
 }
 .tsub>li:last-child {border-bottom: none;}
 .tsub>li>a{  
@@ -251,6 +266,39 @@ ul.gnb{
 .menu_user a{
   width: 2.6rem;
   color: #333;
+  font-size: 1.6rem;
+  padding: 0 1rem;
+}
+
+/* select_menu */
+.menu_user {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin: 3rem auto 0;
+}
+
+.menu_user a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.menu_user span {
+  color: #888;
+}
+
+.menu_user a{
+  color: #333;
+}
+
+.menu_icon{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu_user a:hover img{
@@ -278,6 +326,23 @@ ul.gnb{
 
 @media (max-width: 1200px) {
   .desk_header { display: none; }
+@media (max-width:1400px){
+  .header_wrap{
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1000px){
+  .desk_header {
+    display: block;
+  }
+  .tab_header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .desk_header { display: none;}
   .tab_header { display: flex;}
   .menu_all {
     width: 50%;
@@ -288,6 +353,7 @@ ul.gnb{
   .tab_header{
     padding: 0 1.5rem;
   }
+
   .tab_header_left img{
     width: 2.4rem;
   }
@@ -302,6 +368,7 @@ ul.gnb{
     background-color: #fff;
     z-index: 9999;
     padding: 2rem;
+    z-index: 99;
     box-shadow: none;
   }
 }
