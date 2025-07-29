@@ -1,0 +1,247 @@
+@import url(style.css);
+
+body {
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+section {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1rem 12rem;
+  margin-top: 150px;
+}
+
+/* 로그인 박스 스타일 */
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  max-height: 1000px;
+  height: auto;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin: 2.5rem 0;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.6rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.login-form button:hover {
+  background-color: var(--color-secondary);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login {
+  margin-top: 50px;
+}
+
+.login-type a,
+.login-type .or-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-type a.btn img {
+  width: 38px;
+  margin-right: 8px;
+}
+
+/* 또는 */
+.or-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.or-text:before,
+.or-text:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 43%;
+  height: 1px;
+  background-color: lightgray;
+}
+
+.or-text:before {
+  left: 0;
+}
+.or-text:after {
+  right: 0;
+}
+
+.login-footer p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-footer p a {
+  color: royalblue;
+  font-weight: 400;
+}
+
+.login-footer p a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  border: 1px solid lightgray;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1rem;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  font-size: 1.6rem;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:nth-of-type(1) {
+  color: #222;
+  background: url(../image/logo-mobile.png) no-repeat 15px center #fff;
+}
+
+.btn:nth-of-type(2) {
+  background: url(../image/logo-email.png) no-repeat 15px center #898c9b;
+}
+.btn:nth-of-type(3) {
+  background: url(../image/logo-naver.png) no-repeat 15px center #00b818;
+}
+.btn:nth-of-type(4) {
+  background: url(../image/logo-facebook.png) no-repeat 15px center #ffeb3b;
+  color: #333;
+}
+
+.login-footer {
+  margin-top: 25px;
+}
+
+/* ========== 반응형 설정 ========== */
+
+/* 1400px 이하 */
+@media (max-width: 1400px) {
+  .login-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .login-form h2 {
+    font-size: 2rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 14px 14px 14px 50px;
+  }
+}
+
+/* 768px 이하 */
+@media (max-width: 768px) {
+  section {
+    max-width: 95%;
+    padding: 0 1rem 8rem;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    background-size: 20px;
+    padding: 12px 12px 12px 45px;
+  }
+}
+
+/* 320px 이하 */
+@media (max-width: 320px) {
+  section {
+    padding-bottom: 16rem; /* 더 길게 보이게 */
+  }
+
+  .login-container {
+    padding: 1.2rem;
+    max-height: none;
+    height: auto;
+    min-height: 800px; /* 세로 길게 표시 */
+  }
+
+  .login-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding-left: 40px;
+    background-size: 18px;
+  }
+}

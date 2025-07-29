@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>
+        환영합니다.<br />
+        국립현대미술관입니다!
+      </h3>
+      <form>
+        <div>
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="phone">전화번호</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div>
+          <label for="email">이메일로 가입</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="이메일 주소 입력"
+          />
+        </div>
+
+        <div>
+          <label>또는 외부 계정으로 가입</label>
+          <div class="social-buttons">
+            <button type="button" class="naver">
+              <img src="/images/logo/naver.png" alt="naver logo" />
+            </button>
+            <button type="button" class="google">
+              <img src="/images/logo/google.png" alt="google logo" />
+            </button>
+            <button type="button" class="kakaotalk">
+              <img src="/images/logo/kakao-talk.png" alt="kakaotalk logo" />
+            </button>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">개인정보 수집에 동의합니다</label>
+        </div>
+
+        <button type="submit" class="submit">가입 완료</button>
+      </form>
+    </div>
+  </body>
+</html>

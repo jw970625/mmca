@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="login-container">
+        <form class="login-form">
+          <h2>로그인</h2>
+          <label for="username">아이디</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="아이디를 입력하세요"
+            required
+          />
+
+          <label for="password">비밀번호</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+
+          <button type="submit" onclick="javascript:btn()">로그인</button>
+        </form>
+        <div class="login">
+          <div class="login-type">
+            <a class="btn" href="#none">
+              <img src="/images/logo/phone.svg" alt="" />휴대폰 번호로 로그인</a
+            >
+            <span class="or-text">또는</span>
+            <a class="btn" href="#none">
+              <img src="/images/logo/emailicon.png" alt="email icon" />이메일로
+              로그인</a
+            >
+            <a class="btn" href="#none">
+              <img src="/images/logo/naver.png" alt="naver logo" />네이버로
+              로그인</a
+            >
+            <a class="btn" href="#none">
+              <img
+                src="/images/logo/kakao-talk.png"
+                alt="kakao talk logo"
+              />카카오톡으로 로그인</a
+            >
+          </div>
+          <div class="login-footer">
+            <input type="checkbox" id="chk" />
+            <label for="chk">로그인 상태 유지</label>
+            <p>첫 방문이신가요?<a href="#join.html">회원가입</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
